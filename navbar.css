@@ -86,7 +86,7 @@ padding: 8px 16px;
   background-color: rgb(68, 66, 66); 
 }
  
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 900px){
   .header__deck {
     position: fixed;
     background: linear-gradient(to top, #111, var(--brand-secondary), #111);
@@ -200,7 +200,7 @@ padding: 8px 16px;
   clip-path: path("M0 15 Q0 15 0 15 6 0 12 0 12 6 12 6 9 6 6 12 6 12 6 12 30 12 30 12 30 18 30 18 6 18 6 18 6 18 6 18 9 24 12 24 12 30 12 30 6 30 0 15 0 15 0 15");
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .nav-toggle {
     display: block;
   }

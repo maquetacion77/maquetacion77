@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO & Technical Metadata -->
+  <title>Custom Loaders & Transition Effects </title>
+  <meta name="description" content="A showcase of custom-built page loaders and loading spinners. Optimized with modern CSS keyframes and JavaScript transitions to enhance perceived performance." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Custom Loaders & Transition Effects Showcase" />
+  <meta property="og:description" content="Smooth UI transitions and custom CSS loading components designed for modern web applications." />
+  <meta property="og:image" content="https://maquetacion77.github.io/images/images/custom-loaders.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="headerfooter.css" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="section.css" />
+  <link rel="stylesheet" href="pre-loader.css" />
+  <link rel="stylesheet" href="lspinner.css" />
+
+  <!-- Scripts -->
+  <script src="pre-loader.js" defer></script>
+</head>
+  <body>
+  <!-- PRE LOADER -->
+    <div class="preloader-overlay" id="preloader">
+      <div class="loader-container">
+        <div class="spinner one">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  
+    <header>
+      <a href="index.html" class="logo"
+        >Maquetacion<span>77</span>
+        <span class="sr-only"
+          >Go to home - Front-End & Layout Portfolio</span
+        ></a
+      >
+
+      <div class="header__deck">
+     
+        <nav class="nav-bar" >
+          <a href="#">Navbar</a>
+          <a href="#">Header & Footer</a>
+          <div class="dropdown">
+            <a href="#">Hero</a>
+            <ul class="dropdown-menu">
+              <li><a href="hero01.html" >Hero01</a></li>
+              <li><a href="#" >Hero02</a></li>
+            </ul>
+          </div>
+           <div class="dropdown">
+            <a href="#">Hero</a>
+            <ul class="dropdown-menu">
+              <li><a href="hero01.html" >Hero01</a></li>
+              <li><a href="#" >Hero02</a></li>
+                 <li><a href="#" >Hero03</a></li>
+            </ul>
+          </div>
+      
+          <a href="#" class="is-current">Loaders</a>
+          <a href="#">Cards</a>
+        </nav>
+      </div>
+    
+ 
+          <button
+        class="nav-toggle"
+        id="toggleButton"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      ></button>
+    </header>
+    <section class="loaders-section" id="loaders_showcase">
+      <h1>CUSTOM LOADERS</h1>
+      <p>
+        A technical demonstration of high-performance UI components built with
+        pure CSS. By leveraging advanced vector masking through both rigid
+        polygon structures and fluid SVG paths, this kit showcases how math and
+        code can replace heavy imagery to deliver seamless, production-ready
+        micro-interactions.
+      </p>
+      <div class="loaders-container">
+        <div class="loader-display">
+          <!-- BOTÓN INTERRUPTOR DE FONDO -->
+          <button
+            class="bg-toggle"
+            id="bgToggle"
+            aria-label="Toggle dark background"
+          >
+            <!-- <span>Fondo Oscuro</span> -->
+          </button>
+
+          <div class="loader-container">
+         
+            <div class="spinner one active">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      
+
+        <nav class="loaders-nav" aria-label="Loader selection">
+          <button class="active" aria-label="View Ray Spinner">
+            <span>Ray</span>
+          </button>
+          <button aria-label="View Diamond Spinner">
+            <span>Diamond</span>
+          </button>
+          <button aria-label="View Arrow Spinner"><span>Arrow</span></button>
+          <button aria-label="View Biohazard Spinner">
+            <span>Curve</span>
+          </button>
+          <button aria-label="View Vortex Spinner"><span>Vortex</span></button>
+        </nav>
+
+        <div class="loaders-descriptions">
+          <p class="active">
+            <strong> Precision Ray:</strong> Engineered using discrete CSS
+            polygon coordinates. It utilizes synchronous animation delays to
+            simulate a classic hardware-accelerated radar sweep effect.
+          </p>
+          <p>
+            <strong> Minimalist Diamond:</strong> A lightweight loader crafted
+            through a tight 4-point polygon matrix. This design focuses on
+            minimal geometry to reduce layout recalculation over extended
+            animation loops.
+          </p>
+          <p>
+            <strong> Sharp Arrow Vector:</strong> A multi-directional loading
+            element built with composite polygon pathing. Perfect for
+            high-contrast data fetching states where structural clarity is
+            required.
+          </p>
+          <p>
+            <strong> Curve:</strong> An elegant and fluid component leveraging
+            the inline CSS `path()` function to render harmonic curves. It
+            showcases smooth organic motion, perfect for premium digital health
+            or fintech dashboards.
+          </p>
+          <p>
+            <strong> Vortex :</strong> A high-fidelity spinner utilizing a
+            layout of 12 distinct DOM nodes. By combining pseudo-elements with
+            advanced path() clipping masks, it handles layered rendering and
+            precise depth of field across synchronized animation queues.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="loaders-section">
+<figure class="spinner-card">
+  <img src="https://maquetacion77.github.io/images/images/CL01.png" alt="Custom Loader created using 'polygon' and one animation" loading="lazy">
+  <figcaption>
+    <strong>CL01</strong> 
+  </figcaption>
+</figure>
+<figure class="spinner-card">
+  <img src="https://maquetacion77.github.io/images/images/CL02.png" alt="Custom Loader created using 'polygon' and one animation" loading="lazy">
+  <figcaption>
+    <strong>CL02</strong> 
+  </figcaption>
+</figure><figure class="spinner-card">
+  <img src="https://maquetacion77.github.io/images/images/CL03.png" alt="Custom Loader created using 'polygon' and one animation" loading="lazy">
+  <figcaption>
+    <strong>CL03</strong> 
+  </figcaption>
+</figure>
+</figure><figure class="spinner-card">
+  <img src="https://maquetacion77.github.io/images/images/CL04.png" alt="Custom Loader created using 'polygon' and one animation" loading="lazy">
+  <figcaption>
+    <strong>CL04</strong> 
+  </figcaption>
+</figure>
+</figure><figure class="spinner-card">
+  <img src="https://maquetacion77.github.io/images/images/CL05.png" alt="Custom Loader created using 'polygon' and one animation" loading="lazy">
+  <figcaption>
+    <strong>CL05</strong> 
+  </figcaption>
+</figure>
+</figure><figure class="spinner-card">
+  <img src="https://maquetacion77.github.io/images/images/CL06.png" alt="Custom Loader created using 'polygon' and one animation" loading="lazy">
+  <figcaption>
+    <strong>CL06</strong> 
+  </figcaption>
+</figure>
+</figure><figure class="spinner-card">
+  <img src="https://maquetacion77.github.io/images/images/CL07.png" alt="Custom Loader created using 'polygon' and one animation" loading="lazy">
+  <figcaption>
+    <strong>CL07</strong> 
+  </figcaption>
+</figure>
+</figure><figure class="spinner-card">
+  <img src="https://maquetacion77.github.io/images/images/CL08.png" alt="Custom Loader created using 'polygon' and one animation" loading="lazy">
+  <figcaption>
+    <strong>CL08</strong> 
+  </figcaption>
+</figure>
+</figure><figure class="spinner-card">
+  <img src="https://maquetacion77.github.io/images/images/CL09.png" alt="Custom Loader created using 'path' and two animations" loading="lazy">
+  <figcaption>
+    <strong>CL09</strong> 
+  </figcaption>
+</figure>
+</figure><figure class="spinner-card">
+  <img src="https://maquetacion77.github.io/images/images/CL10.png" alt="Custom Loader created using 'polygon' and one animation" loading="lazy">
+  <figcaption>
+    <strong>CL10</strong> 
+  </figcaption>
+</figure>
+</figure><figure class="spinner-card">
+  <img src="https://maquetacion77.github.io/images/images/CL11.png" alt="Custom Loader created using 'polygon' and one animation" loading="lazy">
+  <figcaption>
+    <strong>CL11</strong> 
+  </figcaption>
+</figure>
+</figure><figure class="spinner-card">
+  <img src="https://maquetacion77.github.io/images/images/CL12.png" alt="Custom Loader created using 'polygon' and one animation" loading="lazy">
+  <figcaption>
+    <strong>CL12</strong> 
+  </figcaption>
+</figure>
+</figure><figure class="spinner-card">
+  <img src="https://maquetacion77.github.io/images/images/CL13.png" alt="Custom Loader created using 'polygon' and one animation" loading="lazy">
+  <figcaption>
+    <strong>CL13</strong> 
+  </figcaption>
+</figure>
+</figure><figure class="spinner-card">
+  <img src="https://maquetacion77.github.io/images/images/CL14.png" alt="Custom Loader created using 'polygon' and one animation" loading="lazy">
+  <figcaption>
+    <strong>CL14</strong> 
+  </figcaption>
+</figure>
+</figure><figure class="spinner-card">
+  <img src="https://maquetacion77.github.io/images/images/CL15.png" alt="Custom Loader created using 'polygon' and one animation" loading="lazy">
+  <figcaption>
+    <strong>CL15</strong> 
+  </figcaption>
+</figure>
+</figure><figure class="spinner-card">
+  <img src="https://maquetacion77.github.io/images/images/CL16.png" alt="Custom Loader created using 'polygon' and one animation" loading="lazy">
+  <figcaption>
+    <strong>CL16</strong> 
+  </figcaption>
+</figure>
+</figure><figure class="spinner-card">
+  <img src="https://maquetacion77.github.io/images/images/CL17.png" alt="Custom Loader created using 'polygon' and one animation" loading="lazy">
+  <figcaption>
+    <strong>CL17</strong> 
+  </figcaption>
+</figure>
+</figure><figure class="spinner-card">
+  <img src="https://maquetacion77.github.io/images/images/CL18.png" alt="Custom Loader created using 'polygon' and one animation" loading="lazy">
+  <figcaption>
+    <strong>CL18</strong> 
+  </figcaption>
+</figure>
+</figure><figure class="spinner-card">
+  <img src="https://maquetacion77.github.io/images/images/CL19.png" alt="Custom Loader created using 'polygon' and one animation" loading="lazy">
+  <figcaption>
+    <strong>CL19</strong> 
+  </figcaption>
+</figure>
+
+
+  <style>
+    .spinner-card{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  </style>
+  
+     
+     
+     
+     
+     
+    
+     
+     
+     
+     
+    
+   
+     
+   
+     
+    </section>
+
+    <script src="section.js" defer></script>
+    <script src="toggleButton.js" defer></script>
+    <footer class="flex---">
+      <p>
+        &copy; 2026 <span>Maquetacion</span><span>77</span> by Miguel Cortez
+      </p>
+    </footer>
+  </body>
+</html>

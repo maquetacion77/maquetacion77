@@ -1,0 +1,25 @@
+/* Capa que bloquea y tapa toda la pantalla */
+.preloader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--cls-black, #000); /* Tu fondo oscuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Clave de nivel Senior: Debe estar sobre TODO */
+  z-index: 99999; 
+  
+  /* Transición suave para cuando desaparezca */
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* LA CLASE SIVIRÁ PARA DESVANECERLO CON JS */
+.preloader-overlay.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none; /* Evita que el usuario haga click sin querer en algo invisible */
+}

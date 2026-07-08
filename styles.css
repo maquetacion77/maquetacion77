@@ -1,0 +1,89 @@
+html {
+  font-size: 62.5%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montenegrin+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ID:wght@100..400&display=swap');
+
+
+:root {
+  /* Brand Colors */
+  --brand-primary: #00ffff;
+  --brand-secondary: #1d9e9e;
+
+  /* Base Colors */
+  --cls-white: #ffffff;
+  --cls-black: #000000;
+   --color-accent: #6495ed;
+    --onyx-dark: #171414;
+  
+  /* Functional / Alpha Colors */
+  --bg-overlay: #0000001a; 
+   --color-card-overlay: #11111173;
+
+  /* Typography */
+  --font-main: "Inter", sans-serif;
+   /* --font-main: "Montserrat", sans-serif; */
+    /* --font-main: "Raleway", sans-serif; */
+    /* --font-main:"Playwrite ID", cursive; */
+  
+   /* Loader */
+  --spinner-size: 100px; 
+  --scale:1;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    font-family: var(--font-main);
+     text-decoration: none;
+       letter-spacing: 1px;
+  list-style: none;
+  transition: 0.5s ease;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+nav a {
+  font-size: 1.5rem;
+}
+.flex--- {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  max-width: 1920px;
+  margin: auto;
+  position: relative;
+  padding-top: 60px;
+  
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 150%;
+    padding: 15px;
+    text-align: justify;
+}
+/* ==========================================================
+   CLASE DE ACCESIBILIDAD (Oculta visualmente, visible para SEO)
+   ========================================================== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0); /* Para navegadores antiguos */
+  clip-path: inset(50%);  /* Estándar moderno que recorta el texto al centro */
+  border: 0;
+  white-space: nowrap;    /* Evita que el texto se rompa en líneas invisibles */
+}
+
+

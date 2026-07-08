@@ -1,0 +1,55 @@
+header {
+  width: 100%;
+  height: 60px;
+  background-color: var(--cls-black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+
+
+.logo {
+  font-size: 2.4rem;
+  color: var(--brand-primary);
+  text-decoration: none; /* Limpieza visual */
+}
+
+.logo span {
+  font-weight: 600;
+  color: var(--brand-secondary);
+}
+
+@media only screen and (max-width: 850px) {
+  /* Al estar el botón adentro, el logo se queda a la izquierda y el botón a la derecha naturalmente */
+  header {
+    justify-content: space-between; 
+  }
+  .logo span {
+    font-size: 25px;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color:var(--cls-black);
+}
+footer p {
+  color: var(--brand-primary);
+}
+footer p span {
+  color: var(--brand-primary);
+  padding: 2px;
+}
+footer p span:last-child {
+  font-weight: 600;
+  color: var(--brand-secondary);
+}
+
+

@@ -1,0 +1,206 @@
+.header__deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+.header__deck .nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+.header__deck .nav-bar > a,
+.header__deck .dropdown > a {
+  padding: 3px 5px;
+  margin: 10px;
+  position: relative;
+  text-decoration: none;
+  color: var(--cls-white, #fff);
+}
+
+.header__deck .nav-bar > a::after,
+.header__deck .dropdown > a::after {
+  content: "";
+  z-index: 5;
+  position: absolute;
+  transition: 0.5s ease;
+  top: 0;
+  left: 0;
+  height: 95%;
+  width: 0%;
+  border-bottom: 1px solid var(--cls-white, #fff);
+}
+
+.header__deck .nav-bar > a:hover::after,
+.header__deck .dropdown > a:hover::after {
+  width: 100%;
+}
+.header__deck .nav-bar a.is-current {
+  color: var(--brand-primary); 
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+
+ .dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-menu {
+ display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%); 
+  background-color: var(--cls-black, #000);
+  border-radius: 0 0 10px 10px;
+  padding: 10px 0 0 0;
+  margin: -2px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+@keyframes dropani {
+  0% {
+    clip-path: polygon(0%0%, 100%0%, 100%0%, 0%0%);
+  }
+
+  100% {
+    clip-path: polygon(0%0%, 100%0%, 100%100%, 0%100%);
+  }
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: dropani 0.3s linear forwards;
+}
+.dropdown-menu li a {
+padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  color: var(--cls-white, #fff);
+  transition: 0.3s ease;
+  font-size: 14px;
+}
+.dropdown-menu li a:hover {
+  background-color: rgb(68, 66, 66); 
+}
+@media only screen and (max-width: 700px) {
+  .header__deck {
+    position: fixed;
+    background: linear-gradient(to top, #111, var(--brand-secondary), #111);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out, visibility 0.4s;
+    visibility: hidden;
+  }
+
+  .header__deck.is-open {
+    transform: translateX(0);
+    visibility: visible;
+  }
+
+  .header__deck .nav-bar {
+    flex-direction: column;  
+  }
+  .header__deck .nav-bar a {
+    padding: 10px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--cls-white);
+    width: 80px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    background-color: var(--bg-overlay);
+    aspect-ratio: 1/0.8;
+   
+    margin: 3px;
+    clip-path: polygon(0%50%, 30%0%, 70%0%, 100%50%, 70%100%, 30%100%);
+  }
+   .header__deck .nav-bar li a{
+    margin: 6px;
+   } 
+
+.dropdown-menu {
+ display: none;
+  position: absolute;
+  top: -47px;
+  left: 105px;
+  background-color: transparent;
+  border-radius: 0 0 10px 10px;
+  padding: 10px 0;
+  list-style: none;
+  margin: 0;
+  z-index: 100;
+}
+@keyframes dropani {
+  0% {
+    clip-path: polygon(0%0%, 100%0%, 100%0%, 0%0%);
+  }
+
+  100% {
+    clip-path: polygon(0%0%, 100%0%, 100%100%, 0%100%);
+  }
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: dropani 0.3s linear forwards;
+}
+
+  .nav-bar a::after {
+    display: none;
+    content: "";
+    z-index: 5;
+    position: absolute;
+    transition: 0.5s ease;
+    top: 0;
+    left: 0;
+    height: 95%;
+    width: 0%;
+    border-bottom: 1px solid var(--cls-white);
+  }
+}
+/* toggle button */
+
+.nav-toggle {
+  width: 30px;
+  height: 30px;
+  position: relative; 
+  z-index: 20;
+  border: unset;
+  cursor: pointer;
+  background-color: transparent; 
+  display: none;
+}
+
+.nav-toggle:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--brand-secondary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: path("M0 15 Q0 0 0 0 15 0 30 0 30 6 30 6 15 6 0 6 0 12 0 12 15 12 30 12 30 18 30 18 15 18 0 18 0 24 0 24 15 24 30 24 30 30 30 30 15 30 0 30 0 15 0 15");
+  transition: transform 0.2s ease-in, clip-path 0.2s ease-in;
+}
+
+.icon:after {
+  clip-path: path("M0 15 Q0 15 0 15 6 0 12 0 12 6 12 6 9 6 6 12 6 12 6 12 30 12 30 12 30 18 30 18 6 18 6 18 6 18 6 18 9 24 12 24 12 30 12 30 6 30 0 15 0 15 0 15");
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-toggle {
+    display: block;
+  }
+}

@@ -86,4 +86,8 @@ p {
   white-space: nowrap;    /* Evita que el texto se rompa en líneas invisibles */
 }
 
-
+ .spinner-card{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }

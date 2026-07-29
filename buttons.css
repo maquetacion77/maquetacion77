@@ -1,387 +1,446 @@
-  /* <!-- ESTILOS AGREGADOS PARA EL NUEVO SWITCH BUTTON Y CAMBIO DE FONDO --> */
-  /* #region 01  */
-      /* Asegura la correcta alineación de los elementos en el Header */
-      .main-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
 
-      /* Estilo base del nuevo Switch Button del Header */
-      .header-theme-switch {
-        width: 40px;
-        height: 24px;
-        background-color: #333;
-        border: 2px solid var(--brand-primary, #00ffff);
-        border-radius: 12px;
-        cursor: pointer;
-        position: relative;
-        z-index: 25; /* Para mantenerse visible sobre overlays móviles */
-        margin-left: auto;
-        margin-right: 15px;
-        transition: background-color 0.3s ease, border-color 0.3s ease;
-        padding: 0;
-        outline: none;
-        -webkit-tap-highlight-color: transparent;
-      }
+/* #region 01 theme-switch */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-      .header-theme-switch::after {
-        content: "";
-        position: absolute;
-        top: 2px;
-        left: 2px;
-        width: 16px;
-        height: 16px;
-        background-color: #fff;
-        border-radius: 50%;
-        transition: transform 0.3s ease, background-color 0.3s ease;
-      }
+.header-theme-switch {
+  width: 40px;
+  height: 24px;
+  background-color: #333;
+  border: 2px solid var(--brand-primary, #00ffff);
+  border-radius: 12px;
+  cursor: pointer;
+  position: relative;
+  z-index: 9; 
+  margin-left: auto;
+  margin-right: 15px;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+  padding: 0;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
 
-      /* Estado Activo / Alternativo del Switch Button */
-      .header-theme-switch.theme-active {
-        background-color: var(--brand-primary, #00ffff);
-      }
+.header-theme-switch::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
 
-      .header-theme-switch.theme-active::after {
-        transform: translateX(16px);
-        background-color: #111;
-      }
+/* Estado Activo / Alternativo del Switch Button */
+.header-theme-switch.theme-active {
+  background-color: var(--brand-primary, #00ffff);
+}
 
-      /* Foco de accesibilidad por teclado */
-      .header-theme-switch:focus-visible {
-        outline: 2px solid #fff;
-        outline-offset: 2px;
-      }
+.header-theme-switch.theme-active::after {
+  transform: translateX(16px);
+  background-color: #111;
+}
 
-      /* Clase dinámica que se aplica a los .button__container */
-      .button__container.bg-dark-theme {
-        background-color: #111 !important;
-        transition: background-color 0.4s ease;
-      }
-      /* #endregion */
-  
-      /* #region 02 */
-    
-      @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
-
-      .button__container {
-        border: 1px solid black;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        margin: 10px 0;
-        transition: background-color 0.4s ease;
-      }
-      .button__container a {
-        width: 150px;
-        height: 50px;
-        box-sizing: border-box;
-        display: block;
-        text-align: center;
-        line-height: 50px;
-        font-size: 1.6rem;
-        letter-spacing: 1px;
-        position: relative;
-        font-weight: bold;
-        margin: 10px 0;
-         font-weight: 900;
-      }
-      .polygon01 {
-        clip-path: path(
-          "M15 0 Q135 0 135 0 150 25 150 25 135 50 135 50 15 50 15 50 0 25 0 25 15 0 15 0"
-        );
-      }
+/* Foco de accesibilidad por teclado */
+.header-theme-switch:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
 
 
-      @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lexend:wght@100..900&display=swap");
-      .primary_btn_01 {
-        color: #fff;
-        font-family: "Lexend", sans-serif;
-        background: radial-gradient(
-          circle at 40% 50%,
-          rgb(105, 57, 182) 0px,
-          rgb(36, 1, 92) 50px,
-          rgb(36, 1, 92) 200px
-        );
-        transition: filter 0.3s ease;
-      }
-      .primary_btn_02 {
-        background:
-          repeating-linear-gradient(
-            -60deg,
-            transparent,
-            transparent 18px,
-            #f3f0ed 20px,
-            #f3f0ed 22px
-          ),
-          repeating-linear-gradient(
-            60deg,
-            #d5c7b5,
-            #d5c7b5 18px,
-            #f3f0ed 20px,
-            #f3f0ed 22px
-          );
-      }
-      .primary_btn_02::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background-color: rgba(0, 0, 0, 0.781);
-        clip-path: path(
-          "M15 0 Q135 0 135 0 150 25 150 25 135 50 135 50 15 50 15 50 0 25 0 25 15 0 15 0 16 2 16 2 2 25 2 25 16 48 16 48 134 48 134 48 148 25 148 25 134 2 134 2 16 2 16 2 15 0 15 0 "
-        );
-      }
- 
-            .primary_btn_03::after {
-    content: attr(data-text); /* Lee el texto de data-text */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-   
-    z-index: -1; /* Lo manda detrás del texto blanco */
-    -webkit-text-stroke: 1px #fff; /* Borde grueso SIN comerse las letras */
-    color: transparent;
-  }
-      .primary_btn_03:hover::before {
-        background: linear-gradient(
-          20deg,
-          yellow,
-          yellow,
-          #ff0000,
-          yellow,
-          yellow
-        );
-      }
-      .primary_btn_03:before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background: linear-gradient(
-          20deg,
-          yellow,
-          #ff0000,
-          #ff0000,
-          yellow,
-          yellow
-        );
-        top: 0;
-        left: 0;
-        clip-path: path(
-          "M15 0 Q135 0 135 0 150 25 150 25 135 50 135 50 15 50 15 50 0 25 0 25 15 0 15 0 17 4 17 4 5 25 5 25 17 46 17 46 132 46 132 46 145 25 145 25 133 4 133 4 17 4 17 4 15 0 15 0 "
-        );
-      }
+.button__container.bg-dark-theme {
+  background-color: #111 !important;
+  transition: background-color 0.4s ease;
+}
+/* #endregion */
 
-      .primary_btn_04 {
-        transition:
-          background-color 0.3s ease,
-          color 0.3s ease;
-        z-index: 2;
-      }
-      .primary_btn_04::after,
-      .primary_btn_04::before {
-        content: "";
-        transition: background-color 0.3s ease;
-        position: absolute;
-        inset: 0;
-        z-index: -1;
-      }
-      .primary_btn_04::after {
-        background-color: black;
-        clip-path: polygon(
-          0%0%,
-          7%0%,
-          7%20%,
-          0%20%,
-          0%0%,
-          0%100%,
-          0%80%,
-          7%80%,
-          7%100%,
-          0%100%,
-          100%100%,
-          93%100%,
-          93%80%,
-          100%80%,
-          100%100%,
-          100%0%,
-          100%20%,
-          93%20%,
-          93%0%,
-          100%0%,
-          100%100%,
-          0%100%
-        );
-      }
-      .primary_btn_04::before {
-        background: orange;
-        clip-path: polygon(
-          1%22%,
-          8%22%,
-          8%2%,
-          92%2%,
-          92%22%,
-          99%22%,
-          99%78%,
-          92%78%,
-          92%98%,
-          8%98%,
-          8%78%,
-          1%78%
-        );
-      }
-      .primary_btn_04:hover {
-        color: orange;
-      }
-      .primary_btn_04:hover:after {
-        background-color: orange;
-      }
-      .primary_btn_04:hover:before {
-        background-color: black;
-      }
-      .primary_btn_05 {
-        background: linear-gradient(to top, green, greenyellow, green);
-        border-radius: 10px;
-        transition:
-          color 0.3s ease,
-          letter-spacing 0.3s ease;
-      }
-      .primary_btn_05:hover {
-        color: rgb(62, 60, 60);
-        letter-spacing: 2px;
-      }
-      .primary_btn_05::after,
-      .primary_btn_05::before {
-        content: "";
-        width: 100%;
-        height: 10px;
-        position: absolute;
-        top: -10px;
-        left: 0;
-        background: linear-gradient(to top, greenyellow, green);
-        clip-path: path(
-          "M5 10 Q15 10 15 0 135 0 135 0 135 10 145 10 0 10 0 10"
-        );
-      }
-      .primary_btn_05::before {
-        transform: rotate(180deg);
-        top: 100%;
-      }
-   
+/* #region 02 primary*/
+
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+
+.button__container {
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 0;
+  transition: background-color 0.4s ease;
+}
+.button__container a {
+  width: 150px;
+  height: 50px;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  position: relative;
+  font-weight: bold;
+  margin: 10px 0;
+  font-weight: 900;
+}
+.polygon01 {
+  clip-path: path(
+    "M15 0 Q135 0 135 0 150 25 150 25 135 50 135 50 15 50 15 50 0 25 0 25 15 0 15 0"
+  );
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lexend:wght@100..900&display=swap");
+.primary_btn_01 {
+  color: #fff;
+  font-family: "Lexend", sans-serif;
+  background: radial-gradient(
+    circle at 40% 50%,
+    rgb(105, 57, 182) 0px,
+    rgb(36, 1, 92) 50px,
+    rgb(36, 1, 92) 200px
+  );
+  transition: filter 0.3s ease;
+}
+.primary_btn_02 {
+  background:
+    repeating-linear-gradient(
+      -60deg,
+      transparent,
+      transparent 18px,
+      #f3f0ed 20px,
+      #f3f0ed 22px
+    ),
+    repeating-linear-gradient(
+      60deg,
+      #d5c7b5,
+      #d5c7b5 18px,
+      #f3f0ed 20px,
+      #f3f0ed 22px
+    );
+}
+.primary_btn_02::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.781);
+  clip-path: path(
+    "M15 0 Q135 0 135 0 150 25 150 25 135 50 135 50 15 50 15 50 0 25 0 25 15 0 15 0 16 2 16 2 2 25 2 25 16 48 16 48 134 48 134 48 148 25 148 25 134 2 134 2 16 2 16 2 15 0 15 0 "
+  );
+}
+
+.primary_btn_03::after {
+  content: attr(data-text); /* Lee el texto de data-text */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1; /* Lo manda detrás del texto blanco */
+  -webkit-text-stroke: 1px #fff; /* Borde grueso SIN comerse las letras */
+  color: transparent;
+}
+.primary_btn_03:hover::before {
+  background: linear-gradient(20deg, yellow, yellow, #ff0000, yellow, yellow);
+}
+.primary_btn_03:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(20deg, yellow, #ff0000, #ff0000, yellow, yellow);
+  top: 0;
+  left: 0;
+  clip-path: path(
+    "M15 0 Q135 0 135 0 150 25 150 25 135 50 135 50 15 50 15 50 0 25 0 25 15 0 15 0 17 4 17 4 5 25 5 25 17 46 17 46 132 46 132 46 145 25 145 25 133 4 133 4 17 4 17 4 15 0 15 0 "
+  );
+}
+
+.primary_btn_04 {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  z-index: 2;
+}
+.primary_btn_04::after,
+.primary_btn_04::before {
+  content: "";
+  transition: background-color 0.3s ease;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.primary_btn_04::after {
+  background-color: black;
+  clip-path: polygon(
+    0%0%,
+    7%0%,
+    7%20%,
+    0%20%,
+    0%0%,
+    0%100%,
+    0%80%,
+    7%80%,
+    7%100%,
+    0%100%,
+    100%100%,
+    93%100%,
+    93%80%,
+    100%80%,
+    100%100%,
+    100%0%,
+    100%20%,
+    93%20%,
+    93%0%,
+    100%0%,
+    100%100%,
+    0%100%
+  );
+}
+.primary_btn_04::before {
+  background: orange;
+  clip-path: polygon(
+    1%22%,
+    8%22%,
+    8%2%,
+    92%2%,
+    92%22%,
+    99%22%,
+    99%78%,
+    92%78%,
+    92%98%,
+    8%98%,
+    8%78%,
+    1%78%
+  );
+}
+.primary_btn_04:hover {
+  color: orange;
+}
+.primary_btn_04:hover:after {
+  background-color: orange;
+}
+.primary_btn_04:hover:before {
+  background-color: black;
+}
+.primary_btn_05 {
+  background: linear-gradient(to top, green, greenyellow, green);
+  border-radius: 10px;
+  transition:
+    color 0.3s ease,
+    letter-spacing 0.3s ease;
+}
+.primary_btn_05:hover {
+  color: rgb(62, 60, 60);
+  letter-spacing: 2px;
+}
+.primary_btn_05::after,
+.primary_btn_05::before {
+  content: "";
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  background: linear-gradient(to top, greenyellow, green);
+  clip-path: path("M5 10 Q15 10 15 0 135 0 135 0 135 10 145 10 0 10 0 10");
+}
+.primary_btn_05::before {
+  transform: rotate(180deg);
+  top: 100%;
+}
+
 /* #endregion */
 
 /* #region switch */
 
-      .s_btn_general.switch_btn_01,
-      .s_btn_general.switch_btn_02,
-      .s_btn_general.switch_btn_03 {
-        width: 44px;
-        height: 44px;
-        padding: 0;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        -webkit-tap-highlight-color: transparent;
-      }
-      .switch_btn_01:after,
-      .switch_btn_02:after,
-      .switch_btn_03:after {
-        content: "";
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        transform: translateZ(0);
-        will-change: clip-path;
-        transition: clip-path 0.3s ease;
-      }
-      .switch_btn_01:after {
-        background-color: green;
-        clip-path: polygon(
-          0%0%,
-          50%0%,
-          100%0%,
-          100%20%,
-          0%20%,
-          0%0%,
-          0%40%,
-          40%40%,
-          60%40%,
-          100%40%,
-          100%50%,
-          100%60%,
-          60%60%,
-          40%60%,
-          0%60%,
-          0%50%,
-          0%40%,
-          0%80%,
-          100%80%,
-          100%100%,
-          50%100%,
-          0%100%,
-          0%80%,
-          0%40%
-        );
-      }
-      .switch_btn_02:after {
-        background-color: #0066ff;
-        border-radius: 25%;
-        clip-path: polygon(0%100%,0%80%,80%0%,60%0%,0%60%,0%35%,35%0%,100%0%,100%65%,65%100%,40%100%,100%40%,100%20%,20%100%);
-      }
-      .switch_btn_03:after {
-        background-color: #FFFF00;
-        clip-path: polygon(0%0%,50%0%,100%0%,100%20%,50%20%,0%20%,0%0%,0%40%,50%40%,100%40%,100%60%,50%60%,0%60%,0%40%,0%80%,50%80%,100%80%,100%100%,50%100%,0%100%,0%80%);
-      }
-      .switch_btn_01.icon_01:after {
-        clip-path: polygon(
-          0%20%,
-          0%0%,
-          20%0%,
-          50%40%,
-          40%50%,
-          0%20%,
-          0%80%,
-          40%50%,
-          50%40%,
-          80%0%,
-          100%0%,
-          100%20%,
-          60%50%,
-          50%60%,
-          20%100%,
-          0%100%,
-          0%80%,
-          50%60%,
-          60%50%,
-          100%80%,
-          100%100%,
-          80%100%,
-          50%60%,
-          0%80%
-        );
-      }
-      .switch_btn_02.icon_02:after {
-        clip-path: polygon(0%100%,0%80%,60%20%,60%20%,0%20%,0%0%,80%0%,100%0%,100%20%,100%100%,80%100%,80%40%,80%40%,20%100%);
-        border-radius: 25% 0 25% 25%;
-      }
-      .switch_btn_03.icon_03:after {
-        clip-path: polygon(0%20%,50%0%,100%20%,100%40%,50%20%,0%40%,0%20%,0%50%,50%30%,100%50%,100%70%,50%50%,0%70%,0%50%,0%80%,50%60%,100%80%,100%100%,50%80%,0%100%,0%80%);
-      }
-      /* Estilo para foco por teclado (Accesibilidad) */
-      .switch_btn_01:focus-visible,
-      .switch_btn_02:focus-visible,
-      .switch_btn_03:focus-visible {
-        outline: 2px solid #0066ff;
-        outline-offset: 2px;
-        border-radius: 4px;
-      }
+.s_btn_general.switch_btn_01,
+.s_btn_general.switch_btn_02,
+.s_btn_general.switch_btn_03 {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.switch_btn_01:after,
+.switch_btn_02:after,
+.switch_btn_03:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  transform: translateZ(0);
+  will-change: clip-path;
+  transition: clip-path 0.3s ease;
+}
+.switch_btn_01:after {
+  background-color: green;
+  clip-path: polygon(
+    0%0%,
+    50%0%,
+    100%0%,
+    100%20%,
+    0%20%,
+    0%0%,
+    0%40%,
+    40%40%,
+    60%40%,
+    100%40%,
+    100%50%,
+    100%60%,
+    60%60%,
+    40%60%,
+    0%60%,
+    0%50%,
+    0%40%,
+    0%80%,
+    100%80%,
+    100%100%,
+    50%100%,
+    0%100%,
+    0%80%,
+    0%40%
+  );
+}
+.switch_btn_02:after {
+  background-color: #0066ff;
+  border-radius: 25%;
+  clip-path: polygon(
+    0%100%,
+    0%80%,
+    80%0%,
+    60%0%,
+    0%60%,
+    0%35%,
+    35%0%,
+    100%0%,
+    100%65%,
+    65%100%,
+    40%100%,
+    100%40%,
+    100%20%,
+    20%100%
+  );
+}
+.switch_btn_03:after {
+  background-color: #ffff00;
+  clip-path: polygon(
+    0%0%,
+    50%0%,
+    100%0%,
+    100%20%,
+    50%20%,
+    0%20%,
+    0%0%,
+    0%40%,
+    50%40%,
+    100%40%,
+    100%60%,
+    50%60%,
+    0%60%,
+    0%40%,
+    0%80%,
+    50%80%,
+    100%80%,
+    100%100%,
+    50%100%,
+    0%100%,
+    0%80%
+  );
+}
+.switch_btn_01.icon_01:after {
+  clip-path: polygon(
+    0%20%,
+    0%0%,
+    20%0%,
+    50%40%,
+    40%50%,
+    0%20%,
+    0%80%,
+    40%50%,
+    50%40%,
+    80%0%,
+    100%0%,
+    100%20%,
+    60%50%,
+    50%60%,
+    20%100%,
+    0%100%,
+    0%80%,
+    50%60%,
+    60%50%,
+    100%80%,
+    100%100%,
+    80%100%,
+    50%60%,
+    0%80%
+  );
+}
+.switch_btn_02.icon_02:after {
+  clip-path: polygon(
+    0%100%,
+    0%80%,
+    60%20%,
+    60%20%,
+    0%20%,
+    0%0%,
+    80%0%,
+    100%0%,
+    100%20%,
+    100%100%,
+    80%100%,
+    80%40%,
+    80%40%,
+    20%100%
+  );
+  border-radius: 25% 0 25% 25%;
+}
+.switch_btn_03.icon_03:after {
+  clip-path: polygon(
+    0%20%,
+    50%0%,
+    100%20%,
+    100%40%,
+    50%20%,
+    0%40%,
+    0%20%,
+    0%50%,
+    50%30%,
+    100%50%,
+    100%70%,
+    50%50%,
+    0%70%,
+    0%50%,
+    0%80%,
+    50%60%,
+    100%80%,
+    100%100%,
+    50%80%,
+    0%100%,
+    0%80%
+  );
+}
+/* Estilo para foco por teclado (Accesibilidad) */
+.switch_btn_01:focus-visible,
+.switch_btn_02:focus-visible,
+.switch_btn_03:focus-visible {
+  outline: 2px solid #0066ff;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
 /* #endregion */

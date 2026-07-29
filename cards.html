@@ -1,0 +1,244 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO & Technical Metadata -->
+  <title>Custom Card Layouts & UI Components | Maquetacion77</title>
+  <meta name="description" content="Explore an inspirational gallery of custom card designs. Interactive, responsive, and lightweight UI card components engineered for modern web applications." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Custom Card Layouts & UI Components | Maquetacion77" />
+  <meta property="og:description" content="Elevate your frontend layouts with custom-built interactive cards, subtle hover effects, and clean semantic structures." />
+  <meta property="og:image" content="https://maquetacion77.github.io/images/images/custom-loaders.png" />
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheets -->
+      <link rel="stylesheet" href="pre-loader.css" /> 
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="section.css" />
+      <link rel="stylesheet" href="headerfooter.css" />
+    <link rel="stylesheet" href="cards.css">
+    <script src="pre-loader.js" defer></script>
+  </head>
+    <body>
+    <!--#region preloader & header -->
+      <div class="preloader-overlay" id="preloader">
+        <div class="loader-container">
+          <div class="spinner one">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    
+      <header class="main-header">
+        <a href="index.html" class="logo"
+          >Maquetacion<span>77</span>
+          <span class="sr-only"
+            >Go to home - Front-End & Layout Portfolio</span
+          ></a>
+           <div id="main-header-deck" class="header__deck">
+  <nav class="nav-bar" aria-label="Navegación principal">
+    <ul class="nav-list">
+      
+      <!-- Dropdown 1: Buttons -->
+      <li class="dropdown">
+        <button type="button" class="dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+          Buttons
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="buttons.html#primary_btn">Primary</a></li>
+          <li><a href="buttons.html#pairs_btn">Pairs</a></li>
+          <li><a href="buttons.html#switch_btn">Switch</a></li>
+          <li><a href="buttons.html#nav_btn">Nav</a></li>
+          <li><a href="buttons.html#hero_btn">Hero</a></li>
+        </ul>
+      </li>
+
+      <!-- Dropdown 2: Hero -->
+      <li class="dropdown">
+        <button type="button" class="dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+          Hero
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="hero01.html">Hero01</a></li>
+          <li><a href="hero02.html">Hero02</a></li>
+        </ul>
+      </li>
+
+      <!-- Enlaces directos -->
+      <li><a href="custom-loaders.html">Loaders</a></li>
+      <li><a href="javascript:void(0)" class="is-current">Cards</a></li>
+
+    </ul>
+  </nav>
+</div>
+      
+  
+   <button 
+  id="toggleButton" 
+  class="nav-toggle" 
+  type="button" 
+  aria-expanded="false" 
+  aria-controls="main-header-deck" 
+  aria-label="Abrir menú"
+></button>
+      </header>
+      <!-- #endregion -->
+     
+     
+      <section class="primary-section">
+        <h1>CUSTOM CARD ARCHITECTURES</h1>
+        <p>
+    
+  A technical showcase of lightweight, high-performance UI cards engineered with semantic HTML and pure CSS. This collection focuses on breaking away from traditional box-model constraints by blending advanced CSS layout systems with complex geometric masks. 
+
+  By utilizing dynamic vector paths, fluid typography, and GPU-optimized micro-interactions, these cards achieve rich visual storytelling and deep motion design without relying on a single kilobyte of heavy imagery. Explore the curated models below to see how mathematical precision transforms static structures into premium user experiences.
+        </p>
+      </section>
+      <!-- card01 -->
+    
+    <div class="cards-wrapper flex---">
+  <!--#region  Botones de navegación  -->
+  <button class="nav-btn btn-left" id="btnLeft" aria-label="Anterior"></button>
+  <button class="nav-btn btn-right" id="btnRight" aria-label="Siguiente"></button>
+  <!-- #endregion -->
+<section class="cards-container" id="cardsContainer">
+   <article class="card01">
+      <img class="card-image" src="https://maquetacion77.github.io/images/cards-280x360/Urban Living.jpg" alt="Fachada exterior de un edificio residencial moderno al atardecer" loading="lazy" decoding="async" />
+      <div class="card-overlay flex---">
+        <h2 class="card-title">Urban Living</h2>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, alias, voluptatem, laboriosam optio adipisci corporis.</p>
+        <a href="#" class="card-btn">View Details</a>
+        <h3 class="card-subtitle">Downtown Area</h3>
+      </div>
+    </article>
+
+    <article class="card01">
+      <img class="card-image" src="https://maquetacion77.github.io/images/cards-280x360/Exclusive Property.jpg" alt="Vista exterior de una villa de lujo con piscina infinita" loading="lazy" decoding="async" />
+      <div class="card-overlay flex---">
+        <h2 class="card-title">Exclusive Property</h2>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, alias, voluptatem, laboriosam optio adipisci corporis.</p>
+        <a href="#" class="card-btn">View Details</a>
+        <h3 class="card-subtitle">Prime Location</h3>
+      </div>
+    </article>
+
+    <article class="card01">
+      <img class="card-image" src="https://maquetacion77.github.io/images/cards-280x360/Modern Apartment.jpg" alt="Diseño de interiores de un departamento minimalista con vistas al centro" loading="lazy" decoding="async" />
+      <div class="card-overlay flex---">
+        <h2 class="card-title">Modern Apartment</h2>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, alias, voluptatem, laboriosam optio adipisci corporis.</p>
+        <a href="#" class="card-btn">View Details</a>
+        <h3 class="card-subtitle">City Center</h3>
+      </div>
+    </article>
+
+    <article class="card02">
+      <img class="card-image" src="https://maquetacion77.github.io/images/cards-280x360/Urban Living.jpg" alt="Fachada de edificio de lujo en centro urbano" loading="lazy" decoding="async" />
+      <div class="card-overlay flex---">
+        <h2 class="card-title">Urban Living</h2>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, alias, voluptatem, laboriosam optio adipisci corporis.</p>
+      </div>
+      <a href="#" class="card-btn"><span>View Details</span></a>
+      <h3 class="card-subtitle">Downtown Area</h3>
+    </article>
+
+    <article class="card02">
+      <img class="card-image" src="https://maquetacion77.github.io/images/cards-280x360/Exclusive Property.jpg" alt="Villa de lujo exclusiva" loading="lazy" decoding="async" />
+      <div class="card-overlay flex---">
+        <h2 class="card-title">Exclusive Property</h2>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, alias, voluptatem, laboriosam optio adipisci corporis.</p>
+      </div>
+      <a href="#" class="card-btn"><span>View Details</span></a>
+      <h3 class="card-subtitle">Prime Location</h3>
+    </article>
+
+    <article class="card02">
+      <img class="card-image" src="https://maquetacion77.github.io/images/cards-280x360/Modern Apartment.jpg" alt="Interior departamento minimalista moderno" loading="lazy" decoding="async" />
+      <div class="card-overlay flex---">
+        <h2 class="card-title">Modern Apartment</h2>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, alias, voluptatem, laboriosam optio adipisci corporis.</p>
+      </div>
+      <a href="#" class="card-btn"><span>View Details</span></a>
+      <h3 class="card-subtitle">City Center</h3>
+    </article>
+</section>
+  
+</div>
+<script>
+  const container = document.getElementById('cardsContainer');
+  const btnLeft = document.getElementById('btnLeft');
+  const btnRight = document.getElementById('btnRight');
+
+  // Función para actualizar la visibilidad de los botones según la posición del scroll
+  function updateButtons() {
+    const scrollLeft = container.scrollLeft;
+    const maxScrollLeft = container.scrollWidth - container.clientWidth;
+
+    // Tolerancia de 2px para evitar inconsistencias de redondeo por zoom o pantallas Retina
+    if (scrollLeft <= 2) {
+      btnLeft.classList.add('is-hidden');
+    } else {
+      btnLeft.classList.remove('is-hidden');
+    }
+
+    if (scrollLeft >= maxScrollLeft - 2) {
+      btnRight.classList.add('is-hidden');
+    } else {
+      btnRight.classList.remove('is-hidden');
+    }
+  }
+
+  // 3° REQUISITO: Traslado del 100% del contenedor al presionar los botones
+  btnRight.addEventListener('click', () => {
+    container.scrollBy({
+      left: container.clientWidth,
+      behavior: 'smooth'
+    });
+  });
+
+  btnLeft.addEventListener('click', () => {
+    container.scrollBy({
+      left: -container.clientWidth,
+      behavior: 'smooth'
+    });
+  });
+
+  // Escuchar el evento de desplazamiento (scroll) y cambios de tamaño de ventana
+  container.addEventListener('scroll', updateButtons);
+  window.addEventListener('resize', updateButtons);
+
+  // Verificación inicial al cargar la página
+  updateButtons();
+
+</script>
+
+
+  
+      <script src="toggleButton.js" defer></script>
+      <footer class="flex---">
+        <p>
+          &copy; 2026 <span>Maquetacion</span><span>77</span> by Miguel Cortez
+        </p>
+      </footer>
+    </body>
+  </html>

@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO & Technical Metadata -->
+    <title>Interactive Button Components & Gallery | Maquetacion77</title>
+    <meta name="description" content="A curated collection of interactive UI buttons: primary, paired actions, hero triggers, nav-bar buttons, and advanced clip-path switch toggles built with pure CSS and JavaScript." />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Interactive Button Components & Gallery | Maquetacion77" />
+    <meta property="og:description" content="Discover unique button designs, micro-interactions, and fluid switch toggles to inspire your next web project." />
+    <meta property="og:image" content="https://maquetacion77.github.io/images/images/custom-loaders.png" />
+
+    <!-- Favicon -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="pre-loader.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="section.css" />
+    <link rel="stylesheet" href="headerfooter.css" />
+    <link rel="stylesheet" href="pre-loader.css" />
+    <link rel="stylesheet" href="buttons.css">
+   
+
+    <script src="pre-loader.js" defer></script>
+  </head>
+  <body>
+    <!--#region preloader & header -->
+    <div class="preloader-overlay" id="preloader">
+      <div class="loader-container">
+        <div class="spinner one">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <header class="main-header">
+      <a href="index.html" class="logo">
+        Maquetacion<span>77</span>
+        <span class="sr-only">Go to home - Front-End & Layout Portfolio</span>
+      </a>
+
+      <!-- NUEVO SWITCH BUTTON EN EL HEADER (Ubicado a la izquierda de la navegación) -->
+      <button 
+        id="themeToggleBtn" 
+        class="header-theme-switch" 
+        type="button" 
+        aria-label="Cambiar tema de contenedores" 
+        aria-pressed="false"
+      ></button>
+
+      <div id="main-header-deck" class="header__deck">
+        <nav class="nav-bar" aria-label="Navegación principal">
+          <ul class="nav-list">
+            
+            <!-- Dropdown 1: Buttons -->
+            <li class="dropdown">
+              <button type="button" class="dropdown-trigger is-current" aria-expanded="false" aria-haspopup="true">
+                Buttons
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="buttons.html#primary_btn">Primary</a></li>
+                <li><a href="buttons.html#pairs_btn">Pairs</a></li>
+                <li><a href="buttons.html#switch_btn">Switch</a></li>
+                <li><a href="buttons.html#nav_btn">Nav</a></li>
+                <li><a href="buttons.html#hero_btn">Hero</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown 2: Hero -->
+            <li class="dropdown">
+              <button type="button" class="dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                Hero
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="hero01.html">Hero01</a></li>
+                <li><a href="hero02.html">Hero02</a></li>
+              </ul>
+            </li>
+
+            <!-- Enlaces directos -->
+            <li><a href="custom-loaders.html">Loaders</a></li>
+            <li><a href="cards.html">Cards</a></li>
+
+          </ul>
+        </nav>
+      </div>
+
+      <button 
+        id="toggleButton" 
+        class="nav-toggle" 
+        type="button" 
+        aria-expanded="false" 
+        aria-controls="main-header-deck" 
+        aria-label="Abrir menú"
+      ></button>
+    </header>
+    <!-- #endregion -->
+
+  
+  
+    <!-- #region descripcion seccion buttons -->
+    <section class="primary-section" id="primary_btn">
+      <h1>CUSTOM CARD ARCHITECTURES</h1>
+      <p>
+        Un gran diseño no solo se ve bien; se siente al interactuar. Bienvenido
+        a la colección de botones: una exploración visual que va desde la
+        elegancia funcional de los botones primarios hasta la precisión
+        geométrica de formas personalizadas y componentes de estado como los
+        switches. Diseñados desde cero pensando en la experiencia táctil, la
+        jerarquía visual y el rendimiento técnico en cualquier dispositivo.
+      </p>
+      <span>Haz hover o mantén presionado para experimentar las transiciones y microinteracciones</span>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region primary_btn -->
+    <section class="primary-section">
+      <h2>Primary CTA</h2>
+      <p>
+        Destinados a la acción principal dentro de una vista o sección (Call to
+        Action). Comportamiento y Formato: Diseñados con dimensiones fijas
+        (150px x 50px) para mantener una presencia limpia y contundente en
+        escritorio. En dispositivos móviles, su proporción compacta permite
+        disponer dos unidades a la par (side-by-side) sin saturar la pantalla,
+        optimizando el espacio sin perder legibilidad ni jerarquía.
+      </p>
+      <div class="button__container">
+        <a href="#" class="primary_btn_01 polygon01">Button01</a>
+        <a href="#" class="primary_btn_02 polygon01">Button02</a>
+        <!-- <a href="#" class="primary_btn_03 polygon01">Button03</a> -->
+       <a href="#" class="primary_btn_03 polygon01" data-text="Button03">Button03</a>
+        <a href="#" class="primary_btn_04">Button04</a>
+        <a href="#" class="primary_btn_05">Button05</a>
+        <a href="#" class="primary_btn_06">Button06</a>
+      </div>
+    </section>
+    
+
+   
+    <!-- #endregion -->
+
+    <!-- #region pairs_btn -->
+    <section class="primary-section" id="pairs_btn">
+      <h2>Button Pairs / Dual Actions</h2>
+      <p>
+        Destinados a resolver decisiones binarias guiando al usuario mediante jerarquía
+        visual (Acción Principal vs. Acción Secundaria). <br>
+        Son un conjunto cohesivo con un ancho contenedor de 320px y 60px de
+        altura. Esta proporción garantiza una adaptación perfecta tanto en
+        layouts de escritorio como en pantallas móviles. Destacan por un
+        lenguaje gráfico unificado que les otorga identidad propia como bloque
+        interactivo.
+      </p>
+      <div class="button__container">
+        <a href="#" class="pair_btn_01">Button01</a>
+        <a href="#" class="pair_btn_02">Button02</a>
+        <a href="#" class="pair_btn_03">Button03</a>
+        <a href="#" class="pair_btn_04">Button04</a>
+        <a href="#" class="pair_btn_05">Button05</a>
+        <a href="#" class="pair_btn_06">Button06</a>
+      </div>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region switch_btn -->
+    <section class="primary-section" id="switch_btn">
+      <h2>Switch buttons</h2>
+      <p>
+        Destinados a resolver decisiones binarias guiando al usuario mediante jerarquía
+        visual (Acción Principal vs. Acción Secundaria). Comportamiento y
+        Formato: Un conjunto cohesivo con un ancho contenedor de 320px y 60px de
+        altura. Esta proporción garantiza una adaptación perfecta tanto en
+        layouts de escritorio como en pantallas móviles. Destacan por un
+        lenguaje gráfico unificado que les otorga identidad propia como bloque
+        interactivo.
+      </p>
+      <div class="button__container">
+        <button
+          class="s_btn_general switch_btn_01"
+          id="switch_btn_01"
+          aria-label="Cambiar estado"
+          aria-pressed="false"
+        ></button>
+        <button
+          class="s_btn_general switch_btn_02"
+          id="switch_btn_02"
+          aria-label="Cambiar estado"
+          aria-pressed="false"
+        ></button>
+        <button
+          class="s_btn_general switch_btn_03"
+          id="switch_btn_03"
+          aria-label="Cambiar estado"
+          aria-pressed="false"
+        ></button>
+      </div>
+    </section>
+   
+
+    
+    <!-- #endregion -->
+
+    <!-- #region nav-bar_btn -->
+    <section class="primary-section" id="nav_btn ">
+      <h2>Nav-Bar Items</h2>
+      <p>
+        Componentes especiales creados para entornos de escritorio. Incorporan
+        microanimaciones finas al interactuar mediante el cursor (:hover),
+        aportando dinamismo visual y elegancia a la interfaz sin distraer de la
+        navegación.
+      </p>
+      <div class="button__container">
+        <a href="#" class="nav-bar_btn_01">Button01</a>
+        <a href="#" class="nav-bar_btn_02">Button02</a>
+        <a href="#" class="nav-bar_btn_03">Button03</a>
+        <a href="#" class="nav-bar_btn_04">Button04</a>
+        <a href="#" class="nav-bar_btn_05">Button05</a>
+        <a href="#" class="nav-bar_btn_06">Button06</a>
+      </div>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region hero_btn -->
+    <section class="primary-section" id="hero_btn">
+      <h2>Hero / Interactive CTAs</h2>
+      <p>
+        Capturar la atención en secciones principales (como el Hero Section)
+        transmitiendo múltiples beneficios o características clave en un solo
+        punto de contacto. Comportamiento y Formato: Un bloque dominante de gran
+        formato (~700px en escritorio y 100% fluido en móviles). Integra
+        tipografía estática junto a un carrusel dinámico de texto animado por
+        CSS/GPU. Diseñado con animaciones ligeras basadas en vectores y
+        transformaciones para ofrecer un alto impacto visual sin penalizar los
+        tiempos de carga ni el rendimiento en dispositivos móviles.
+      </p>
+      <div class="button__container">
+        <a href="#" class="cta_btn_01 polygon01">Button01</a>
+        <a href="#" class="cta_btn_02 polygon01">Button02</a>
+        <a href="#" class="cta_btn_03 polygon01">Button03</a>
+        <a href="#" class="cta_btn_04">Button04</a>
+        <a href="#" class="cta_btn_05">Button05</a>
+        <a href="#" class="cta_btn_06">Button06</a>
+      </div>
+    </section>
+    <!-- #endregion -->
+   <script>
+      // Lógica de los tres Switches existentes en la sección #switch_btn
+      const toggleButton01 = document.getElementById("switch_btn_01");
+      toggleButton01.addEventListener("click", function () {
+        const isActive = toggleButton01.classList.toggle("icon_01");
+        toggleButton01.setAttribute("aria-pressed", isActive ? "true" : "false");
+      });
+
+      const toggleButton02 = document.getElementById("switch_btn_02");
+      toggleButton02.addEventListener("click", function () {
+        const isActive = toggleButton02.classList.toggle("icon_02");
+        toggleButton02.setAttribute("aria-pressed", isActive ? "true" : "false");
+      });
+
+      const toggleButton03 = document.getElementById("switch_btn_03");
+      toggleButton03.addEventListener("click", function () {
+        const isActive = toggleButton03.classList.toggle("icon_03");
+        toggleButton03.setAttribute("aria-pressed", isActive ? "true" : "false");
+      });
+
+      // LÓGICA DINÁMICA DEL NUEVO SWITCH BUTTON DEL HEADER
+      const themeToggleBtn = document.getElementById("themeToggleBtn");
+      const buttonContainers = document.querySelectorAll(".button__container");
+
+      themeToggleBtn.addEventListener("click", function () {
+        // 1. Cambia de clase el propio botón
+        const isThemeActive = themeToggleBtn.classList.toggle("theme-active");
+
+        // 2. Cambia la clase de todos los .button__container para cambiar su fondo a #111
+        buttonContainers.forEach(container => {
+          container.classList.toggle("bg-dark-theme");
+        });
+
+        // 3. Actualiza el atributo aria-pressed de accesibilidad
+        themeToggleBtn.setAttribute("aria-pressed", isThemeActive ? "true" : "false");
+      });
+    </script>
+    <script src="toggleButton.js" defer></script>
+    <footer class="flex---">
+      <p>
+        &copy; 2026 <span>Maquetacion</span><span>77</span> by Miguel Cortez
+      </p>
+    </footer>
+  </body>
+</html>

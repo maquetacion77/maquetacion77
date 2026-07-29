@@ -1,8 +1,10 @@
 
-.loaders-section {
+/* #region 00 */
+.primary-section {
   width: 100%;
   max-width: 800px;
-  margin:  20px auto;
+  padding:50px 10px 20px 10px ;
+  margin:  2px auto;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -10,19 +12,28 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-.loaders-section h1{
-  padding:30px;
+.primary-section h1{
+  padding-bottom:10px;
   font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
   letter-spacing: 0.5rem;
 }
+.primary-section p {
+    text-align: justify;
+}
+.primary-section span{
+  text-align: center;
+  padding: 10px 0;
+}
 .loaders-container {
+  margin-top: 10px;
   width: 100%;
   height: 300px;
    display: grid;
   grid-template-columns:repeat(5, 1fr) ;
   grid-template-rows: repeat(4, 1fr) 4rem ;
+
 }
 .loader-display {
   grid-column: 5 / -1;
@@ -31,16 +42,17 @@
   display: flex;
 box-shadow: inset 3px 3px 10px var(--bg-overlay),
 inset 0px -3px 10px var(--bg-overlay);
-
   justify-content: center;
   transition:0.4s ease ;
-  background-color: var(--cls-white);
- transition: background-color 0.3s ease;
+  background: var(--cls-white);
+ transition: background 0.5s ease;
  border-radius: 20px 0 0 20px;
  
 }
+
 .loader-display.has-dark-bg {
-  background-color: var(--cls-black);
+   transition: background 0.5s ease;
+  background: var(--cls-black);
 }
 .bg-toggle {
   position: absolute;
@@ -48,27 +60,29 @@ inset 0px -3px 10px var(--bg-overlay);
   left: 10px;
   width: 30px;
   height: 30px;
-  background-color: var(--cls-black);
-   border:1px solid var(--cls-black);
+background: #111;
+clip-path: polygon(0%0%,40%0%,40%10%,60%10%,60%0%,100%0%,100%40%,90%40%,90%60%,100%60%,100%100%,60%100%,60%90%,40%90%,40%100%,0%100%,0%60%,10%60%,10%40%,0%40%);
+   border: transparent;
   border-radius: 50%;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transform: rotate(0) scale(1);
+  transition: transform 0.5s ease;
   z-index: 5;
 }
 .loader-display.has-dark-bg .bg-toggle {
-  background-color: var(--cls-white);
-border:1px solid var(--bg-overlay);
+    transform: rotate(45deg) scale(0.8);
+    background: #fff;
+  transition: transform 0.5s ease;
 }
 
-.bg-toggle:hover {
-  transform: scale(1.1);
-}
+
 .loaders-descriptions {
   grid-column: 2/ 5;
   grid-row: 1 / -1;
 display: flex;
   align-items: center;
   justify-content: center;
+  padding:10px;
 }
 .loaders-descriptions p {
   display: none;
@@ -122,6 +136,9 @@ display: flex;
 .loaders-nav button.active::after {
   opacity: 1;
 }
+.spinner-card figcaption{
+  text-align: center;
+}
 @media only screen and (max-width: 500px){
   .loaders-nav {
   flex-direction: row; 
@@ -157,7 +174,6 @@ display: flex;
   display: flex;
   justify-content: center;
   border-radius: 0 0 0 0;
-
 }
 .loaders-descriptions {
   grid-column: 1/ -1;
@@ -165,5 +181,374 @@ display: flex;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
 }
 }
+/* #endregion */
+
+/* #region 1. Brand / Hero Section Styles===================================== */
+.about__01 {
+  position: relative;
+  clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+}
+.about__01::after { 
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #171414;
+  clip-path: polygon(0% 0%, 100% 20%, 100% 21%, 0% 1%, 0% 0%, 0% 2%, 100% 22%, 100% 23%, 0% 3%, 0% 0%, 0% 97%, 100% 97%, 100% 98%, 0% 98%, 0% 0%, 0% 99%, 100% 99%, 100% 100%, 0% 100%, 0% 0%);
+}
+.landing-about__container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 10px;
+  position: relative;
+}
+.landing-about__text {
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+.landing-hero {
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: #ffffff;
+}
+.landing-hero__container {
+  max-width: 600px;
+  padding: 15px 10px;
+  text-align: center;
+}
+.landing-hero__subtitle {
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+.landing-hero__title {
+  font-size: 4rem;
+}
+/* #endregion */
+
+/*#region 2. 1L&2R=====================================*/
+.about-grid {
+  position: relative;
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  padding: 30px 10px ;
+  gap: 10px;
+}
+.about-grid:not(:last-of-type):after
+{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  margin:0 auto;
+background: linear-gradient(to bottom, rgb(240, 239, 234), rgb(24, 22, 22));
+}
+
+
+/* Secondary Column (Wrapper for the 2 right-hand cards)*/
+.about-grid__secondary-column {
+  flex-grow: 1; 
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* ==========================================================================
+   3. Component: Cards & Media
+   ========================================================================== */
+.card {
+  display: flex;
+  flex-direction: column;
+}
+/* Specific size for the main featured card on desktop */
+.card--featured {
+  min-width: 66%;
+}
+/* Image Wrapper and Sizing */
+.card__image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+.card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* Card Content Areas */
+.card__content {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+}
+.card__overlay-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0));
+  color: #fff;
+}
+/* ==========================================================================
+   4. Flexbox Alignment Logic for Secondary Column (Dynamic heights)
+   ========================================================================== */
+/* Force first card to stretch vertically */
+.about-grid__secondary-column .card:first-child {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+/* Adjust image container of first card to use full available height */
+.about-grid__secondary-column .card:first-child .card__image-wrapper {
+  flex-grow: 1;
+  height: 100%;
+  aspect-ratio: auto; /* Overrides 16:9 to adapt vertically */
+}
+/* Second card adapts natively to its text length without stretching */
+.about-grid__secondary-column .card:last-child {
+  flex-grow: 0;
+}
+/* ==========================================================================
+   5. Responsive Media Queries
+   ========================================================================== */
+@media only screen and (max-width: 1130px) {
+  /* Set both columns to exactly 50% width minus half of the 10px gap */
+  .card--featured, 
+  .about-grid__secondary-column {
+    flex: 0 0 calc(50% - 5px); 
+    min-width: 0;
+    
+  }
+}
+
+@media only screen and (max-width: 560px) {
+ 
+  .about-grid {
+    flex-direction: column;
+  }
+  .about-grid__secondary-column {
+    flex-direction:column;
+  }
+}
+/* #endregion */
+
+/* #region 3. SECTION: About Showcase (40/60 Layout) */
+
+
+.about-grid__aside-container {
+  flex: 0 0 calc(40% - 5px);
+  min-width: 0;
+  position: relative; 
+}
+    .about-grid__aside-container img{
+      width: 100%;
+      height: 100%;
+    }
+.about-grid__main-content {
+  flex: 0 0 calc(60% - 5px);
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* RESPONSIVE: Stacks vertically at 1130px with right column on top */
+@media only screen and (max-width: 1130px) {
+  .about-grid.px1130 {
+    flex-direction: column;
+    gap: 20px; 
+  }
+  .about-grid__aside-container,
+  .about-grid__main-content {
+    flex: 0 0 calc(100% - 10px); /* Ambos toman el 100% del ancho disponible */
+  }
+  .about-grid__text {
+    text-align: left; /* Mejora la legibilidad en pantallas más chicas */
+  }
+}
+/* #endregion */
+
+/* #region 4. 1L&1R=====================================  */
+
+
+.split-card {
+  flex: 0 0 calc(50% - 5px); 
+  min-width: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.split-card--image-left {
+  flex-direction: row-reverse;
+}
+
+.split-card--image-right {
+  flex-direction: row;
+}
+
+.split-card__image-wrapper_x4 {
+  flex: 0 0 calc(50% - 7.5px);
+  aspect-ratio: 16 / 9;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.split-card__image-wrapper_x4 img {
+  width: calc(50% - 5px);
+  height: calc(50% - 5px);
+  object-fit: cover;
+  display: block;
+}
+
+.split-card__content:nth-child(1) {
+  flex: 0 0 calc(100% - 0px);
+  display: flex;
+  flex-direction: column;
+}
+
+.split-card__content:nth-child(2) {
+  flex: 0 0 calc(50% - 7.5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.split-card__title {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1130px) {
+  .split-card {
+    flex-direction: column !important;
+    gap: 15px;
+    height: auto; 
+  }
+
+  .split-card__image-wrapper_x4 {
+    flex: none; 
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    height: auto; 
+  }
+
+  .split-card__content {
+    flex: none; 
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .split-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .split-card {
+    flex: 0 0 100%;
+  }
+}
+
+/* #endregion */
+
+/* #region 5. carrousel&subtitle===================================== */
+/* .about-grid {
+  position: relative;
+  max-width: 1150px;
+  margin: 0 auto;
+ 
+  box-sizing: border-box;
+} */
+
+/* 1. El contenedor que recorta y aplica el desvanecido */
+.carousel-container {
+  width: 100%;
+display: flex;
+justify-content: center;
+  overflow: hidden; /* Evita que las imágenes sobresalgan de la pantalla */
+  
+  /* Máscara de gradiente: transparente en los bordes, sólida en el centro */
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+.images-track {
+  display: flex;
+  gap: 10px;              
+  width: max-content;     
+  margin: 0 auto;          
+}
+
+/* 3. Reglas estrictas para las imágenes */
+.images-track img {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;         
+  object-fit: cover;
+}
+
+/* Estilos básicos para los textos inferiores */
+.about-subtitle {
+  /* margin: 10px 0 0 0; */
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.about-text {
+margin: 0 auto;
+  max-width: 800px;
+}
+/* #endregion */
+
+/* #region 6. 1L&1R cards=====================================  */
+.split-card__image-wrapper_x1 {
+  flex: 0 0 calc(50% - 7.5px);
+  overflow: hidden;
+}
+.split-card__image-wrapper_x1 img{
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.split-card__title {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+/* RESPONSIVE */
+@media only screen and (max-width: 1130px) {
+  .split-card__image-wrapper_x1 {
+    flex: none; 
+    display: flex;
+  }
+
+  .split-card__content {
+    flex: none; /* Permite que el contenedor de texto mida exactamente lo que ocupe su párrafo */
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .split-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .split-card {
+    flex: 0 0 100%;
+  }
+}
+
+/* #endregion */

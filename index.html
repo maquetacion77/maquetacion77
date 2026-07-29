@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO & Technical Metadata -->
+  <title>Maquetacion77 | Custom Web Components & Pure CSS UI Showcase</title>
+  <meta name="description" content="Explore Maquetacion77, a living library of reusable web components, custom CSS animations, and bespoke UI layouts built with high-performance pure CSS and semantic HTML." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Maquetacion77 | Custom Web Components & Pure CSS UI Showcase" />
+  <meta property="og:description" content="Challenging the status quo of modern frontend design with clean, reusable, and high-fidelity pure CSS components." />
+  <meta property="og:image" content="https://maquetacion77.github.io/images/images/custom-loaders.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="pre-loader.css" />
+    <link rel="stylesheet" href="lspinner.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="headerfooter.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="section.css" />
+    <script src="pre-loader.js" defer></script>
+  </head>
+ 
+  <body>
+    <!-- #region PRE LOADER & HEADER -->
+    <div class="preloader-overlay" id="preloader">
+      <div class="loader-container">
+        <div class="spinner one">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <header class="main-header">
+      <a href="javascript:void(0)" class="logo"
+        >Maquetacion<span>77</span>
+        <span class="sr-only"
+          >Go to home - Front-End & Layout Portfolio</span
+        ></a
+      >
+
+   <div id="main-header-deck" class="header__deck">
+  <nav class="nav-bar" aria-label="Navegación principal">
+    <ul class="nav-list">
+      
+      <!-- Dropdown 1: Buttons -->
+      <li class="dropdown">
+        <button type="button" class="dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+          Buttons
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="buttons.html#primary_btn">Primary</a></li>
+          <li><a href="buttons.html#pairs_btn">Pairs</a></li>
+          <li><a href="buttons.html#switch_btn">Switch</a></li>
+          <li><a href="buttons.html#nav_btn">Nav</a></li>
+          <li><a href="buttons.html#hero_btn">Hero</a></li>
+        </ul>
+      </li>
+
+      <!-- Dropdown 2: Hero -->
+      <li class="dropdown">
+        <button type="button" class="dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+          Hero
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="hero01.html">Hero01</a></li>
+          <li><a href="hero02.html">Hero02</a></li>
+        </ul>
+      </li>
+
+      <!-- Enlaces directos -->
+      <li><a href="custom-loaders.html">Loaders</a></li>
+      <li><a href="cards.html">Cards</a></li>
+
+    </ul>
+  </nav>
+</div>
+    <button 
+  id="toggleButton" 
+  class="nav-toggle" 
+  type="button" 
+  aria-expanded="false" 
+  aria-controls="main-header-deck" 
+  aria-label="Abrir menú"
+></button>
+    </header>
+    <!-- #endregion -->
+
+    <!-- #region 0. landing-hero -->
+    <section class="landing-hero">
+      <div class="landing-hero__container">
+        <h1 class="landing-hero__title">Pure CSS Components</h1>
+        <p class="landing-hero__subtitle">
+          A living library of production-ready, lightweight, and reusable web
+          elements designed to elevate your user interfaces.
+        </p>
+        <!-- <a href="#components" class="landing-hero__btn">Explore Components</a> -->
+      </div>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region 1. Brand / Hero Section Styles===================================== -->
+    <section class="about__01">
+      <div class="landing-about__container">
+        <!-- Un subtítulo pequeño estético arriba -->
+        <span class="landing-about__subtitle"
+          >The Mind Behind Maquetacion77</span
+        >
+        <h2 class="landing-about__title">About Me</h2>
+        <!-- Tu párrafo seleccionado -->
+        <p class="landing-about__text">
+          Hola, soy Miguel. <br />
+          Vivo en Argentina y Mi pasatiempo favorito es diseñar y construir
+          interfaces web utilizando HTML semántico y CSS puro. Me apasiona el
+          desafío de desarrollar animaciones fluidas, componentes interactivos y
+          diseños adaptables (responsive) sin uso de
+          librerías para crear experiencias de usuario impresionantes y de alto
+          rendimiento.
+        </p>
+      </div>
+    </section>
+    <!-- #endregion  -->
+
+    <!-- #region 2. 1L&2R ===================================== -->
+    <section class="about-grid">
+      <article class="card card--featured">
+        <div class="card__image-wrapper">
+          <img src="assets/you10.webp" alt="Featured note" class="card__img" />
+        </div>
+        <div class="card__content">
+          <h2 class="s_s_01">
+            Maquetacion77 nació de una convicción sencilla pero poderosa:
+          </h2>
+          <p>
+            Las interfaces web siempre pueden ser "un poco mejores". En un
+            panorama digital donde los sitios web a menudo parecen idénticos
+            debido al uso de frameworks prefabricados, disfruto diseñando
+            componentes web personalizados desde cero, siempre en la búsqueda de
+            una estética impactante.
+          </p>
+        </div>
+      </article>
+
+      <!-- Secondary Column (Right Column containing 2 Cards) -->
+      <div class="about-grid__secondary-column">
+        <!-- Overlay Text Card -->
+      <a href="buttons.html#primary_btn" class="card" role="article">
+  <div class="card__image-wrapper">
+    <img
+      src="assets/image_swich_button_01.webp"
+      alt="Overlay text note"
+      class="card__img"
+    />
+    <div class="card__overlay-content">
+      <h2>SWITCH BUTTONS ARE ABSOLUTELY AMAZING!</h2>
+      <p>
+        They pack incredible interactive power into a tiny, elegant component.
+      </p>
+    </div>
+  </div>
+</a>
+
+        <!-- Standard Text Card -->
+        <a href="hero01.html" class="card" role="article">
+          <div class="card__image-wrapper">
+            <img
+              src="assets/hero01.webp"
+              alt="Standard note"
+              class="card__img"
+            />
+          </div>
+          <div class="card__content">
+            <h2>HERO SECTION challenge!!!</h2>
+            <p>
+              Primer version de Hero sections que promete infinitos estilos
+              totalmente diferentes "sin tocar HTML"
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- #endregion  -->
+
+    <!-- #region 3. (40/60 Layout) -->
+    <section class="about-grid px1130">
+      <article class="about-grid__aside-container">
+        <img src="assets/you07.webp" alt="" />
+      </article>
+      <article class="about-grid__main-content">
+        <h2 class="s_s_02">Ampliando <span>los límites de la Web</span></h2>
+        <p class="about-grid__text">
+          Esta plataforma es una biblioteca viva y en evolución, diseñada para
+          crecer continuamente. Me gusta todo el espectro del diseño de
+          interfaces de usuario (UI): desde perfeccionar la sutil animación de
+          un botón minimalista hasta desarrollar barras de navegación avanzadas
+          que rompen con los esquemas convencionales y lineales. Cada elemento
+          añadido a esta colección representa un paso adelante en la ampliación
+          de los límites de lo que es visualmente posible en la web.
+        </p>
+      </article>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region 4. 1L&1R loaders=====================================  -->
+    <section class="about-grid">
+      <article class="split-card split-card--image-left">
+        <div class="split-card__image-wrapper_x4">
+          <img src="assets/nav_button01.webp" alt="About Maquetacion77" />
+          <img src="assets/nav_button02.webp" alt="About Maquetacion77" />
+          <img src="assets/nav_button03.webp" alt="About Maquetacion77" />
+          <img src="assets/nav_button04.webp" alt="About Maquetacion77" />
+        </div>
+        <div class="split-card__content">
+          <h2>SWITCH BUTTONS ARE AMAZING!</h2>
+          <p>They pack incredible interactive...</p>
+        </div>
+      </article>
+      <article class="split-card split-card--image-right">
+        <!-- <div class="split-card__image-wrapper">
+      <img src="https://maquetacion77.github.io/images/images/institute-hair-salon.png" alt="Our philosophy" class="split-card__img">
+    </div> -->
+        <div class="split-card__content">
+          <!-- <h2 class="split-card__title">Our   Philosophy</h2> -->
+          <p class="split-card__text">
+            Verás en este sitio cuánto me gusta transformar conceptos de diseño
+            complejos e intrincados en interacciones digitales fluidas y reales.
+            <br />
+            Cuando un cliente o diseñador pregunte "¿Se puede construir esto?",
+            podré afirmarlo gracias al CSS puro, cerrando la brecha entre la
+            imaginación y la ejecución, garantizando que incluso las animaciones
+            más complejas sean ligeras, accesibles y extremadamente fluidas.
+          </p>
+        </div>
+      </article>
+    </section>
+    <!-- #endregion  -->
+
+    <!-- #region 5. carrousel===================================== -->
+    <section class="about-grid flex__c---">
+      <div class="carousel-container">
+        <div class="images-track">
+          <img src="assets/CL06.png" alt="Imagen 1" />
+          <img src="assets/CL07.png" alt="Imagen 2" />
+          <img src="assets/CL08.png" alt="Imagen 3" />
+          <img src="assets/CL09.png" alt="Imagen 4" />
+          <img src="assets/CL10.png" alt="Imagen 5" />
+          <img src="assets/CL11.png" alt="Imagen 6" />
+          <img src="assets/CL12.png" alt="Imagen 7" />
+          <img src="assets/CL13.png" alt="Imagen 8" />
+          <img src="assets/CL14.png" alt="Imagen 9" />
+          <img src="assets/CL15.png" alt="Imagen 10" />
+        </div>
+      </div>
+      <p class="about-text">
+        Mi objetivo es crear experiencias digitales más atractivas, no buscando
+        imponer lineamientos ni modas, por supuesto,sino lograr, componente a
+        componente, que las animaciones de alta fidelidad y los diseños a medida
+        puedan ser viables sin depender de librerías externas.
+      </p>
+    </section>
+    <!-- #endregion  -->
+
+    <!-- #region 6. 1L&1R cards=====================================  -->
+    <section class="about-grid">
+      <article class="split-card split-card--image-left">
+        <div class="split-card__content">
+          <p class="split-card__text">
+            Maquetacion77 se erige como una muestra del potencial puro del
+            frontend: una prueba de concepto de que una arquitectura limpia y un
+            diseño audaz van de la mano.
+          </p>
+        </div>
+      </article>
+      <a href="cards.html" class="split-card split-card--image-right" role="article">
+        <div class="split-card__image-wrapper_x1">
+          <img
+            src="assets/card-section-images-white.webp"
+            alt="About Maquetacion77"
+            class="split-card__img"
+          />
+        </div>
+        <div class="split-card__content">
+          <!-- <h2 class="split-card__title">Our   Philosophy</h2> -->
+          <p class="split-card__text">Nav-bar bu!!</p>
+        </div>
+      </a>
+    </section>
+    <!-- #endregion  -->
+
+    <!-- #region 7. end===================================== -->
+    <section class="about-grid">
+      <p>
+        Este es solo el comienzo de un viaje continuo hacia la innovación en el
+        estilo web. Tanto si eres un desarrollador en busca de inspiración
+        refinada, un diseñador que desafía los límites o un cliente listo para
+        elevar la identidad digital de su marca, te invito a explorar esta
+        colección en constante evolución. Redefinamos juntos la web moderna: una
+        línea de CSS personalizada a la vez.
+      </p>
+    </section>
+    <!-- #endregion -->
+
+    <script src="section.js" defer></script>
+    <script src="toggleButton.js" defer></script>
+    <footer class="flex---">
+      <p>
+        &copy; 2026 <span>Maquetacion</span><span>77</span> by Miguel Cortez
+      </p>
+    </footer>
+  </body>
+</html>

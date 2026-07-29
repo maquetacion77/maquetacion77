@@ -1,11 +1,8 @@
 html {
   font-size: 62.5%;
+  scroll-padding-top: 60px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montenegrin+Gothic+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+ID:wght@100..400&display=swap');
 
 
 :root {
@@ -41,9 +38,9 @@ html {
   box-sizing: border-box;
     font-family: var(--font-main);
      text-decoration: none;
-       letter-spacing: 1px;
+     
   list-style: none;
-  transition: 0.5s ease;
+
   letter-spacing: 1px;
   color: var(--black);
 }
@@ -55,6 +52,10 @@ nav a {
   align-items: center;
   justify-content: center;
 }
+.flex__c---{
+  display: flex;
+  flex-direction: column;
+}
 
 body {
   max-width: 1920px;
@@ -63,13 +64,12 @@ body {
   padding-top: 60px;
   
 }
+  p{
+    font-size: 1.4rem;
+    line-height: 150%;
+  }
 
-p {
-  font-size: 1.4rem;
-  line-height: 150%;
-    padding: 15px;
-    text-align: justify;
-}
+
 /* ==========================================================
    CLASE DE ACCESIBILIDAD (Oculta visualmente, visible para SEO)
    ========================================================== */
@@ -86,8 +86,63 @@ p {
   white-space: nowrap;    /* Evita que el texto se rompa en líneas invisibles */
 }
 
- .spinner-card{
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-    }
+/* #region subtitle_style */
+
+.s_s_01{
+  background: linear-gradient(
+    to top,
+    #62166c 0%,      
+    #ffffff 20%, 
+    #ffffff 80%,   
+    #62166c 100%    
+  ); 
+  max-width: max-content;
+  margin-bottom: 5px; 
+  letter-spacing: 1px;
+  padding:15px;
+ clip-path: polygon(2%0%,98%0%,100%50%,98%100%,2%100%,0%50%);
+  position: relative
+}
+.s_s_01::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #62166c ;
+  clip-path: polygon(2%0%,98%0%,100%50%,98%100%,2%100%,0%50%,2%0%,3%4%,1%50%,3%96%,97%96%,99%50%,97%4%,3%4%);
+}
+.s_s_02 {
+  max-width: max-content;
+  margin-bottom: 5px; 
+  padding-left:15px;
+  border-radius: 3rem;
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.s_s_02 span {
+  display: inline-block; 
+  background-color: #ffffff;
+  color: #111111;
+  padding: 15px ; 
+  border: 2px solid #111111;
+  border-radius: 3rem; 
+}
+.s_s_03{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  background-color: red;
+    align-items: center;
+  font-weight: 900; /* Tipografías gruesas funcionan mejor aquí */
+  line-height: 0.85; /* Pega las líneas verticalmente para el efecto póster */
+}
+.s_s_03 span{
+display: inline-block; 
+  text-align: center;
+  
+
+  background-color: yellow;
+}
+
+/* #endregion */

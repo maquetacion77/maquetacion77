@@ -1,4 +1,4 @@
-header {
+.main-header{
   width: 100%;
   height: 60px;
   background-color: var(--cls-black);
@@ -27,12 +27,12 @@ header {
 
 @media only screen and (max-width: 850px) {
   /* Al estar el botón adentro, el logo se queda a la izquierda y el botón a la derecha naturalmente */
-  header {
+.main-header{
     justify-content: space-between; 
   }
-  .logo span {
-    font-size: 25px;
-  }
+  /* .logo span {
+    font-size:rem;
+  } */
 }
 
 footer {
@@ -42,6 +42,8 @@ footer {
 }
 footer p {
   color: var(--brand-primary);
+  font-size: 1.4rem;
+  line-height: 150%;
 }
 footer p span {
   color: var(--brand-primary);

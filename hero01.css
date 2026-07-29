@@ -3,7 +3,7 @@
 .hero {
   height:calc(100vh - 60px);
   width: 100%;
-  background-color: var(--cls-black);
+  /* background-color: var(--cls-black); */
   overflow: hidden;
 }
 
@@ -150,7 +150,6 @@
   border: none;
   font-size: 1.4rem;
   font-weight: 900;
-  /* font-family: var(--font-hero01); */
   cursor: pointer;
   color: var(--cls-white);
   letter-spacing: 2px;

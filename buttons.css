@@ -275,7 +275,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-tap-highlight-color: transparent;
 }
 .switch_btn_01:after,
 .switch_btn_02:after,

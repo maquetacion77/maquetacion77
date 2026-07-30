@@ -109,24 +109,24 @@ font-size: 1.4rem;
 .nav-toggle {
   width: 30px;
   height: 30px;
+  padding: 0;
   position: relative; 
   z-index: 20;
   border: unset;
   cursor: pointer;
-  background-color: transparent; 
+  background:transparent; 
   display: none;
 }
 
 .nav-toggle:after {
   content: "";
-  width: 100%;
-  height: 100%;
+ position: absolute;
+ inset: 0;
   background-color: var(--brand-secondary);
-  position: absolute;
-  top: 0;
-  left: 0;
   clip-path: path("M0 15 Q0 0 0 0 15 0 30 0 30 6 30 6 15 6 0 6 0 12 0 12 15 12 30 12 30 18 30 18 15 18 0 18 0 24 0 24 15 24 30 24 30 30 30 30 15 30 0 30 0 15 0 15");
-  transition: transform 0.2s ease-in, clip-path 0.2s ease-in;
+   transform: translateZ(0);
+  will-change: clip-path;
+  transition:clip-path 0.2s ease;
 }
 
 .icon:after {

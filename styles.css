@@ -4,32 +4,23 @@ html {
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
 :root {
   /* Brand Colors */
   --brand-primary: #00ffff;
   --brand-secondary: #1d9e9e;
-
   /* Base Colors */
   --cls-white: #ffffff;
   --cls-black: #000000;
    --color-accent: #6495ed;
     --onyx-dark: #171414;
-  
   /* Functional / Alpha Colors */
   --bg-overlay: #0000001a; 
    --color-card-overlay: #11111173;
-
   /* Typography */
   --font-main: "Inter", sans-serif;
-   /* --font-main: "Montserrat", sans-serif; */
-    /* --font-main: "Raleway", sans-serif; */
-    /* --font-main:"Playwrite ID", cursive; */
-  
    /* Loader */
   --spinner-size: 100px; 
   --scale:1;
-
 }
 
 * {
@@ -43,6 +34,14 @@ html {
 
   letter-spacing: 1px;
   color: var(--black);
+}
+a,
+button,
+input,
+textarea,
+select,
+.is-clickable {
+  -webkit-tap-highlight-color: transparent;
 }
 nav a {
   font-size: 1.5rem;

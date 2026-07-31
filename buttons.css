@@ -76,8 +76,9 @@
   gap: 20px;
   margin: 10px 0;
   transition: background-color 0.4s ease;
+  padding: 20px 0;
 }
-.button__container a {
+.button__container .primary_btn {
   width: 150px;
   height: 50px;
   box-sizing: border-box;
@@ -258,6 +259,63 @@
   top: 100%;
 }
 
+/* #endregion */
+
+/* #region 02 pairs */
+   /* Ergonomic 44px touch target containing a 30px visual element */
+      .button-group {
+        width: 325px;
+        height: 50px;
+        /* background-color: red; */
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+      }
+      .button-group .pair01 {
+        width: 160px;
+        height: 50px;
+        color: #111;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        position: relative;
+        z-index: 2;
+        
+        filter: drop-shadow(0 0.3rem 0.1rem rgb(243, 0, 0));
+      }
+      .button-group .pair01.btn-primary01::after,
+      .button-group .pair01.btn-secondary01::after {
+        content: "";
+        position: absolute;
+        width: 110%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background: #ffff00;
+        box-shadow: inset 10px 10px 50px #ffa500,
+        inset -10px -10px 50px  #ffa500;
+        z-index: -1;
+        transform: translateZ(0);
+        will-change: clip-path;
+        transition: clip-path 0.3s ease;
+      
+         clip-path: polygon(100%0%,100%100%,8%100%,18%0%,18%0%,8%100%,8%100%,18%0%,18%0%,8%100%,8%100%,18%0%);
+      }
+      .button-group .pair01.btn-secondary01::after {
+        transform: rotate(180deg);
+           background: #ffa500;
+      box-shadow: inset 10px 10px 50px #ffff00,
+        inset -10px -10px 50px #ffff00;
+        right: -10%;
+       
+      }
+      .button-group .pair01:hover::after{
+         clip-path: polygon(100%0%,100%100%,0%100%,10%0%,12%0%,2%100%,4%100%,14%0%,16%0%,6%100%,8%100%,18%0%);
+      }
 /* #endregion */
 
 /* #region 03 switch */

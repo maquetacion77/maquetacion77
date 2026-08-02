@@ -21,6 +21,13 @@ html {
    /* Loader */
   --spinner-size: 100px; 
   --scale:1;
+  /* nav-buttons */
+         --nav02: #13dfdf; /* navbar02 */
+        --nav03: #ccff00; /* navbar03 */
+        --nav04: #ffd500; /* navbar04 */
+        --nav05: #33fc5f; /* navbar05 */
+        --nav06: #ffff00; /* navbar06 */
+        --nav07: #ff69b4; /* navbar07 */
 }
 
 * {

@@ -147,7 +147,8 @@ opacity: 1;
       justify-content: center;
       width: 200px;
       height: 60px;
-      background-color: #000000;
+       background: linear-gradient(to top, #000000,#454141,#000000);
+   
       font-size: 16px;
       font-weight: 400;
       color: #ffffff;
@@ -155,6 +156,17 @@ opacity: 1;
       letter-spacing: 1px;
       clip-path: path("M30 0 Q 196 0 196 0 196 30 170 56 110 56 110 56 110 58 110 58 170 58 170 58 198 30 198 0 198 0 200 0 200 30 170 60 4 60 4 60 4 30 30 4 90 4 90 4 90 2 90 2 30 2 30 2 2 30 2 60 0 60 0 60 0 30 30 0");
       transition: 0.3s ease;
+    }
+    .card01 .card-btn::after{
+      content: "";
+      position: absolute;
+      inset: 0;
+       background-color: #000000;
+     z-index: -2;
+     transition: background-color 0.3s ease;
+    } 
+    .card01 .card-btn:hover::after{
+       background-color: #00000000;
     }
    
     /* #endregion */

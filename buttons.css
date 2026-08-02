@@ -501,3 +501,192 @@
   border-radius: 4px;
 }
 /* #endregion */
+
+/* #region 04 nav */
+ .nav-link {
+        font-size: 1.4rem;
+        position: relative;
+        text-decoration: none;
+        background: transparent;
+        font-family: "Inter", sans-serif;
+        letter-spacing: 1px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         padding: 3px 5px;
+      }
+      
+/* #region nav-link01 */
+ .nav-link01 {
+        color: var(--nav07);
+      }
+
+      .nav-link01::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-bottom: 1px solid currentColor;
+        transform: scaleX(0%);
+        transition: transform 0.2s linear;
+      }
+
+      .nav-link01:hover::after {
+        transform: scaleX(100%);
+      }
+/* #endregion */
+
+/* #region nav-link02 */
+      .nav-link02 {
+        color: var(--nav02);
+      }
+      .nav-link02::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-block: 1px solid currentcolor;
+        transform: scaleX(0%);
+        transition: transform 0.2s linear;
+      }
+      .nav-link02:hover::after {
+        transform: scaleX(100%);
+      }
+/* #endregion */
+
+/* #region nav-link03 */
+.nav-link03 {
+      color: var(--nav03);
+    }
+
+    .nav-link03::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 1px solid currentColor;
+      transition: clip-path 0.2s linear;
+      will-change: clip-path;
+      clip-path: polygon(50%0%, 50%0%, 50%100%, 50%100%);
+      
+    }
+
+    .nav-link03:hover::after {
+      clip-path: polygon(0%0%, 100%0%, 100%100%, 0%100%);
+    }
+/* #endregion */
+
+/* #region nav-link04 */
+ .nav-link04 {
+ padding: 10px 12px;
+        color: var(--nav04);
+      }
+      .nav-link04::after,
+      .nav-link04::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+       
+         border: 3px double currentColor;
+  clip-path: polygon(0%0%,0%0%,0%0%,0%0%,0%0%,0%0%);
+   
+        transition: clip-path 0.2s linear;
+        will-change: clip-path;
+        transform: translateZ(0);
+      }
+      .nav-link04:hover::after,
+        .nav-link04:hover::before {
+          clip-path: polygon(0%0%,80%0%,80%20%,20%20%,20%80%,0%80%);
+      }
+        .nav-link04::after{
+          transform: rotate(180deg);
+        }
+/* #endregion */
+
+
+/* #region nav-link05 */
+.nav-link05{
+  padding: 8px 10px;
+  color: var(--nav05);
+}
+ .nav-link05::after,
+      .nav-link05::before {
+        content: "";
+        position: absolute;
+        transition: transform 0.3s ease;
+      }
+      .nav-link05::after {
+        width: 90%;
+        height: 120%;
+        transform: scaleY(0);
+  border-inline: 1px solid currentcolor;
+      }
+        .nav-link05::before{
+        width: 105%;
+        height: 90%;
+        transform: scaleX(0);
+  border-block: 1px solid currentcolor;
+      }
+      .nav-link05:hover::after {
+              transform: scaleY(1);
+      }
+         .nav-link05:hover::before {
+              transform: scaleX(1);
+      }
+/* #endregion */
+
+/* #region nav-link06 */
+.nav-link06{
+  color: var(--nav06);
+    padding: 10px 12px;
+}
+  .nav-link06::after,
+      .nav-link06::before {
+        content: "";
+        position: absolute;
+
+        transition: opacity 0.5s ease;
+      }
+      .nav-link06::after {
+        width: 90%;
+        height: 50%;
+        opacity: 0;
+        border-bottom: 1px solid currentColor;
+      }
+      .nav-link06::before {
+        top: 80%;
+        width: 25px;
+        height: 50%;
+        opacity: 0;
+        clip-path: polygon(0%0%, 100%0%, 50%20%);
+        background: var(--nav06);
+      }
+      .nav-link06:hover::after,
+      .nav-link06:hover::before {
+        opacity: 1;
+      }
+/* #endregion */
+
+/* #region nav-link07 */
+.nav-link07{
+  color: var(--nav07);
+}
+ .nav-link07::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        transition: clip-path 0.3s ease;
+        background-color: currentColor;
+        clip-path: polygon(0%20%, 100%20%, 50%20%);
+        transform: translateZ(0);
+        will-change: clip-path;
+        transform: translateY(-5%);
+      }
+      .nav-link07:hover::after {
+        clip-path: polygon(0%20%, 100%20%, 50%0%);
+      }
+/* #endregion */
+
+
+
+
+
+/* #endregion */

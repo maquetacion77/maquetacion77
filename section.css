@@ -189,14 +189,14 @@ display: flex;
 /* #region 1. Brand / Hero Section Styles===================================== */
 .about__01 {
   position: relative;
-  clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+  /* clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%); */
+ 
 }
 .about__01::after { 
   content: "";
   position: absolute;
   inset: 0;
-  background-color: #171414;
-  clip-path: polygon(0% 0%, 100% 20%, 100% 21%, 0% 1%, 0% 0%, 0% 2%, 100% 22%, 100% 23%, 0% 3%, 0% 0%, 0% 97%, 100% 97%, 100% 98%, 0% 98%, 0% 0%, 0% 99%, 100% 99%, 100% 100%, 0% 100%, 0% 0%);
+ 
 }
 .landing-about__container {
   max-width: 800px;
@@ -213,7 +213,10 @@ display: flex;
   display: flex;
   align-items: center;
   justify-content: left;
-  background-color: #ffffff;
+  background: 
+    url('https://maquetacion77.github.io/images/images/you12A.webp');
+  background-blend-mode: overlay;
+  background-size: cover;
 }
 .landing-hero__container {
   max-width: 600px;
@@ -230,6 +233,7 @@ display: flex;
 /* #endregion */
 
 /*#region 2. 1L&2R=====================================*/
+
 .about-grid {
   position: relative;
   max-width: 1150px;
@@ -250,7 +254,9 @@ display: flex;
   margin:0 auto;
 background: linear-gradient(to bottom, rgb(240, 239, 234), rgb(24, 22, 22));
 }
-
+.about-grid h2{
+  text-align: center;
+}
 
 /* Secondary Column (Wrapper for the 2 right-hand cards)*/
 .about-grid__secondary-column {

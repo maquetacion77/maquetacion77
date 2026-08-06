@@ -269,10 +269,7 @@ background: linear-gradient(to bottom, rgb(240, 239, 234), rgb(24, 22, 22));
 /* ==========================================================================
    3. Component: Cards & Media
    ========================================================================== */
-.card {
-  display: flex;
-  flex-direction: column;
-}
+
 /* Specific size for the main featured card on desktop */
 .card--featured {
   min-width: 66%;
@@ -472,23 +469,16 @@ background: linear-gradient(to bottom, rgb(240, 239, 234), rgb(24, 22, 22));
 /* #endregion */
 
 /* #region 5. carrousel&subtitle===================================== */
-/* .about-grid {
-  position: relative;
-  max-width: 1150px;
-  margin: 0 auto;
- 
-  box-sizing: border-box;
-} */
 
-/* 1. El contenedor que recorta y aplica el desvanecido */
 .carousel-container {
   width: 100%;
 display: flex;
 justify-content: center;
-  overflow: hidden; /* Evita que las imágenes sobresalgan de la pantalla */
-  
-  /* Máscara de gradiente: transparente en los bordes, sólida en el centro */
-  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  overflow: hidden; 
+}
+.s_s_03,
+.carousel-container{
+ -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
   mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
 }
 .images-track {

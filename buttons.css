@@ -97,11 +97,8 @@
     "M15 0 Q135 0 135 0 150 25 150 25 135 50 135 50 15 50 15 50 0 25 0 25 15 0 15 0"
   );
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lexend:wght@100..900&display=swap");
 .primary_btn_01 {
   color: #fff;
-  font-family: "Lexend", sans-serif;
   background: radial-gradient(
     circle at 40% 50%,
     rgb(105, 57, 182) 0px,
@@ -136,17 +133,15 @@
     "M15 0 Q135 0 135 0 150 25 150 25 135 50 135 50 15 50 15 50 0 25 0 25 15 0 15 0 16 2 16 2 2 25 2 25 16 48 16 48 134 48 134 48 148 25 148 25 134 2 134 2 16 2 16 2 15 0 15 0 "
   );
 }
-
 .primary_btn_03::after {
-  content: attr(data-text); /* Lee el texto de data-text */
+  content: attr(data-text); 
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-
-  z-index: -1; /* Lo manda detrás del texto blanco */
-  -webkit-text-stroke: 1px #fff; /* Borde grueso SIN comerse las letras */
+  z-index: -1; 
+  -webkit-text-stroke: 1px #fff; 
   color: transparent;
 }
 .primary_btn_03:hover::before {
@@ -180,7 +175,7 @@
   z-index: -1;
 }
 .primary_btn_04::after {
-  background-color: black;
+  background-color: #ff69b4;
   clip-path: polygon(
     0%0%,
     7%0%,
@@ -207,7 +202,7 @@
   );
 }
 .primary_btn_04::before {
-  background: orange;
+  background: #9370d8;
   clip-path: polygon(
     1%22%,
     8%22%,
@@ -223,14 +218,11 @@
     1%78%
   );
 }
-.primary_btn_04:hover {
-  color: orange;
-}
 .primary_btn_04:hover:after {
-  background-color: orange;
+  background-color: #9370d8;
 }
 .primary_btn_04:hover:before {
-  background-color: black;
+  background-color: #ff69b4;
 }
 .primary_btn_05 {
   background: linear-gradient(to top, green, greenyellow, green);
@@ -259,14 +251,35 @@
   top: 100%;
 }
 
+.primary_btn_06{
+   color: #e7e1e1;
+  border-radius: 25px;
+  background-color:  #0066ff;
+  box-shadow: 0 3px 3px rgba(0, 0, 0,0.5);
+}
+
+.primary_btn_06:after{
+    content:attr(data-text);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  inset: 5px;
+  background-color:  #0066ff;
+  border-radius: calc(25px + 5px);
+     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.primary_btn_06:hover::after{
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+background-color: #095fe0;
+}
+
 /* #endregion */
 
 /* #region 02 pairs */
-   /* Ergonomic 44px touch target containing a 30px visual element */
       .button-group {
         width: 325px;
         height: 50px;
-        /* background-color: red; */
         box-sizing: border-box;
         display: flex;
         justify-content: space-between;
@@ -492,7 +505,6 @@
     0%80%
   );
 }
-/* Estilo para foco por teclado (Accesibilidad) */
 .switch_btn_01:focus-visible,
 .switch_btn_02:focus-visible,
 .switch_btn_03:focus-visible {
@@ -566,7 +578,6 @@
       transition: clip-path 0.2s linear;
       will-change: clip-path;
       clip-path: polygon(50%0%, 50%0%, 50%100%, 50%100%);
-      
     }
 
     .nav-link03:hover::after {

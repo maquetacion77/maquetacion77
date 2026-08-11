@@ -665,6 +665,9 @@ background-color: #095fe0;
   padding: 8px 10px;
   color: var(--nav05);
 }
+.nav-link05{
+  padding: 3px 5px;
+}
  .nav-link05::after,
       .nav-link05::before {
         content: "";
@@ -672,14 +675,14 @@ background-color: #095fe0;
         transition: transform 0.3s ease;
       }
       .nav-link05::after {
-        width: 90%;
+        width: 100%;
         height: 120%;
         transform: scaleY(0);
   border-inline: 1px solid currentcolor;
       }
         .nav-link05::before{
         width: 105%;
-        height: 90%;
+        height: 100%;
         transform: scaleX(0);
   border-block: 1px solid currentcolor;
       }
@@ -763,18 +766,14 @@ background-color: #095fe0;
   clip-path: polygon(0%0%,100%0%,100%5%,0%5%,0%10%,100%10%,100%90%,0%90%,0%95%,100%95%,100%100%,0%100%);
   content-visibility: auto;
 }
-
 .hero-cta-btn:hover {
   transform: translate3d(0, -2px, 0); 
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
 }
-
 .hero-cta-btn:focus-visible {
   outline: 3px solid #60a5fa;
   outline-offset: 2px;
 }
-
-/* Pausa de la animación al pasar el cursor o enfocar */
 .hero-cta-btn:hover .carousel-item01,
 .hero-cta-btn:hover .carousel-item02,
 .hero-cta-btn:hover .carousel-item03,
@@ -783,8 +782,6 @@ background-color: #095fe0;
 .hero-cta-btn:focus .carousel-item03 {
   animation-play-state: paused;
 }
-
-/* Content Container */
 .cta-content {
   width: 100%;
   height: 100%;
@@ -793,12 +790,10 @@ background-color: #095fe0;
   justify-content: space-between;
   gap: 8px;
   overflow: hidden;
-  /* Tipografía fluida para evitar desbordamientos en pantallas pequeñas */
-  font-size: clamp(0.875rem, 2.5vw, 1.4rem);
+  font-size: clamp(1.2rem, 2.5vw, 1.4rem);
   font-weight: 500;
   padding: 0 16px;
 }
-
 .cta-carousel,
 .cta-static {
   width: 50%;
@@ -808,14 +803,11 @@ background-color: #095fe0;
   overflow: hidden;
   position: relative;
 }
-
 .cta-static {
   justify-content: flex-end;
   text-align: right;
   white-space: nowrap;
 }
-
-/* Animación y posiciones del Carrusel */
 .carousel-item01,
 .carousel-item02,
 .carousel-item03 {
@@ -847,8 +839,6 @@ background-color: #095fe0;
   33%  { clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%); }
   100% { clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%); }
 }
-
-/* Accesibilidad: Reducción de movimiento */
 @media (prefers-reduced-motion: reduce) {
   .carousel-item01,
   .carousel-item02,
@@ -857,7 +847,6 @@ background-color: #095fe0;
     clip-path: none;
     position: static;
   }
-
   .carousel-item02,
   .carousel-item03 {
     display: none;

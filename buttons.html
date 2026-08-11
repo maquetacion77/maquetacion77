@@ -111,8 +111,6 @@
   </header>
   <!-- #endregion -->
 
-
-
   <!-- #region descripcion seccion buttons -->
   <section class="primary-section" id="primary_btn">
     <h1>CUSTOM CARD ARCHITECTURES</h1>
@@ -155,6 +153,10 @@
       <div class="button-group">
         <a href="javascript:void(0)" class="pair01 btn-primary01"> Join now </a>
         <a href="javascript:void(0)" class="pair01 btn-secondary01">view details</a>
+      </div>
+       <div class="button-group">
+        <a href="javascript:void(0)" class="pair02 btn-primary02" data-text="Join now"> </a>
+        <a href="javascript:void(0)" class="pair02 btn-secondary02" data-text="view details"></a>
       </div>
     </div>
   </section>
@@ -206,13 +208,17 @@ Special components created for desktop environments. They incorporate subtle mic
       This component captures attention in primary sections (such as the Hero Section) by conveying multiple benefits or key features in a single touchpoint, integrating static typography alongside a dynamic text carousel animated by CSS/GPU. Designed with lightweight vector-based animations and transforms to deliver high visual impactwithout compromising load times or mobile performance.
     </p>
     <div class="button__container">
-      <a href="javascript:void(0)" class="cta_btn_01 polygon01">Button01</a>
-      <a href="javascript:void(0)" class="cta_btn_02 polygon01">Button02</a>
-      <a href="javascript:void(0)" class="cta_btn_03 polygon01">Button03</a>
-      <a href="javascript:void(0)" class="cta_btn_04">Button04</a>
-      <a href="javascript:void(0)" class="cta_btn_05">Button05</a>
-      <a href="javascript:void(0)" class="cta_btn_06">Button06</a>
+  <a href="#" class="hero-cta-btn">
+    <div class="cta-content">
+      <span class="cta-static">Boost your workflow:</span>
+      <span class="cta-carousel" aria-hidden="true">
+        <span class="carousel-item01">Fast and lightweight</span>
+        <span class="carousel-item02">GPU animations</span>
+        <span class="carousel-item03">100% Responsive</span>
+      </span>
     </div>
+  </a>
+</div>
   </section>
   <!-- #endregion -->
 <script src="buttons.js" defer></script>

@@ -266,12 +266,33 @@
   inset: 5px;
   background-color:  #0066ff;
   border-radius: calc(25px + 5px);
-     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+     transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 .primary_btn_06:hover::after{
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
 background-color: #095fe0;
 }
+.primary_btn_07{
+  background-image: radial-gradient(
+    circle farthest-side at 30% 30%, /* Círculo descentrado hacia arriba a la izquierda */
+    #FFF44F 0%,                       /* Centro: Amarillo Limón brillante */
+    #32CD32 60%,                      /* Medio: Verde Lima Vibrante (el color principal) */
+    #00A36C 100%                      /* Extremos: Verde Esmeralda Profundo */
+  );
+  
+}
+.primary_btn_07:after{
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border: 2px solid rgb(85, 255, 0);
+  clip-path: polygon(0%0%,10%0%,70%100%,90%100%,30%0%,100%0%,100%100%,0%100%);
+  transition: clip-path 0.4s ease-in-out;
+}
+.primary_btn_07:hover:after{
+  clip-path: polygon(0%0%,70%0%,10%100%,30%100%,90%0%,100%0%,100%100%,0%100%);
+}
+
 
 /* #endregion */
 
@@ -337,35 +358,36 @@ background-color: #095fe0;
         width: 160px;
         height: 50px;
         position: relative;
-        z-index: 2;
-      }
-      .button-group .pair02.btn-primary02::after{
-          content: attr(data-text);
-        background: #4F46E5;
-        color: #FFFFFF;
-        border-radius: 0 0 0 5px;
-      }
-       .button-group .pair02.btn-secondary02::after{
-          content: attr(data-text);
-        background: #d9e0ed;
-        color: #374151;
-        border-radius: 0 0 5px 0;
-      }
-      .button-group .pair02::after
-       {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transform:skew(0deg) translateX(5px);
-        top: 0;
-        right: 5px;
-         font-weight: bold;
+           font-weight: bold;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 1.6rem;
         letter-spacing: 1px;
-        box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.3);
+         
+      }
+      .button-group .pair02.btn-primary02{
+          content: attr(data-text);
+        background: #1d11ff;
+        color: #FFFFFF;
+        border-radius: 5px 5px 5px 50px;
+        box-shadow: inset 0 0 15px 10px rgba(24, 1, 73, 0.902),
+          0 2px 4px -2px rgba(0, 0, 0,1);
+      }
+       .button-group .pair02.btn-secondary02{
+          content: attr(data-text);
+        background: #d9e0ed;
+        color: #374151;
+        border-radius: 5px 5px 50px 5px;
+        box-shadow: inset 0 0 15px 10px rgba(27, 12, 198, 0.3),
+          0 2px 4px -2px rgba(0, 0, 0,1);
+      }
+      .button-group .pair02::after
+       {
+        position: absolute;
+      inset: 0;
+     
+       
         will-change: transform;
         transition: transform 0.3s ease;
       }
@@ -676,12 +698,12 @@ background-color: #095fe0;
       }
       .nav-link05::after {
         width: 100%;
-        height: 120%;
+        height: 140%;
         transform: scaleY(0);
   border-inline: 1px solid currentcolor;
       }
         .nav-link05::before{
-        width: 105%;
+        width: 115%;
         height: 100%;
         transform: scaleX(0);
   border-block: 1px solid currentcolor;

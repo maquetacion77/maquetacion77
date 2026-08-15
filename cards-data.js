@@ -1,7 +1,7 @@
 const cardsData = [
   {
     id: "urban-living-01",
-    previewImg: "assets/card_01.webp",
+    previewImg: "maquetacion77.github.io/images/images/card_01.webp",
     altText: "Vista previa de Urban Living",
     htmlContent: `
       <article class="card01">
@@ -17,7 +17,7 @@ const cardsData = [
   },
   {
     id: "exclusive-property",
-    previewImg: "assets/card_02.webp",
+    previewImg: "maquetacion77.github.io/images/images/card_02.webp",
     altText: "Vista previa de Exclusive Property",
     htmlContent: `
      <article class="card02">
@@ -33,7 +33,7 @@ const cardsData = [
   },
   {
    id: "card-news-tech",
-  previewImg: "assets/card_03.webp",
+  previewImg: "maquetacion77.github.io/images/images/card_03.webp",
   altText: "Card News Preview",
   htmlContent: `
     <article class="card-news">
@@ -53,7 +53,7 @@ const cardsData = [
   },
   {
    id: "cyber-card-rtx",
-  previewImg: "assets/card_04.webp",
+  previewImg: "maquetacion77.github.io/images/images/card_04.webp",
   altText: "Cyber Card Preview",
   htmlContent: `
     <div class="cyber-card">

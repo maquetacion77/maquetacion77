@@ -137,8 +137,19 @@
   );
 }
 .primary_btn_03{
-  color:#ffd500;
-  letter-spacing: 5px!important;
+  text-transform: uppercase;
+  color:#111;
+}
+.primary_btn_03::after {
+  content: attr(data-text); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  -webkit-text-stroke: 1px #fff; 
+  color: transparent;
 }
 .primary_btn_03:hover::before {
   background: linear-gradient(20deg, yellow, yellow, #ff0000, yellow, yellow);
@@ -291,12 +302,13 @@ background-color: #095fe0;
 }
 .primary_btn_08{
 clip-path: path("M11 0 Q139 0 139 0 149 10 149 10 149 40 149 40 139 50 139 50 11 50 11 50 1 40 1 40 1 10 1 10 11 0 11 0 ");
- background: #9f9fd1;
+  background: #ffffff;
 color: #ffffff;
 transition: background-color 0.3s ease;
 }
 .primary_btn_08:hover{
-  background: #ffffff;
+ 
+  background: #9f9fd1;
 }
 .primary_btn_08::after{
   content: "";
@@ -305,9 +317,46 @@ transition: background-color 0.3s ease;
   z-index: -1;
   clip-path: path("M10 0 Q0 10 0 10 0 40 0 40 10 50 10 50 15 50 15 50 5 40 5 40 145 40 145 40 135 50 135 50 140 50 140 50 150 40 150 40 150 10 150 10 140 0 140 0 135 0 135 0 145 10 145 10 5 10 5 10 15 0 15 0 10 0 10 0 ");
   background: rgb(83, 83, 203);
-  filter: drop-shadow(0 0 1rem black);
+}
+.primary_btn_09{
+
+  background: transparent;
+color: #333;
 }
 
+.primary_btn_09::after,
+.primary_btn_09::before
+{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(189, 203, 83);
+  z-index: -2;
+}
+.primary_btn_09::after{
+ clip-path: path("M0 7 Q75 0 75 0 150 7 150 7 150 10 150 10 75 3 75 3 0 10 0 10 0 40 0 40 75 47 75 47 150 40 150 40 150 43 150 43 75 50 75 50 0 43 0 43 0 7 0 7 ");
+}
+.primary_btn_09::before{
+ clip-path: path("M0 13 Q75 6 75 6 150 13 150 13 150 37 150 37 75 44 75 44 0 37 0 37 0 13 0 13");
+}
+.primary_btn_10{
+
+  background: rgba(255, 255, 0, 0.5);
+color: #ffffff;
+transition: background-color 0.3s ease;
+}
+.primary_btn_10::after,
+.primary_btn_10::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+ 
+}
+.primary_btn_10::after{
+clip-path: path("M20 0 Q130 0 130 0 130 50 130 50 20 50 20 50 20 0 20 0 ");
+ background: rgb(83, 83, 203);
+}
 
 
 /* #endregion */

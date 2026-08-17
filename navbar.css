@@ -54,7 +54,7 @@ font-size: 1.4rem;
 }
 
 .dropdown-menu {
-  display: none;
+  display: block;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -64,6 +64,7 @@ font-size: 1.4rem;
   padding: 10px 0 0 0;
   z-index: 10;
   overflow: hidden;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
 }
 
 @keyframes dropani {
@@ -78,7 +79,7 @@ font-size: 1.4rem;
 .dropdown:hover .dropdown-menu,
 .dropdown:focus-within .dropdown-menu 
 {
-  display: block;
+  /* display: block; */
   animation: dropani 0.3s linear forwards;
 }
 
@@ -221,6 +222,7 @@ font-size: 1.4rem;
 background: var(--bg-overlay);
     margin: 3px;
     clip-path: polygon(0% 50%, 30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%);
+    
   }
 
   .dropdown-menu {
@@ -237,7 +239,14 @@ background: var(--bg-overlay);
     margin: 6px;
     font-size: 1.4rem;
     clip-path: polygon(0% 50%, 30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%);
+    transform: scale(0);
+    transition: transform 0.5s ease;
   }
+  .dropdown:hover .dropdown-menu li a,
+.dropdown:focus-within .dropdown-menu li a {
+transform: scale(1);
+}
+
   .nav-bar a::after,
   .dropdown-trigger::after {
     display: none;
@@ -253,18 +262,16 @@ background: var(--bg-overlay);
   .header__deck .dropdown-trigger{
     width: 90px;
      aspect-ratio: 1/1;
+   
      clip-path: polygon(50%0%,100%30%,100%70%,50%100%,0%70%,0%30%);
     
   }
   .dropdown .dropdown-menu
  {
-  display: none;
+ display: flex;
   flex-direction: row;
   top: 60%;
   left:-50%;  
-}
-.dropdown:hover .dropdown-menu{
-  display: flex;
 }
 .dropdown .dropdown-menu li a{
  

@@ -1,4 +1,4 @@
-/* Reset para listas */
+
 .nav-list, 
 .dropdown-menu {
   list-style: none;
@@ -11,8 +11,6 @@
   align-items: center;
   gap: 15px;
 }
-
-/* Reset para los botones desplegables para que se vean IGUAL a los enlaces */
 .nav-bar a,
 .dropdown-trigger {
 font-size: 1.4rem;
@@ -21,15 +19,12 @@ font-size: 1.4rem;
   color: var(--cls-white, #fff);
   background: transparent;
   border: none;
-  /* font: inherit; */
   cursor: pointer;
   padding: 5px 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
-
-/* Línea animada inferior (hover) */
 .nav-list > li > a::after,
 .dropdown-trigger::after {
   content: "";
@@ -48,15 +43,11 @@ font-size: 1.4rem;
  {
   width: 100%;
 }
-
-/* Estado activo */
 .nav-bar .is-current { 
   color: var(--brand-primary); 
   font-weight: bolder;
   letter-spacing: 2px;
 }
-
-/* Estilos de los Dropdowns */
 .dropdown {
   display: inline-block;
   position: relative;
@@ -104,8 +95,6 @@ font-size: 1.4rem;
 .dropdown-menu li a:hover {
   background-color: rgb(68, 66, 66); 
 }
-
-/* --- Botón Toggle Hamburguesa --- */
 .nav-toggle {
   width: 30px;
   height: 30px;
@@ -123,7 +112,7 @@ font-size: 1.4rem;
  position: absolute;
  inset: 0;
   background-color: var(--brand-secondary);
-  /* clip-path: path("M0 15 Q0 0 0 0 15 0 30 0 30 6 30 6 15 6 0 6 0 12 0 12 15 12 30 12 30 18 30 18 15 18 0 18 0 24 0 24 15 24 30 24 30 30 30 30 15 30 0 30 0 15 0 15"); */
+ 
    clip-path: polygon(
     0%0%,
     50%0%,
@@ -156,7 +145,7 @@ font-size: 1.4rem;
 }
 
 .icon:after {
-  /* clip-path: path("M0 15 Q0 15 0 15 6 0 12 0 12 6 12 6 9 6 6 12 6 12 6 12 30 12 30 12 30 18 30 18 6 18 6 18 6 18 6 18 9 24 12 24 12 30 12 30 6 30 0 15 0 15 0 15"); */
+
    clip-path: polygon(
     0%20%,
     0%0%,
@@ -184,10 +173,6 @@ font-size: 1.4rem;
     0%80%
   );
 }
-  
-
-
-/* --- Adaptación Móvil (<= 900px) --- */
 @media only screen and (max-width: 900px) {
 
 
@@ -220,22 +205,20 @@ font-size: 1.4rem;
     flex-direction: column;  
     gap: 0;
   }
-
-  /* Formato Hexágono/Clip-path para móviles */
   .header__deck .nav-bar a,
   .header__deck .dropdown-trigger {
     padding: 10px;
     position: relative;
-    display: flex;
+    display: flex;  
     text-align: center;
     align-items: center;
     justify-content: center;
     color: var(--cls-white);
     width: 110px;
+     aspect-ratio: 1/0.8;
     font-size: 1.4rem;
     letter-spacing: 2px;
-    background-color: var(--bg-overlay, rgba(0,0,0,0.5));
-    aspect-ratio: 1/0.8;
+background: var(--bg-overlay);
     margin: 3px;
     clip-path: polygon(0% 50%, 30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%);
   }
@@ -255,10 +238,39 @@ font-size: 1.4rem;
     font-size: 1.4rem;
     clip-path: polygon(0% 50%, 30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%);
   }
-
-  /* Oculta la línea inferior animada en pantalla móvil */
   .nav-bar a::after,
   .dropdown-trigger::after {
     display: none;
   }
+}
+@media only screen and (max-width: 900px) and (orientation: landscape) and (max-height: 500px){
+   .nav-list {
+    flex-direction: row;  
+    gap: 0;
+    
+  }
+   .header__deck .nav-bar a,
+  .header__deck .dropdown-trigger{
+    width: 90px;
+     aspect-ratio: 1/1;
+     clip-path: polygon(50%0%,100%30%,100%70%,50%100%,0%70%,0%30%);
+    
+  }
+  .dropdown .dropdown-menu
+ {
+  display: none;
+  flex-direction: row;
+  top: 60%;
+  left:-50%;  
+}
+.dropdown:hover .dropdown-menu{
+  display: flex;
+}
+.dropdown .dropdown-menu li a{
+ 
+   margin: 3px;
+   aspect-ratio: 1/1;
+   width: 90px;
+  clip-path: polygon(50%0%,100%30%,100%70%,50%100%,0%70%,0%30%);
+}
 }

@@ -260,8 +260,8 @@ transform: scale(1);
   }
    .header__deck .nav-bar a,
   .header__deck .dropdown-trigger{
-    width: 90px;
-     aspect-ratio: 1/1;
+    width: 100px;
+     aspect-ratio: 1/1.1;
    
      clip-path: polygon(50%0%,100%30%,100%70%,50%100%,0%70%,0%30%);
     
@@ -270,14 +270,14 @@ transform: scale(1);
  {
  display: flex;
   flex-direction: row;
-  top: 60%;
+  top: 63%;
   left:-50%;  
 }
 .dropdown .dropdown-menu li a{
  
    margin: 3px;
-   aspect-ratio: 1/1;
-   width: 90px;
+   aspect-ratio: 1/1.1;
+   width: 100px;
   clip-path: polygon(50%0%,100%30%,100%70%,50%100%,0%70%,0%30%);
 }
 }

@@ -12,6 +12,7 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .primary-section h1{
   padding-bottom:10px;
   font-size: 1.8rem;
@@ -189,7 +190,7 @@ display: flex;
 /* #region 1. Brand / Hero Section Styles===================================== */
 .about__01 {
   position: relative;
-  /* clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%); */
+  clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
  
 }
 .about__01::after { 
@@ -209,17 +210,51 @@ display: flex;
   line-height: 150%;
 }
 .landing-hero {
+  max-width: 1920px;
   height: calc(100vh - 60px);
   display: flex;
   align-items: center;
   justify-content: left;
-  background: 
-    url('https://maquetacion77.github.io/images/images/you12A.webp');
-  background-blend-mode: overlay;
-  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  
 }
+   :root {
+ --primary-color: conic-gradient(from -40deg,white, rgb(87, 94, 98),white);
+}
+.recuadro,
+.recuadro div{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+     background-image: var(--primary-color);
+}
+.recuadro{
+  z-index: -5;
+    width: 5000px;
+    height: 5000px;
+    overflow: hidden;
+}
+
+.recuadro div{
+  position: absolute;
+    border-radius: 50%;
+
+}
+.recuadro .borde{ width: 4500px;height:4500px;box-shadow: -3px -3px 3px 0px rgba(0, 0, 0, 0.421);}
+.recuadro .borde02{width: 1800px;height: 1800px;box-shadow: -3px -3px 3px 0px rgba(0, 0, 0, 0.421);}
+.recuadro .borde03{width: 1600px;height:1600px;box-shadow: -3px -3px 3px 0px rgba(0, 0, 0, 0.421);}
+.recuadro .borde04{width: 1400px;height: 1400px;box-shadow: -3px -3px 3px 0px rgba(0, 0, 0, 0.421);}
+.recuadro .borde05{width: 1200px;height: 1200px;box-shadow: -3px -3px 3px 0px rgba(0, 0, 0, 0.421);}
+.recuadro .borde06{width: 1000px;height: 1000px;box-shadow: -3px -3px 3px 0px rgba(0, 0, 0, 0.421);}
+.recuadro .borde07{width: 800px;height: 800px;box-shadow: -3px -3px 3px 0px rgba(0, 0, 0, 0.421);}
+.recuadro .borde08{width: 600px;height: 600px;box-shadow: -3px -3px 3px 0px rgba(0, 0, 0, 0.421);}
+.recuadro .borde09{width: 400px;height: 400px;box-shadow: -3px -3px 3px 0px rgba(0, 0, 0, 0.421);}
+.recuadro .borde10{width: 200px;height: 200px;box-shadow: -3px -3px 3px 0px rgba(0, 0, 0, 0.421);}
+
+
 .landing-hero__container {
-  max-width: 600px;
+  max-width: 800px;
   padding: 15px 10px;
   text-align: center;
 }

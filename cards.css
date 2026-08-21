@@ -1,11 +1,14 @@
+html {
+  font-size: 62.5%;
 
+}
   
   /* #region card  */
 .cards-wrapper {
   position: relative;
   max-width: 800px;
   margin: auto;
-padding:  40px 0 10px 0 ;
+padding:  0px 0 10px 0 ;
 }
 .cards-container {
   display: flex;
@@ -31,7 +34,7 @@ padding:  40px 0 10px 0 ;
 }
 
 .card-preview-btn__image {
-  width: 150px;
+  width: 100px;
   height: auto;
   display: block;
     border-radius: 15px;
@@ -353,7 +356,6 @@ opacity: 1;
 .card-news {
   width: 100%;
   max-width: 340px; 
-  width: 100%;
   background-color: #ffffff; 
   color: #0f172a; 
   border: 1px solid #e2e8f0; 
@@ -437,9 +439,7 @@ opacity: 1;
   font-weight: 600;
   color: #1e293b;
 }
-    /* #endregion */
-
-
+    /* #endregion */  
     /* #region card04 */
     .cyber-card {
       min-width: 280px;
@@ -628,5 +628,170 @@ opacity: 1;
       color: #05070f;
     }
       /* #endregion */
+
+    
+
+ /* #region card05 */
+    .card_gaming_01 {
+      width: 280px;
+      height: 420px;
+      position: relative;
+        transition: transform 0.2s ease,filter 0.2s ease;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .card_gaming_01:hover{
+   filter: 
+        drop-shadow(0 0 2px #4b5461)
+        drop-shadow(0 0 2px #4b5461);
+    } 
+.card_gaming_01::after,
+ .card_gaming_content::before,
+ .card_gaming_content::after{
+    clip-path: path("M6 48 Q6 43 11 43 L24 43 Q35 43 40 35 Q45 27 60 27 L109 27 Q120 27 135 13 Q 140 9 145 13 Q160 27 171 27 L220 27 Q235 27 240 35 Q245 43 256 43 L269 43 Q274 43 274 48 L274 372 Q274 377 269 377 L256 377 Q245 377 240 385 Q235 393 220 393 L171 393 Q160 393 145 407 Q140 411 135 407 Q120 393 109 393 L60 393 Q45 393 40 385 Q35 377 24 377 L11 377 Q6 377 6 372 Z");
+ }
+    .card_gaming_01::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 280px;
+      height: 420px;
+      z-index: 1;
+      background-color: #4b5461;
+    }
+    .card_gaming_content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 280px;
+      height: 420px;
+      z-index: 3;
+     
+      transform: scale(0.97); 
+      transform-origin: center center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 7px;
+      /* justify-content: center; */
+    }
+    .card_gaming_content::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: #cabb94;
+    }
+
+    .card_gaming_content::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: #4b5461;
+     
+      transform: scale(0.98);
+      transform-origin: center center;
+    }
+.card_gaming_content {
+  padding: 30px 24px;
+  text-align: center;
+  color: #ffffff;
+  z-index: 20;
+}
+.card_tag {
+  padding-top: 20px;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #cabb94;
+  text-transform: uppercase;
+}
+.card_title {
+  position: relative;
+  font-size: 2.6rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  margin: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.card_subtitle {
+  position: relative;
+  font-size: 1.4rem;
+  color: #a0aab8;
+  margin: 2px 0 10px 0;
+  letter-spacing: 1px;
+  
+}
+.card_stats {
+  position: relative;
+  z-index: 10;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card_stats li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 6px 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-left: 2px solid #cabb94;
+}
+
+.card_stats span {
+  color: #a0aab8;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.card_stats strong {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+.card_description {
+  position: relative;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #cbd5e1;
+  margin: 0;
+}
+.btn_cta {
+  position: absolute;
+  transform: scale(0.9);
+  bottom: 10px;
+  width: 220px;
+  height: 70px;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background-color: #00ff00;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  clip-path: path("M110 5 L195 5 Q220 5 220 26 Q 220 47 195 47 L141 47 Q130 47 115 61 Q110 65 105 61 Q90 47 79 47 L25 47 Q0 47 0 26 Q0 5 25 5 Z");
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn_cta:hover{
+  background-color: #ffffff;
+color: #4b5461;
+}
+/* #endregion */
 
    

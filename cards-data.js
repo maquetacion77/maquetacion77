@@ -1,4 +1,5 @@
 const cardsData = [
+  // card01
   {
     id: "urban-living-01",
     previewImg: "https://maquetacion77.github.io/images/images/card_01.webp",
@@ -15,6 +16,7 @@ const cardsData = [
       </article>
     `
   },
+  // card02
   {
     id: "exclusive-property",
     previewImg: "https://maquetacion77.github.io/images/images/card_02.webp",
@@ -31,6 +33,7 @@ const cardsData = [
     </article>
     `
   },
+  // card03
   {
    id: "card-news-tech",
   previewImg: "https://maquetacion77.github.io/images/images/card_03.webp",
@@ -57,6 +60,7 @@ const cardsData = [
     </article>
     `
   },
+  // card04
   {
    id: "cyber-card-rtx",
   previewImg: "https://maquetacion77.github.io/images/images/card_04.webp",
@@ -99,6 +103,46 @@ const cardsData = [
         </div>
       </div>
     </div>
+
+    `
+  },
+  // card05
+   {
+   id: "gamming-card-01 ",
+  previewImg: "https://maquetacion77.github.io/images/images/card_05.webp",
+  altText: "Pase Cyberpunk Preview",
+  htmlContent: `
+  
+    <article class="card_gaming_01">
+    <div class="card_gaming_content">
+  <span class="card_tag">RANK #01</span>
+
+  <h2 class="card_title">CYBER PASS</h2>
+  <p class="card_subtitle">Access Level: Omega</p>
+
+  <ul class="card_stats">
+    <li>
+      <span>STATUS</span>
+      <strong>ACTIVE</strong>
+    </li>
+    <li>
+      <span>XP BONUS</span>
+      <strong>+150%</strong>
+    </li>
+    <li>
+      <span>EXPIRATION</span>
+      <strong>30 DAYS</strong>
+    </li>
+  </ul>
+
+ <p class="card_description">
+  Unlock exclusive rewards, priority servers, and encrypted network routing.
+</p>
+<button  type="button" class="btn_cta">
+CLAIM ACCESS
+</button>
+</div>
+  </article>
 
     `
   }

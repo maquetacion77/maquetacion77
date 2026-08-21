@@ -1,6 +1,7 @@
 
 /* #region 00 */
-.primary-section {
+.primary-section,
+.primary-section-cards {
   width: 100%;
   max-width: 800px;
   padding:50px 10px 20px 10px ;
@@ -11,6 +12,11 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+
+}
+.primary-section-cards{
+height: 470px;
+padding: unset;
 }
 
 .primary-section h1{

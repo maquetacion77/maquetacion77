@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const primarySection = document.getElementById("primarySection");
+  const primarySection = document.getElementById("primarySection_cards");
   const cardsContainer = document.getElementById("cardsContainer");
 
   // 1. Renderizar la lista de botones-imagen en el contenedor

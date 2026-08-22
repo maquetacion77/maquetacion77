@@ -145,5 +145,44 @@ CLAIM ACCESS
   </article>
 
     `
+  },
+   // card06
+   {
+   id: "pricing-card-01 ",
+  previewImg: "https://maquetacion77.github.io/images/images/card_06.webp",
+  altText: "Saas Preview",
+  htmlContent: `
+  <div class="saas-card-container">
+   <article class="saas-card">
+    <div class="saas-card-header">
+      <div class="badge-container">
+        <span class="badge-plan">Pro Dev</span>
+        <span class="badge-popular">★ Most Popular</span>
+      </div>
+
+      <h2 class="plan-title">Pro Plan</h2>
+      <p class="plan-description">
+        Ideal for independent developers and growing teams.
+      </p>
+
+      <div class="price-container">
+        <span class="price-amount">$29</span>
+        <span class="price-period">/ month</span>
+      </div>
+
+      <ul class="features-list">
+        <li class="feature-item"><span>✓</span>Up to 15 Active Projects</li>
+        <li class="feature-item"><span>✓</span>Continuous Deployment (CI/CD)</li>
+        <li class="feature-item"><span>✓</span>24/7 Priority Support</li>
+        <li class="feature-item"><span>✓</span>Unlimited Custom Domains</li>
+        <li class="feature-item"><span>✓</span>Advanced Traffic Analytics</li>
+      </ul>
+    </div>
+
+
+    <a href="#" class="btn-plan">Start Free Trial</a>
+  </article>
+  </div>
+    `
   }
 ];

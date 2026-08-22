@@ -944,8 +944,5 @@ filter: drop-shadow(5px 0 0 #238636)
       letter-spacing: 0.3px;
       transition: background-color 0.2s ease;
     }
-    .btn-plan:hover {
-      background: #2ea043;
-
-    }
+   
    /* #endregion */

@@ -1,5 +1,5 @@
 
-/* #region 01 theme-switch */
+/* #region 00 theme-switch */
 .main-header {
   display: flex;
   align-items: center;
@@ -62,7 +62,7 @@
 }
 /* #endregion */
 
-/* #region 02 primary*/
+/* #region 01 primary*/
 
 @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
 
@@ -282,10 +282,10 @@ background-color: #095fe0;
 }
 .primary_btn_07{
   background-image: radial-gradient(
-    circle farthest-side at 30% 30%, /* Círculo descentrado hacia arriba a la izquierda */
-    #FFF44F 0%,                       /* Centro: Amarillo Limón brillante */
-    #32CD32 60%,                      /* Medio: Verde Lima Vibrante (el color principal) */
-    #00A36C 100%                      /* Extremos: Verde Esmeralda Profundo */
+    circle farthest-side at 30% 30%, 
+    #FFF44F 0%,                      
+    #32CD32 60%,                    
+    #00A36C 100%                     
   );
   
 }
@@ -319,9 +319,10 @@ transition: background-color 0.3s ease;
   background: rgb(83, 83, 203);
 }
 .primary_btn_09{
-
   background: transparent;
 color: #333;
+z-index: 5;
+
 }
 
 .primary_btn_09::after,
@@ -650,7 +651,7 @@ clip-path: path("M20 0 Q130 0 130 0 130 50 130 50 20 50 20 50 20 0 20 0 ");
 
 /* #region 04 nav */
  .nav-link {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         position: relative;
         text-decoration: none;
         background: transparent;

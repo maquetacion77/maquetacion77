@@ -807,6 +807,7 @@ filter: drop-shadow(5px 0 0 #238636)
         blur(0.2px)
       ;
         transition: filter 0.3s ease;
+        will-change: filter;
     }
 .saas-card-container:hover{
   filter: drop-shadow(5px 0 0 #238636) 
@@ -944,5 +945,5 @@ filter: drop-shadow(5px 0 0 #238636)
       letter-spacing: 0.3px;
       transition: background-color 0.2s ease;
     }
-   
+ 
    /* #endregion */

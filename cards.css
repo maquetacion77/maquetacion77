@@ -820,9 +820,6 @@ transform: scale(0.81);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-      will-change: transform;
-      transform: translateZ(0);
       clip-path: path("M0 0 L90 0 Q105 0 110 1 L160 18 L210 1 Q215 0 230 0 L320 0 L320 53 Q320 450 165 473 Q160 474 155 473 Q0 450 0 53 Z");
          
     }

@@ -800,7 +800,6 @@ filter: drop-shadow(5px 0 0 #238636)
         drop-shadow(-5px 0 0 #238636) 
         drop-shadow(0 5px 0 #238636) 
         drop-shadow(0 -5px 0 #238636)
-        
       ;  
     }
    .saas-card {
@@ -830,14 +829,14 @@ filter: drop-shadow(5px 0 0 #238636)
       left: 0;
 
     }
-    /* .badge-container::after,
+    .badge-container::after,
     .badge-container::before{
       content: "";
       position: absolute;
       inset: 0;
  clip-path: path("M0 3 L90 3 Q105 3 110 4 L210 39 Q215 40 220 40 L320 40 L320 47 L220 47 Q215 47 210 46 L110 11 Q105 10 90 10 L0 10 Z");
    background: #238636;
-    } */
+    }
     .badge-container::before{
       transform: rotateX(180deg);
     }

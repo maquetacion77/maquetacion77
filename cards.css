@@ -795,15 +795,7 @@ color: #4b5461;
 /* #endregion */
 
 /* #region card06 */
- .saas-card-container{
-filter: drop-shadow(5px 0 0 #238636) 
-        drop-shadow(-5px 0 0 #238636) 
-        drop-shadow(0 5px 0 #238636) 
-        drop-shadow(0 -5px 0 #238636)
-         drop-shadow(0 0 2px #000000)
-        drop-shadow(0 0 2px #000000)
-      ;  
-    }
+
    .saas-card {
       width: 320px;
       height: 420px;

@@ -180,7 +180,7 @@ CLAIM ACCESS
     </div>
 
 
-    <a href="#" class="btn-plan">Start Free Trial</a>
+    <a href="javascript:void(0)" class="btn-plan">Start Free Trial</a>
   </article>
   </div>
     `

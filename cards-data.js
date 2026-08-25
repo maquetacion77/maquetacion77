@@ -2,11 +2,11 @@ const cardsData = [
   // card01
   {
     id: "urban-living-01",
-    previewImg: "https://maquetacion77.github.io/images/images/card_01.webp",
+    previewImg: "assets/card_01.webp",
     altText: "Preview of Urban Living",
     htmlContent: `
       <article class="card01">
-         <img class="card-image" src="https://maquetacion77.github.io/images/cards-280x360/Urban Living.jpg" alt="Exterior facade of a modern residential building at sunset" loading="lazy" decoding="async" />
+         <img class="card-image" src="assets/Urban Living.jpg" alt="Exterior facade of a modern residential building at sunset" loading="lazy" decoding="async" />
         <div class="card-overlay flex---">
           <h2 class="card-title">Urban Living</h2>
           <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, alias, voluptatem, laboriosam optio adipisci corporis.</p>
@@ -19,11 +19,11 @@ const cardsData = [
   // card02
   {
     id: "exclusive-property",
-    previewImg: "https://maquetacion77.github.io/images/images/card_02.webp",
+    previewImg: "assets/card_02.webp",
     altText: "Preview of Exclusive Property",
     htmlContent: `
      <article class="card02">
-       <img class="card-image" src="https://maquetacion77.github.io/images/cards-280x360/Exclusive Property.jpg" alt="Exterior view of a luxury villa with an infinity pool" loading="lazy" decoding="async" />
+       <img class="card-image" src="assets/Exclusive Property.jpg" alt="Exterior view of a luxury villa with an infinity pool" loading="lazy" decoding="async" />
       <div class="card-overlay flex---">
         <h2 class="card-title">Exclusive Property</h2>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, alias, voluptatem, laboriosam optio adipisci corporis.</p>
@@ -36,13 +36,13 @@ const cardsData = [
   // card03
   {
    id: "card-news-tech",
-  previewImg: "https://maquetacion77.github.io/images/images/card_03.webp",
+  previewImg: "assets/card_03.webp",
   altText: "Card News Preview",
   htmlContent: `
     <article class="card-news">
      <div class="card-news-image">
     <img 
-      src="https://maquetacion77.github.io/images/images/imageAI.webp" 
+      src="assets/imageAI.png" 
       alt="Artificial Intelligence concept visualization" 
       loading="lazy" 
       decoding="async" 
@@ -63,7 +63,7 @@ const cardsData = [
   // card04
   {
    id: "cyber-card-rtx",
-  previewImg: "https://maquetacion77.github.io/images/images/card_04.webp",
+  previewImg: "assets/card_04.webp",
   altText: "Cyber Card Preview",
   htmlContent: `
     <div class="cyber-card">
@@ -109,7 +109,7 @@ const cardsData = [
   // card05
    {
    id: "gamming-card-01 ",
-  previewImg: "https://maquetacion77.github.io/images/images/card_05.webp",
+  previewImg: "assets/card_05.webp",
   altText: "Pase Cyberpunk Preview",
   htmlContent: `
   
@@ -149,7 +149,7 @@ CLAIM ACCESS
    // card06
    {
    id: "pricing-card-01 ",
-  previewImg: "https://maquetacion77.github.io/images/images/card_06.webp",
+  previewImg: "assets/card_06.png",
   altText: "Saas Preview",
   htmlContent: `
   <div class="saas-card-container">

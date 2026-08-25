@@ -39,7 +39,6 @@
     background-color 0.3s ease;
 }
 
-/* Estado Activo / Alternativo del Switch Button */
 .header-theme-switch.theme-active {
   background-color: var(--brand-primary, #00ffff);
 }
@@ -49,7 +48,6 @@
   background-color: #111;
 }
 
-/* Foco de accesibilidad por teclado */
 .header-theme-switch:focus-visible {
   outline: 2px solid #fff;
   outline-offset: 2px;
@@ -104,12 +102,16 @@
   color: #fff;
   background: radial-gradient(
     circle at 40% 50%,
-    rgb(182, 78, 57) 0px,
-    rgb(255, 0, 34) 50px,
-    rgb(182, 78, 92) 200px
+    rgb(132, 122, 224) 0px,
+    rgb(24, 6, 183) 50px,
+    rgb(8, 3, 53) 200px
   );
-  transition: filter 0.3s ease;
+  transition:transform 0.3s ease;
 }
+.primary_btn_01:hover{
+  transform: scale(1.03);
+}
+
 .primary_btn_02 {
   background:
     repeating-linear-gradient(
@@ -126,6 +128,12 @@
       #f3f0ed 20px,
       #f3f0ed 22px
     );
+    filter: contrast(100%) invert(0%);
+    transition:filter 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.primary_btn_02:hover{
+filter: contrast(130%) invert(100%);
 }
 .primary_btn_02::after {
   content: "";

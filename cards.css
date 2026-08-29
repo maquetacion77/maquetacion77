@@ -440,6 +440,7 @@ opacity: 1;
   color: #1e293b;
 }
     /* #endregion */  
+  
     /* #region card04 */
     .cyber-card {
       min-width: 280px;
@@ -629,8 +630,6 @@ opacity: 1;
     }
       /* #endregion */
 
-    
-
  /* #region card05 */
     .card_gaming_01 {
       width: 280px;
@@ -796,10 +795,10 @@ color: #4b5461;
 
 /* #region card06 */
  .saas-card-container{
-filter: drop-shadow(5px 0 0 #238636) 
-        drop-shadow(-5px 0 0 #238636) 
-        drop-shadow(0 5px 0 #238636) 
-        drop-shadow(0 -5px 0 #238636)
+filter: drop-shadow(2px 0 0 #238636) 
+        drop-shadow(-2px 0 0 #238636) 
+        drop-shadow(0 2px 0 #238636) 
+        drop-shadow(0 -2px 0 #238636)
       ;  
     }
    .saas-card {

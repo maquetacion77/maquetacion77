@@ -226,7 +226,7 @@ background: var(--bg-overlay);
   }
 
   .dropdown-menu {
-    top: -60px;
+    top: 35px;
     left: 81px;
     transform: none;
     background-color: transparent;
@@ -270,7 +270,7 @@ transform: scale(1);
  {
  display: flex;
   flex-direction: row;
-  top: 63%;
+  top: -80%;
   left:-50%;  
 }
 .dropdown .dropdown-menu li a{

@@ -904,6 +904,7 @@ clip-path: path("M24 0 L126 0 L126 50 L24 50 Z");
   justify-content: flex-end;
   text-align: right;
   white-space: nowrap;
+  color: var(--cls-white);
 }
 .carousel-item01,
 .carousel-item02,

@@ -257,16 +257,15 @@ display: flex;
 .recuadro .borde09{width: 400px;height: 400px;box-shadow: -3px -3px 3px 0px rgba(0, 0, 0, 0.421);}
 .recuadro .borde10{width: 200px;height: 200px;box-shadow: -3px -3px 3px 0px rgba(0, 0, 0, 0.421);}
 .landing-hero__container {
-  color: #475569;
+ 
   position: absolute;
   top: 60%;
   left: 5%;
   max-width: 600px;
   padding: 15px 10px;
-  /* text-align: center; */
 }
 .landing-hero__subtitle {
-  color: #475569;
+  
   font-size: 1.6rem;
   line-height: 150%;
 }

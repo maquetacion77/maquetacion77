@@ -226,7 +226,7 @@ display: flex;
   
 }
    :root {
- --primary-color: conic-gradient(from -40deg,white, rgb(87, 94, 98),white);
+ --primary-color: conic-gradient(from -40deg,white, rgb(201, 95, 223),white);
 }
 .recuadro,
 .recuadro div{
@@ -260,11 +260,16 @@ display: flex;
 
 
 .landing-hero__container {
-  max-width: 800px;
+  color: #475569;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  max-width: 600px;
   padding: 15px 10px;
-  text-align: center;
+  /* text-align: center; */
 }
 .landing-hero__subtitle {
+  color: #475569;
   font-size: 1.6rem;
   line-height: 150%;
 }
@@ -589,3 +594,5 @@ margin: 0 auto;
 }
 
 /* #endregion */
+
+/* #region ideas */

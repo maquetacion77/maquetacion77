@@ -225,7 +225,7 @@ display: flex;
   overflow: hidden;
 }
    :root {
- --primary-color: conic-gradient(from -40deg,white, rgb(201, 95, 223),white);
+ --primary-color: conic-gradient(from -40deg,white, var(--brand-secondary),white);
 }
 .recuadro,
 .recuadro div{

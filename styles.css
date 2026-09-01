@@ -13,6 +13,7 @@ html {
   --cls-black: #000000;
    --color-accent: #6495ed;
     --onyx-dark: #171414;
+    --Soft-slate-gray:#475569;
   /* Functional / Alpha Colors */
   --bg-overlay: #0000001a; 
    --color-card-overlay: #11111173;
@@ -22,12 +23,12 @@ html {
   --spinner-size: 100px; 
   --scale:1;
   /* nav-buttons */
-         --nav02: #13dfdf; /* navbar02 */
-        --nav03: #ccff00; /* navbar03 */
-        --nav04: #ffd500; /* navbar04 */
-        --nav05: #33fc5f; /* navbar05 */
-        --nav06: #ffff00; /* navbar06 */
-        --nav07: #ff69b4; /* navbar07 */
+         --nav02: #13dfdf; 
+        --nav03: #ccff00; 
+        --nav04: #ffd500; 
+        --nav05: #33fc5f; 
+        --nav06: #ffff00; 
+        --nav07: #ff69b4; 
 }
 
 * {
@@ -40,7 +41,7 @@ html {
   list-style: none;
 
   letter-spacing: 1px;
-  color: var(--black);
+  color: var(--Soft-slate-gray);
 }
 a,
 button,

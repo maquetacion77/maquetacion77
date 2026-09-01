@@ -223,7 +223,6 @@ display: flex;
   justify-content: left;
   position: relative;
   overflow: hidden;
-  
 }
    :root {
  --primary-color: conic-gradient(from -40deg,white, rgb(201, 95, 223),white);
@@ -257,8 +256,6 @@ display: flex;
 .recuadro .borde08{width: 600px;height: 600px;box-shadow: -3px -3px 3px 0px rgba(0, 0, 0, 0.421);}
 .recuadro .borde09{width: 400px;height: 400px;box-shadow: -3px -3px 3px 0px rgba(0, 0, 0, 0.421);}
 .recuadro .borde10{width: 200px;height: 200px;box-shadow: -3px -3px 3px 0px rgba(0, 0, 0, 0.421);}
-
-
 .landing-hero__container {
   color: #475569;
   position: absolute;

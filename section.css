@@ -265,12 +265,13 @@ display: flex;
   padding: 15px 10px;
 }
 .landing-hero__subtitle {
-  
+  color: var(--Soft-slate-gray);
   font-size: 1.6rem;
   line-height: 150%;
 }
 .landing-hero__title {
   font-size: 4rem;
+  color: var(--Soft-slate-gray);
 }
 /* #endregion */
 

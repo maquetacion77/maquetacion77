@@ -41,7 +41,7 @@ html {
   list-style: none;
 
   letter-spacing: 1px;
-  color: var(--Soft-slate-gray);
+  color: var(--cls-black);
 }
 a,
 button,

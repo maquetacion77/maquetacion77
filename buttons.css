@@ -112,69 +112,6 @@
   transform: scale(1.03);
 }
 
-.primary_btn_02 {
-  background:
-    repeating-linear-gradient(
-      -60deg,
-      transparent,
-      transparent 18px,
-      #f3f0ed 20px,
-      #f3f0ed 22px
-    ),
-    repeating-linear-gradient(
-      60deg,
-      #d5c7b5,
-      #d5c7b5 18px,
-      #f3f0ed 20px,
-      #f3f0ed 22px
-    );
-    filter: contrast(100%) invert(0%);
-    transition:filter 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.primary_btn_02:hover{
-filter: contrast(130%) invert(100%);
-}
-.primary_btn_02::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.781);
-  clip-path: path(
-    "M15 0 Q135 0 135 0 150 25 150 25 135 50 135 50 15 50 15 50 0 25 0 25 15 0 15 0 16 2 16 2 2 25 2 25 16 48 16 48 134 48 134 48 148 25 148 25 134 2 134 2 16 2 16 2 15 0 15 0 "
-  );
-}
-.primary_btn_03{
-  text-transform: uppercase;
-  color:#111;
-}
-.primary_btn_03::after {
-  content: attr(data-text); 
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; 
-  -webkit-text-stroke: 1px #fff; 
-  color: transparent;
-}
-.primary_btn_03:hover::before {
-  background: linear-gradient(20deg, yellow, yellow, #ff0000, yellow, yellow);
-}
-.primary_btn_03:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: linear-gradient(20deg, yellow, #ff0000, #ff0000, yellow, yellow);
-  top: 0;
-  left: 0;
-  clip-path: path(
-    "M15 0 Q135 0 135 0 150 25 150 25 135 50 135 50 15 50 15 50 0 25 0 25 15 0 15 0 17 4 17 4 5 25 5 25 17 46 17 46 132 46 132 46 145 25 145 25 133 4 133 4 17 4 17 4 15 0 15 0 "
-  );
-}
-
 .primary_btn_04 {
   transition:
     background-color 0.3s ease,
@@ -288,73 +225,10 @@ filter: contrast(130%) invert(100%);
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
 background-color: #095fe0;
 }
-.primary_btn_07{
-  background-image: radial-gradient(
-    circle farthest-side at 30% 30%, 
-    #FFF44F 0%,                      
-    #32CD32 60%,                    
-    #00A36C 100%                     
-  );
-  
-}
-.primary_btn_07:after{
-  content: "";
-  position: absolute;
-  inset: -4px;
-  border: 2px solid rgb(85, 255, 0);
-  clip-path: polygon(0%0%,10%0%,70%100%,90%100%,30%0%,100%0%,100%100%,0%100%);
-  transition: clip-path 0.4s ease-in-out;
-}
-.primary_btn_07:hover:after{
-  clip-path: polygon(0%0%,70%0%,10%100%,30%100%,90%0%,100%0%,100%100%,0%100%);
-}
-.primary_btn_08{
-clip-path: path("M11 0 Q139 0 139 0 149 10 149 10 149 40 149 40 139 50 139 50 11 50 11 50 1 40 1 40 1 10 1 10 11 0 11 0 ");
-  background: #ffffff;
-color: #ffffff;
-transition: background-color 0.3s ease;
-}
-.primary_btn_08:hover{
- 
-  background: #9f9fd1;
-}
-.primary_btn_08::after{
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  clip-path: path("M10 0 Q0 10 0 10 0 40 0 40 10 50 10 50 15 50 15 50 5 40 5 40 145 40 145 40 135 50 135 50 140 50 140 50 150 40 150 40 150 10 150 10 140 0 140 0 135 0 135 0 145 10 145 10 5 10 5 10 15 0 15 0 10 0 10 0 ");
-  background: rgb(83, 83, 203);
-}
-.primary_btn_09{
-  background: transparent;
-color: #333;
-z-index: 5;
 
-}
 
-.primary_btn_09::after,
-.primary_btn_09::before
-{
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgb(189, 203, 83);
-  z-index: -2;
-}
-.primary_btn_09::after{
- clip-path: path("M0 7 Q75 0 75 0 150 7 150 7 150 10 150 10 75 3 75 3 0 10 0 10 0 40 0 40 75 47 75 47 150 40 150 40 150 43 150 43 75 50 75 50 0 43 0 43 0 7 0 7 ");
-}
-.primary_btn_09::before{
- clip-path: path("M0 13 Q75 6 75 6 150 13 150 13 150 37 150 37 75 44 75 44 0 37 0 37 0 13 0 13");
-}
-.primary_btn_10{
 
-  background: rgb(132, 132, 122);
-  clip-path: PATH("M75 0 L134 0 L134 5 L142 5 L142 15 L150 15 L150 35 L144 35 L144 15 L142 15 L142 45 L136 45 L136 5 L134 5 L134 50 L128 50 L128 0 L126 0 L126 50 L24 50 L24 0 L22 0 L22 50 L16 50 L16 5 L14 5 L14 45 L8 45 L8 15 L6 15 L6 35 L0 35 L0 15 L8 15 L8 5 L16 5 L16 0 Z");
-color: #ffffff;
-transition: background-color 0.3s ease;
-}
+
 /* .primary_btn_10::after,
 .primary_btn_10::before{
   content: "";

@@ -37,9 +37,7 @@ html {
   box-sizing: border-box;
     font-family: var(--font-main);
      text-decoration: none;
-     
   list-style: none;
-
   letter-spacing: 1px;
   color: var(--cls-black);
 }

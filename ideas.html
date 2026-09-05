@@ -113,71 +113,254 @@
 Welcome to my digital workshop for interface design. Here you’ll find a collection of web components, experimental card layouts, custom button architectures, and typographic patterns. Every piece serves as visual inspiration, crafted to show how modern CSS and clean HTML can transform simple elements into memorable user experiences.
         </p>
       </section>
-      <section class="ideas_container_01">
-      <div><img src="assets/you15.webp" alt=""></div>
-      <div><img src="assets/you10.webp" alt=""></div>
-      <div><img src="assets/you25.webp" alt=""></div>
-      <div><img src="assets/you05.webp" alt=""></div>
+      
+     <div class="ideas_container">
+       <section class="ideas_container_01">
+      <div><img src="assets/button_03.webp" alt=""></div>
+      <div><img src="assets/button_08.webp" alt=""></div>
+      <div><img src="assets/button_09.webp" alt=""></div>
+      <div><img src="assets/button_10.webp" alt=""></div>
       <div><img src="assets/you15.webp" alt=""></div>
       <div><img src="assets/image_swich_button_04.png" alt=""></div>
-      <div><img src="assets/forma07b.webp" alt=""></div>
-      <div><img src="assets/nav_button07.png" alt=""></div>
       </section>
+      <section class="ideas_container_03">
+        <img src="assets/nav_button07.png" alt="">
+      </section>
+      <section class="ideas_container_02">
+         <div><img src="assets/separator_01.webp" alt=""></div>
+      <div><img src="assets/background_01.webp" alt=""></div>
+      </section>
+       <section class="ideas_container_02">
+         <div><img src="assets/background_02.webp" alt=""></div>
+         <div><img src="assets/separator_02.webp" alt=""></div>
+      </section>
+      <div class="ideas_container_04">
+  <!-- Imagen Principal (Destacada) -->
+  <div>
+    <img src="assets/hero01.webp" alt="Hero Section completa">
+  </div>
+  
+  <!-- Contenedor Duo (2 imágenes secundarias apiladas) -->
+  <div class="ideas_duo">
+    <div>
+      <img src="assets/button_03.webp" alt="Detalle de Card">
+    </div>
+    <div>
+      <img src="assets/button_09.webp" alt="Detalle de Botón">
+    </div>
+  </div>
+</div>
+<div class="ideas_container_05">
+  <div><img src="assets/CL01.webp" alt="Spinner Loader Design 1"></div>
+  <div><img src="assets/CL02.webp" alt="Spinner Loader Design 2"></div>
+  <div><img src="assets/CL05.webp" alt="Spinner Loader Design 3"></div>
+  <div><img src="assets/CL12.webp" alt="Spinner Loader Design 4"></div>
+</div>
+<div class="ideas_container_06">
+  <div><img src="assets/button_08.webp" alt="Card Opción 1"></div>
+  <div><img src="assets/button_08.webp" alt="Card Opción 2"></div>
+  <div><img src="assets/button_08.webp" alt="Card Opción 3"></div>
+  <div><img src="assets/button_08.webp" alt="Card Opción 4"></div>
+  <div><img src="assets/button_08.webp" alt="Card Opción 5"></div>
+</div>
+     </div>
+      
       <style>
-    
-        .ideas_container_01 {
-  max-width: 1920px;
-  margin: 0 auto;
+    .ideas_container{
+      padding: 0 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    /* #region ideas_container_01 */
+
+.ideas_container_01 {
   display: grid;
-  /* Definimos 6 columnas iguales para manejar tercios (2 cols) y sextos (1 col) */
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(2, 1fr); 
   gap: 5px;
-  padding: 0 10px;
-}
-
-/* Estilo base para los marquetos de prueba */
-.ideas_container_01 > div {
-  background-color: #e6e6e6; /* Gris tiza */
- 
-  overflow: hidden;
-}
-
-/* Asegura que las imágenes ocupen todo el contenedor */
-.ideas_container_01 > div img {
   width: 100%;
-  height:auto;
+}
+.ideas_container_01 > div {
+  width: 100%;
+  display: flex;
+}
+.ideas_container_01 img {
+  width: 100%;
+  height: auto;
+  display: block;
   object-fit: cover;
 }
 
-/* Hijos N° 1, 2, 3, 5, 6: Ocupan 1/3 del ancho (2 de 6 columnas) con relación 9/16 */
-.ideas_container_01 > div:nth-child(1),
-.ideas_container_01 > div:nth-child(2),
-.ideas_container_01 > div:nth-child(3),
-.ideas_container_01 > div:nth-child(5),
-.ideas_container_01 > div:nth-child(6) {
-  grid-column: span 2;
-  aspect-ratio: 16  / 9;
+/* Pantallas de escritorio (768px o más): cambia a 3 columnas */
+@media (min-width: 768px) {
+  .ideas_container_01 {
+    grid-template-columns: repeat(3, 1fr); /* 3 imágenes a la par */
+  }
 }
 
-/* Hijos N° 4 y 7: Ocupan la mitad de 1/3 (1 de 6 columnas) y heredan la altura */
-.ideas_container_01 > div:nth-child(4),
-.ideas_container_01 > div:nth-child(7) {
-  grid-column: span 1;
-}
-.ideas_container_01 > div:nth-child(4) img,
-.ideas_container_01 > div:nth-child(7) img {
-  height: 100%;
+/* #endregion */
 
+/* #region ideas_container_02 */
+/* Contenedor de las dos imágenes separadoras */
+.ideas_container_02 {
+  display: grid;
+  /* Crea 2 columnas iguales si caben (mínimo 280px cada una), si no, las apila en 1 columna */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 5px;
+  width: 100%;
 }
 
-
-/* Hijo N° 8: Ocupa el 100% (las 6 columnas) con altura mínima de 200px */
-.ideas_container_01 > div:nth-child(8) {
-  grid-column: span 6;
-  
+/* Envoltorios de las imágenes */
+.ideas_container_02 > div {
+  width: 100%;
+  display: flex;
 }
-   
+
+/* Estilos de las imágenes para que respondan al ancho */
+.ideas_container_02 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+/* #endregion */
+
+/* #region .ideas_container_03 */
+.ideas_container_03{
+  width: 100%;
+}
+   .ideas_container_03 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+/* #endregion */
         
+/* #region .ideas_container_04 */
+/* #region .ideas_container_04 */
+.ideas_container_04 {
+  display: grid;
+  grid-template-columns: 1fr; /* En móvil: 1 sola columna vertical */
+  gap: 5px;
+  width: 100%;
+}
+
+.ideas_container_04 > div {
+  width: 100%;
+  display: flex;
+}
+
+.ideas_container_04 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Contenedor secundario para apilar las dos imágenes pequeñas */
+.ideas_container_04 .ideas_duo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+/* Pantallas de escritorio (768px o más): cambia a 2 columnas asimétricas */
+@media (min-width: 768px) {
+  .ideas_container_04 {
+    /* La columna izquierda mide el doble (2fr) que la derecha (1fr) */
+    grid-template-columns: 2fr 1fr;
+  }
+}
+/* #endregion */
+/* #endregion */
+/* #region .ideas_container_05 */
+/* #region .ideas_container_05 */
+.ideas_container_05 {
+  display: grid;
+  /* Móvil: 2 columnas cuadradas */
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 5px;
+  width: 100%;
+}
+
+.ideas_container_05 > div {
+  width: 100%;
+  /* Fuerza a que el contenedor mantenga siempre una proporción 1:1 */
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.ideas_container_05 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Tablets (≥600px): cambia a 3 columnas */
+@media (min-width: 600px) {
+  .ideas_container_05 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Escritorio (≥900px): cambia a 4 columnas cuadradas */
+@media (min-width: 900px) {
+  .ideas_container_05 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* #endregion */
+/* #endregion */
+/* #region .ideas_container_06 */
+/* #region .ideas_container_06 */
+.ideas_container_06 {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  overflow-x: auto; /* Habilita el desplazamiento horizontal */
+  scroll-snap-type: x mandatory; /* Fuerza a que cada imagen "calce" al deslizar */
+  padding-bottom: 8px; /* Espacio para que la barra de scroll no pise la imagen */
+  -webkit-overflow-scrolling: touch; /* Desplazamiento suave en móviles (iOS) */
+}
+
+/* Opcional: Personalización estilizada de la barra de scroll */
+.ideas_container_06::-webkit-scrollbar {
+  height: 6px;
+}
+.ideas_container_06::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.ideas_container_06 > div {
+  /* En móvil cada tarjeta ocupa el 80% del ancho para dejar ver que hay más contenido al lado */
+  flex: 0 0 80%; 
+  scroll-snap-align: start; /* Alineación del punto de encaje */
+}
+
+.ideas_container_06 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* En escritorio (768px o más): mostramos tarjetas más compactas */
+@media (min-width: 768px) {
+  .ideas_container_06 > div {
+    /* Muestra ~3.5 tarjetas en pantalla para incentivar el scroll */
+    flex: 0 0 calc(30% - 10px); 
+  }
+}
+/* #endregion */
+/* #endregion */
       </style>
 
  

@@ -343,6 +343,9 @@ background: linear-gradient(to bottom, rgb(240, 239, 234), rgb(24, 22, 22));
   right: 0;
   padding: 20px;
   background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0));
+}
+.card__overlay-content h2, 
+.card__overlay-content p{
   color: #fff;
 }
 /* ==========================================================================

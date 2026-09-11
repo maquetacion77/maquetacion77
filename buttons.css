@@ -268,8 +268,6 @@ clip-path: path("M24 0 L126 0 L126 50 L24 50 Z");
         letter-spacing: 1px;
         position: relative;
         z-index: 2;
-        
-        filter: drop-shadow(0 0.3rem 0.1rem rgb(243, 0, 0));
       }
       .button-group .pair01.btn-primary01::after,
       .button-group .pair01.btn-secondary01::after {

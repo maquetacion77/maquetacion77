@@ -287,7 +287,8 @@ clip-path: path("M24 0 L126 0 L126 50 L24 50 Z");
         will-change: clip-path;
         transition: clip-path 0.3s ease;
       
-         clip-path: polygon(100%0%,100%100%,8%100%,18%0%,18%0%,8%100%,8%100%,18%0%,18%0%,8%100%,8%100%,18%0%);
+         /* clip-path: polygon(100%0%,100%100%,8%100%,18%0%,18%0%,8%100%,8%100%,18%0%,18%0%,8%100%,8%100%,18%0%); */
+           clip-path: polygon(100%0%,100%100%,0%100%,10%0%,12%0%,2%100%,4%100%,14%0%,16%0%,6%100%,8%100%,18%0%);
       }
       .button-group .pair01.btn-secondary01::after {
         transform: rotate(180deg);
@@ -297,9 +298,9 @@ clip-path: path("M24 0 L126 0 L126 50 L24 50 Z");
         right: -10%;
        
       }
-      .button-group .pair01:hover::after{
+      /* .button-group .pair01:hover::after{
          clip-path: polygon(100%0%,100%100%,0%100%,10%0%,12%0%,2%100%,4%100%,14%0%,16%0%,6%100%,8%100%,18%0%);
-      }
+      } */
       /* #endregion */
 
     /* #region pair02 */

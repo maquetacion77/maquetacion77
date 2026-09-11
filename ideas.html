@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="section.css" />
       <link rel="stylesheet" href="headerfooter.css" />
-    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="ideas.css">
     <script src="pre-loader.js" defer></script>
   </head>
     <body>
@@ -113,259 +113,131 @@
 Welcome to my digital workshop for interface design. Here you’ll find a collection of web components, experimental card layouts, custom button architectures, and typographic patterns. Every piece serves as visual inspiration, crafted to show how modern CSS and clean HTML can transform simple elements into memorable user experiences.
         </p>
       </section>
-      
-     <div class="ideas_container">
-       <section class="ideas_container_01">
+      <div class="ideas_filter_bar">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="buttons">Buttons</button>
+  <button class="filter-btn" data-filter="loaders">Loaders</button>
+  <button class="filter-btn" data-filter="cards">Cards</button>
+  <button class="filter-btn" data-filter="backgrounds">Backgrounds</button>
+  <button class="filter-btn" data-filter="nav-bar">Nav-Bar</button>
+  <button class="filter-btn" data-filter="hero">Hero</button>
+  <button class="filter-btn" data-filter="separator">Separator</button>
+</div>
+     <div class="ideas_container" id="ideasContainer">
+       <section class="ideas_container_01" data-category="buttons">
       <div><img src="assets/button_03.webp" alt=""></div>
       <div><img src="assets/button_08.webp" alt=""></div>
       <div><img src="assets/button_09.webp" alt=""></div>
       <div><img src="assets/button_10.webp" alt=""></div>
+      </section>
+
+      <section class="ideas_container_03" data-category="nav-bar">
+        <img src="assets/nav_bar_01.png" alt="">
+      </section>
+
+      <section class="ideas_container_02" data-category="backgrounds">
+         <div><img src="assets/background_02.webp" alt=""></div>
+      <div><img src="assets/background_01.webp" alt=""></div>
+      </section>
+      
+       <section class="ideas_container_02" data-category="separator">
+         <div><img src="assets/separator_01.webp" alt=""></div>
+         <div><img src="assets/separator_02.webp" alt=""></div>
+      </section>
+
+       <section class="ideas_container_02" data-category="cards">
+         <div><img src="assets/card_01.webp" alt=""></div>
+         <div><img src="assets/card_02.webp" alt=""></div>
+      </section>
+
+       <section class="ideas_container_03" data-category="nav-bar">
+        <img src="assets/nav_bar_02.png" alt="">
+      </section>
+
+       <section class="ideas_container_01" data-category="buttons">
+      <div><img src="assets/button_11.webp" alt=""></div>
+      <div><img src="assets/button_12.webp" alt=""></div>
+      <div><img src="assets/button_13.webp" alt=""></div>
+      <div><img src="assets/image_swich_button_01.webp" alt=""></div>
+      </section>
+
+<div class="ideas_container_01" data-category="loaders">
+  <div><img src="assets/CL01.webp" alt="Spinner Loader Design 1"></div>
+  <div><img src="assets/CL02.webp" alt="Spinner Loader Design 2"></div>
+  <div><img src="assets/CL03.webp" alt="Spinner Loader Design 3"></div>
+  <div><img src="assets/CL04.webp" alt="Spinner Loader Design 4"></div>
+</div>
+ <section class="ideas_container_02" data-category="backgrounds">
+         <div><img src="assets/background_03.webp" alt=""></div>
+      <div><img src="assets/background_04.webp" alt=""></div>
+      </section>
+
+ <section class="ideas_container_03" data-category="nav-bar">
+        <img src="assets/nav_bar_03.png" alt="">
+      </section>
+<div class="ideas_container_01" data-category="loaders">
+  <div><img src="assets/CL05.webp" alt="Spinner Loader Design 1"></div>
+  <div><img src="assets/CL06.webp" alt="Spinner Loader Design 2"></div>
+  <div><img src="assets/CL07.webp" alt="Spinner Loader Design 3"></div>
+  <div><img src="assets/CL08.webp" alt="Spinner Loader Design 4"></div>
+</div>
+       <section class="ideas_container_03" data-category="nav-bar">
+        <img src="assets/nav_bar_04.png" alt="">
+      </section>
+  <section class="ideas_container_02" data-category="separator">
+         <div><img src="assets/separator_03.webp" alt=""></div>
+         <div><img src="assets/separator_04.webp" alt=""></div>
+      </section>
+       <section class="ideas_container_03" data-category="nav-bar">
+        <img src="assets/nav_bar_05.png" alt="">
+      </section>
+
+<section class="ideas_container_02" data-category="cards">
+         <div><img src="assets/card_03.webp" alt=""></div>
+         <div><img src="assets/card_04.webp" alt=""></div>
+      </section>
+
+       <section class="ideas_container_03" data-category="nav-bar">
+        <img src="assets/nav_bar_06.png" alt="">
+      </section>
+      <section class="ideas_container_01" data-category="buttons">
+      <div><img src="assets/button_11.webp" alt=""></div>
+      <div><img src="assets/button_12.webp" alt=""></div>
       <div><img src="assets/button_13.webp" alt=""></div>
       <div><img src="assets/image_swich_button_04.png" alt=""></div>
       </section>
-      <section class="ideas_container_03">
-        <img src="assets/nav_button07.png" alt="">
+
+        <section class="ideas_container_02" data-category="separator">
+         <div><img src="assets/separator_05.webp" alt=""></div>
+         <div><img src="assets/separator_06.webp" alt=""></div>
       </section>
-      <section class="ideas_container_02">
-         <div><img src="assets/separator_01.webp" alt=""></div>
-      <div><img src="assets/background_01.webp" alt=""></div>
+
+       <section class="ideas_container_03" data-category="nav-bar">
+        <img src="assets/nav_bar_07.png" alt="">
       </section>
-       <section class="ideas_container_02">
-         <div><img src="assets/background_02.webp" alt=""></div>
-         <div><img src="assets/separator_02.webp" alt=""></div>
+      <section class="ideas_container_02" data-category="cards">
+         <div><img src="assets/card_05.webp" alt=""></div>
+         <div><img src="assets/card_06.webp" alt=""></div>
       </section>
-      <div class="ideas_container_04">
-  <!-- Imagen Principal (Destacada) -->
-  <div>
-    <img src="assets/hero01.webp" alt="Hero Section completa">
-  </div>
-  
-  <!-- Contenedor Duo (2 imágenes secundarias apiladas) -->
-  <div class="ideas_duo">
-    <div>
-      <img src="assets/button_11.webp" alt="Detalle de Card">
-    </div>
-    <div>
-      <img src="assets/button_12.webp" alt="Detalle de Botón">
-    </div>
-  </div>
-</div>
-<div class="ideas_container_05">
-  <div><img src="assets/CL01.webp" alt="Spinner Loader Design 1"></div>
-  <div><img src="assets/CL02.webp" alt="Spinner Loader Design 2"></div>
-  <div><img src="assets/CL05.webp" alt="Spinner Loader Design 3"></div>
+      <div class="ideas_container_01" data-category="loaders">
+  <div><img src="assets/CL09.webp" alt="Spinner Loader Design 1"></div>
+  <div><img src="assets/CL10.webp" alt="Spinner Loader Design 2"></div>
+  <div><img src="assets/CL11.webp" alt="Spinner Loader Design 3"></div>
   <div><img src="assets/CL12.webp" alt="Spinner Loader Design 4"></div>
 </div>
-<div class="ideas_container_06">
-  <div><img src="assets/button_08.webp" alt="Card Opción 1"></div>
-  <div><img src="assets/button_08.webp" alt="Card Opción 2"></div>
-  <div><img src="assets/button_08.webp" alt="Card Opción 3"></div>
-  <div><img src="assets/button_08.webp" alt="Card Opción 4"></div>
-  <div><img src="assets/button_08.webp" alt="Card Opción 5"></div>
-</div>
+
      </div>
+     <div class="pagination_controls" id="paginationControls">
+  <button id="prevBtn" type="button" aria-label="Página anterior">&laquo; Prev</button>
+  <span id="pageIndicator">Página 1 de 1</span>
+  <button id="nextBtn" type="button" aria-label="Página siguiente">Next &raquo;</button>
+</div>
       
-      <style>
-    .ideas_container{
-      padding: 0 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
-    /* #region ideas_container_01 */
+     
+     
 
-.ideas_container_01 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 5px;
-  width: 100%;
-}
-.ideas_container_01 > div {
-  width: 100%;
-  display: flex;
-}
-.ideas_container_01 img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
-/* Pantallas de escritorio (768px o más): cambia a 3 columnas */
-@media (min-width: 768px) {
-  .ideas_container_01 {
-    grid-template-columns: repeat(3, 1fr); /* 3 imágenes a la par */
-  }
-}
-
-/* #endregion */
-
-/* #region ideas_container_02 */
-/* Contenedor de las dos imágenes separadoras */
-.ideas_container_02 {
-  display: grid;
-  /* Crea 2 columnas iguales si caben (mínimo 280px cada una), si no, las apila en 1 columna */
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
-  gap: 5px;
-  width: 100%;
-}
-
-/* Envoltorios de las imágenes */
-.ideas_container_02 > div {
-  width: 100%;
-  display: flex;
-}
-
-/* Estilos de las imágenes para que respondan al ancho */
-.ideas_container_02 img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-/* #endregion */
-
-/* #region .ideas_container_03 */
-.ideas_container_03{
-  width: 100%;
-}
-   .ideas_container_03 img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-/* #endregion */
-        
-/* #region .ideas_container_04 */
-/* #region .ideas_container_04 */
-.ideas_container_04 {
-  display: grid;
-  grid-template-columns: 1fr; /* En móvil: 1 sola columna vertical */
-  gap: 5px;
-  width: 100%;
-}
-
-.ideas_container_04 > div {
-  width: 100%;
-  display: flex;
-}
-
-.ideas_container_04 img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-/* Contenedor secundario para apilar las dos imágenes pequeñas */
-.ideas_container_04 .ideas_duo {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  width: 100%;
-}
-
-/* Pantallas de escritorio (768px o más): cambia a 2 columnas asimétricas */
-@media (min-width: 768px) {
-  .ideas_container_04 {
-    /* La columna izquierda mide el doble (2fr) que la derecha (1fr) */
-    grid-template-columns: 2fr 1fr;
-  }
-}
-/* #endregion */
-/* #endregion */
-/* #region .ideas_container_05 */
-/* #region .ideas_container_05 */
-.ideas_container_05 {
-  display: grid;
-  /* Móvil: 2 columnas cuadradas */
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 5px;
-  width: 100%;
-}
-
-.ideas_container_05 > div {
-  width: 100%;
-  /* Fuerza a que el contenedor mantenga siempre una proporción 1:1 */
-  aspect-ratio: 1 / 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.ideas_container_05 img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-/* Tablets (≥600px): cambia a 3 columnas */
-@media (min-width: 600px) {
-  .ideas_container_05 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Escritorio (≥900px): cambia a 4 columnas cuadradas */
-@media (min-width: 900px) {
-  .ideas_container_05 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-/* #endregion */
-/* #endregion */
-/* #region .ideas_container_06 */
-/* #region .ideas_container_06 */
-.ideas_container_06 {
-  display: flex;
-  gap: 10px;
-  width: 100%;
-  overflow-x: auto; /* Habilita el desplazamiento horizontal */
-  scroll-snap-type: x mandatory; /* Fuerza a que cada imagen "calce" al deslizar */
-  padding-bottom: 8px; /* Espacio para que la barra de scroll no pise la imagen */
-  -webkit-overflow-scrolling: touch; /* Desplazamiento suave en móviles (iOS) */
-}
-
-/* Opcional: Personalización estilizada de la barra de scroll */
-.ideas_container_06::-webkit-scrollbar {
-  height: 6px;
-}
-.ideas_container_06::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 4px;
-}
-
-.ideas_container_06 > div {
-  /* En móvil cada tarjeta ocupa el 80% del ancho para dejar ver que hay más contenido al lado */
-  flex: 0 0 80%; 
-  scroll-snap-align: start; /* Alineación del punto de encaje */
-}
-
-.ideas_container_06 img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  border-radius: 4px;
-}
-
-/* En escritorio (768px o más): mostramos tarjetas más compactas */
-@media (min-width: 768px) {
-  .ideas_container_06 > div {
-    /* Muestra ~3.5 tarjetas en pantalla para incentivar el scroll */
-    flex: 0 0 calc(30% - 10px); 
-  }
-}
-/* #endregion */
-/* #endregion */
-      </style>
-
- 
+ <script src="ideas.js" defer></script>
       <script src="toggleButton.js" defer></script>
-   
       <footer class="flex---">
         <p>
           &copy; 2026 <span>Maquetacion</span><span>77</span> by Miguel Cortez

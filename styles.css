@@ -1,5 +1,5 @@
 html {
-  font-size: 62.5%;
+   font-size: 62.5%;
   scroll-padding-top: 60px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -78,11 +78,6 @@ body {
   display: inline-block;
   filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 1)); 
 }
-
-
-/* ==========================================================
-   CLASE DE ACCESIBILIDAD (Oculta visualmente, visible para SEO)
-   ========================================================== */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -120,6 +115,19 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
   inset: -4px;
   border: 2px solid #3a3434;
   border-radius: calc(40px + 4px);
+}
+.s_s_04{
+  position: relative;
+  padding: 10px 30px;
+}
+.s_s_04::after{
+   content: "";
+      position: absolute;
+      inset: 0;
+       filter: brightness(1.5);
+    
+      background-color: rgb(20, 9, 226);
+      clip-path: polygon(7px 0, 100% 0, 100% 100%, 0 100%, 0 0, 5px 0, 5px 5px, 0 5px, 0 7px, 2px 7px, 2px calc(100% - 7px), 0 calc(100% - 7px), 0 calc(100% - 5px), 5px calc(100% - 5px), 5px 100%, 7px 100%, 7px calc(100% - 2px), calc(100% - 7px) calc(100% - 2px), calc(100% - 7px) 100%, calc(100% - 5px) 100%, calc(100% - 5px) calc(100% - 5px), 100% calc(100% - 5px), 100% calc(100% - 7px), calc(100% - 2px) calc(100% - 7px), calc(100% - 2px) 7px, 100% 7px, 100% 5px, calc(100% - 5px) 5px, calc(100% - 5px) 0, calc(100% - 7px) 0, calc(100% - 7px) 2px, 7px 2px);
 }
 
 .s_s_02 {

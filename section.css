@@ -596,3 +596,10 @@ margin: 0 auto;
 /* #endregion */
 
 /* #region ideas */
+
+/* #region custom loaders */
+.spinner-card img{
+  width: 100px;
+  height: 100px;
+}
+/* #endregion */

@@ -149,7 +149,7 @@ CLAIM ACCESS
    // card06
    {
    id: "pricing-card-01 ",
-  previewImg: "assets/card_06.png",
+  previewImg: "assets/card_06.webp",
   altText: "Saas Preview",
   htmlContent: `
   <div class="saas-card-container">

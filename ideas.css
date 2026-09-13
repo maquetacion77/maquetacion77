@@ -2,7 +2,7 @@
   padding: 0 10px;
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Aumentado ligeramente para mejor respiración entre bloques */
+  gap: 5px;
   width: 100%;
 }
 
@@ -160,7 +160,7 @@
 }
 /* #endregion */
 
-/* #region Transición de galería */
+/* #region  gallery transition*/
 .fade-in {
   animation: fadeInEffect 0.4s ease-in-out forwards;
 }
@@ -168,11 +168,11 @@
 @keyframes fadeInEffect {
   from {
     opacity: 0;
-    transform: translateY(12px); /* Viene desde un poquito abajo */
+    transform: translateY(12px); 
   }
   to {
     opacity: 1;
-    transform: translateY(0);    /* Vuelve a su posición original */
+    transform: translateY(0);    
   }
 }
 /* #endregion */

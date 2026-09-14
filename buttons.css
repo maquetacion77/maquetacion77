@@ -75,6 +75,7 @@
   transition: background-color 0.4s ease;
   padding: 20px 0;
 }
+
 .button__container .primary_btn {
   width: 150px;
   height: 50px;
@@ -225,24 +226,6 @@
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
 background-color: #095fe0;
 }
-
-
-
-
-/* .primary_btn_10::after,
-.primary_btn_10::before{
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
- 
-}
-.primary_btn_10::after{
-clip-path: path("M24 0 L126 0 L126 50 L24 50 Z");
- background: rgb(0, 0, 219);
-} */
-
-
 /* #endregion */
 
 /* #region 02 pairs */
@@ -567,43 +550,6 @@ clip-path: path("M24 0 L126 0 L126 50 L24 50 Z");
       }
 /* #endregion */
 
-/* #region nav-link02 */
-      .nav-link02 {
-        color: var(--nav02);
-      }
-      .nav-link02::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        border-block: 1px solid currentcolor;
-        transform: scaleX(0%);
-        transition: transform 0.2s linear;
-      }
-      .nav-link02:hover::after {
-        transform: scaleX(100%);
-      }
-/* #endregion */
-
-/* #region nav-link03 */
-.nav-link03 {
-      color: var(--nav03);
-    }
-
-    .nav-link03::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border: 1px solid currentColor;
-      transition: clip-path 0.2s linear;
-      will-change: clip-path;
-      clip-path: polygon(50%0%, 50%0%, 50%100%, 50%100%);
-    }
-
-    .nav-link03:hover::after {
-      clip-path: polygon(0%0%, 100%0%, 100%100%, 0%100%);
-    }
-/* #endregion */
-
 /* #region nav-link04 */
  .nav-link04 {
  padding: 10px 12px;
@@ -698,25 +644,7 @@ clip-path: path("M24 0 L126 0 L126 50 L24 50 Z");
       }
 /* #endregion */
 
-/* #region nav-link07 */
-.nav-link07{
-  color: var(--nav07);
-}
- .nav-link07::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        transition: clip-path 0.3s ease;
-        background-color: currentColor;
-        clip-path: polygon(0%20%, 100%20%, 50%20%);
-        transform: translateZ(0);
-        will-change: clip-path;
-        transform: translateY(-5%);
-      }
-      .nav-link07:hover::after {
-        clip-path: polygon(0%20%, 100%20%, 50%0%);
-      }
-/* #endregion */
+
 /* #endregion */
 
 /* #region 05 heroCTA */

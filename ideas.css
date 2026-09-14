@@ -99,6 +99,9 @@
 
 /* #region ideas_filter */
 .ideas_filter_bar {
+  position: sticky;
+  top: 65px; 
+  z-index: 99; 
   display: flex;
   flex-wrap: wrap;
   gap: 8px;

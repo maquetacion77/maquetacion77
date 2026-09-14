@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const ITEMS_PER_PAGE = 7; // Bloques por página
+  const ITEMS_PER_PAGE = 7; 
   let currentPage = 1;
   let currentFilter = 'all';
   const container = document.getElementById('ideasContainer');
@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const paginationControls = document.getElementById('paginationControls');
 
   function createBlockElement(blockData) {
-    // Usamos <section> o <div> según tus clases originales
     const section = document.createElement('section');
     section.className = blockData.type;
     section.setAttribute('data-category', blockData.category);
@@ -21,11 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
       img.alt = imgData.alt || 'Componente Maquetación 77';
       img.loading = 'lazy';
 
-      // Si es container_03 (Nav-bars), la <img> va directa sin <div>
+      
       if (blockData.type === 'ideas_container_03') {
         section.appendChild(img);
       } else {
-        // Para container_01 y 02, la <img> se envuelve en un <div>
+  
         const wrapper = document.createElement('div');
         wrapper.appendChild(img);
         section.appendChild(wrapper);
@@ -53,9 +52,9 @@ function renderGallery() {
 
     container.innerHTML = '';
 
-    // --- AGREGADO: Reinicia la animación en cada render ---
+   // -------------------------------------------------------------
     container.classList.remove('fade-in');
-    void container.offsetWidth; // Forzar reflow para reiniciar la transición CSS
+    void container.offsetWidth; 
     // ------------------------------------------------------
 
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -69,12 +68,11 @@ function renderGallery() {
         container.appendChild(blockEl);
       });
     }
-
-    // --- AGREGADO: Aplica la clase de animación al contenedor ---
+// -------------------------------------------------------------
     container.classList.add('fade-in');
     // -------------------------------------------------------------
 
-    pageIndicator.textContent = `Página ${currentPage} de ${totalPages}`;
+    pageIndicator.textContent = `${currentPage} - ${totalPages}`;
     prevBtn.disabled = currentPage === 1;
     nextBtn.disabled = currentPage === totalPages;
 
@@ -96,7 +94,7 @@ function renderGallery() {
     });
   });
 
-  // Paginación
+
   prevBtn.addEventListener('click', () => {
     if (currentPage > 1) {
       currentPage--;

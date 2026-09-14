@@ -108,7 +108,7 @@ const IDEAS_DATA = [
     category: "buttons",
     images: [
       { src: "assets/pair_button_01.webp", alt: "Pair Button Design 01" },
-      { src: "assets/pair_button_01.webp", alt: "Pair Button Design 02" }
+      { src: "assets/pair_button_02.webp", alt: "Pair Button Design 02" }
     ]
   },
     {

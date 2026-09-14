@@ -175,3 +175,9 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
 }
 
 /* #endregion */
+
+/* 1. forces all elements injected by the translator (<font>) to inherit their parent's color */
+font {
+  color: inherit !important;
+}
+

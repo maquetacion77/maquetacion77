@@ -99,35 +99,45 @@
 
 /* #region ideas_filter */
 .ideas_filter_bar {
+  background-color: #000000;
   position: sticky;
-  top: 65px; 
+  top: 59px; 
   z-index: 99; 
+
+  padding: 8px 10px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: center;
-  margin: 20px 0 15px 0;
-  padding: 0 10px;
+  align-items: center;
+  gap: 7px;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
+
+
 .filter-btn {
+  display: flex;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
-  padding: 8px 16px;
-  border-radius: 20px;
+  padding: 5px 16px;
   cursor: pointer;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   transition: all 0.25s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .filter-btn:hover {
   background-color: #e0e0e0;
 }
+
 .filter-btn.active {
-  background-color: #111;
-  color: #fff;
-  border-color: #111;
+  background:var(--brand-primary);
+  /* color: #fff; */
+  border-color: var(--brand-secondary);
+ 
 }
 /* #endregion */
 
@@ -160,6 +170,15 @@
 #pageIndicator {
   font-size: 0.95rem;
   font-weight: 600;
+}
+
+@media (max-width: 500px) {
+  /* Oculta la barra en Chrome, Safari y Opera */
+.ideas_filter_bar::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
 }
 /* #endregion */
 

@@ -1,13 +1,12 @@
 const IDEAS_DATA = [
   //#region page01
   {
-    type: "ideas_container_01",
+    type: "ideas_container_01b",
     category: "buttons",
     images: [
       { src: "assets/button_01.webp", alt: "Primary Button Design 01" },
       { src: "assets/button_02.webp", alt: "Primary Button Design 02" },
-      { src: "assets/button_03.webp", alt: "Primary Button Design 03" },
-     { src: "assets/image_swich_button_01.webp", alt: "Switch Button 01" }
+     { src: "assets/pair_button_01.webp", alt: "Pair Button Design 01" }
     ]
   },
   {
@@ -66,10 +65,11 @@ const IDEAS_DATA = [
     type: "ideas_container_01",
     category: "buttons",
     images: [
-       { src: "assets/image_swich_button_02.webp", alt: "Switch Button 02" },
+       { src: "assets/image_swich_button_01.webp", alt: "Switch Button 01" },
+       { src: "assets/button_03.webp", alt: "Primary Button Design 03" },
       { src: "assets/button_05.webp", alt: "Primary Button Design 05" },
-      { src: "assets/button_06.webp", alt: "Primary Button Design 06" },
-      { src: "assets/button_08.webp", alt: "Primary Button Design 08" }
+      { src: "assets/button_06.webp", alt: "Primary Button Design 06" }
+      
     ]
   },
   {
@@ -104,10 +104,11 @@ const IDEAS_DATA = [
     ]
   },
   {
-    type: "ideas_container_02",
+    type: "ideas_container_01b",
     category: "buttons",
     images: [
-      { src: "assets/pair_button_01.webp", alt: "Pair Button Design 01" },
+        { src: "assets/button_08.webp", alt: "Primary Button Design 08" },
+      { src: "assets/image_swich_button_02.webp", alt: "Switch Button 02" },
       { src: "assets/pair_button_02.webp", alt: "Pair Button Design 02" }
     ]
   },
@@ -186,12 +187,12 @@ const IDEAS_DATA = [
 
 //#region page04
   {
-    type: "ideas_container_01",
+    type: "ideas_container_01b",
     category: "buttons",
     images: [
       { src: "assets/button_12.webp", alt: "Primary Button Design 12" },
-      { src: "assets/button_13.webp", alt: "Primary Button Design 13" },
-        { src: "assets/image_swich_button_04.webp", alt: "Switch Button 04" }
+        { src: "assets/image_swich_button_04.webp", alt: "Switch Button 04" },
+        { src: "assets/pair_button_03.webp", alt: "Pair Button Design 03" }
       
     ]
   },

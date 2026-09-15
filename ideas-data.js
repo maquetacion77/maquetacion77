@@ -131,7 +131,7 @@ const IDEAS_DATA = [
     images: [
       { src: "assets/button_09.webp", alt: "Primary Button Design 09" },
         { src: "assets/image_swich_button_03.webp", alt: "Switch Button 03" },
-      { src: "assets/button_10.webp", alt: "Primary Button Design 11" },
+      { src: "assets/button_10.webp", alt: "Primary Button Design 10" },
       { src: "assets/button_11.webp", alt: "Primary Button Design 11" }
     ]
   },

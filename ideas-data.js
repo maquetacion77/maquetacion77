@@ -239,10 +239,11 @@ const IDEAS_DATA = [
     ]
   },
    {
-    type: "ideas_container_03",
-    category: "nav-bar",
+    type: "ideas_container_02",
+    category: "adaptive_frame",
     images: [
-      { src: "assets/nav_bar_07.webp", alt: "Nav_bar Design 07" }
+      { src: "assets/adaptive_frame_03.webp", alt: "Adaptive Frame 03" },
+      // { src: "assets/you09.webp", alt: "Adaptive Frame 04" }
     ]
   },
 //#endregion

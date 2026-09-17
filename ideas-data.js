@@ -67,8 +67,9 @@ const IDEAS_DATA = [
     images: [
        { src: "assets/image_swich_button_01.webp", alt: "Switch Button 01" },
        { src: "assets/button_03.webp", alt: "Primary Button Design 03" },
-      { src: "assets/button_05.webp", alt: "Primary Button Design 05" },
-      { src: "assets/button_06.webp", alt: "Primary Button Design 06" }
+         { src: "assets/button_04.webp", alt: "Primary Button Design 04" },
+      { src: "assets/button_05.webp", alt: "Primary Button Design 05" }
+    
       
     ]
   },
@@ -107,7 +108,7 @@ const IDEAS_DATA = [
     type: "ideas_container_01b",
     category: "buttons",
     images: [
-        { src: "assets/button_08.webp", alt: "Primary Button Design 08" },
+        { src: "assets/button_06.webp", alt: "Primary Button Design 06" },
       { src: "assets/image_swich_button_02.webp", alt: "Switch Button 02" },
       { src: "assets/pair_button_02.webp", alt: "Pair Button Design 02" }
     ]
@@ -129,10 +130,10 @@ const IDEAS_DATA = [
     type: "ideas_container_01",
     category: "buttons",
     images: [
-      { src: "assets/button_09.webp", alt: "Primary Button Design 09" },
+   { src: "assets/button_07.webp", alt: "Primary Button Design 07" },
         { src: "assets/image_swich_button_03.webp", alt: "Switch Button 03" },
-      { src: "assets/button_10.webp", alt: "Primary Button Design 10" },
-      { src: "assets/button_11.webp", alt: "Primary Button Design 11" }
+          { src: "assets/button_08.webp", alt: "Primary Button Design 08" },
+          { src: "assets/button_09.webp", alt: "Primary Button Design 09" }
     ]
   },
   {
@@ -190,7 +191,7 @@ const IDEAS_DATA = [
     type: "ideas_container_01b",
     category: "buttons",
     images: [
-      { src: "assets/button_12.webp", alt: "Primary Button Design 12" },
+      { src: "assets/button_10.webp", alt: "Primary Button Design 10" },
         { src: "assets/image_swich_button_04.webp", alt: "Switch Button 04" },
         { src: "assets/pair_button_03.webp", alt: "Pair Button Design 03" }
       

@@ -151,8 +151,8 @@ html {
   background: linear-gradient(
     to right, 
     #000000 0%, 
-    transparent 15%, 
-    transparent 85%, 
+    transparent 30px, 
+    transparent calc(100% - 30px), 
     #000000 100%
   );
 }

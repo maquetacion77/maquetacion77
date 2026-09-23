@@ -306,8 +306,7 @@
   width: 30px;
   height: 30px;
   position: absolute;
-  /* Removido transform: translateZ(0) y will-change innecesario */
-  transition: clip-path 0.3s ease;
+  transition: clip-path 0.3s ease, border-radius 0.3s ease;
 }
 
 .switch_btn_01:after {
@@ -396,7 +395,6 @@
   border: 3px double currentColor;
   clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%);
   transition: clip-path 0.2s linear;
-  /* Removido will-change y transform translateZ */
 }
 
 .nav-link04:hover::after,
@@ -497,7 +495,6 @@
   overflow: hidden;
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease;
   clip-path: polygon(0% 0%, 100% 0%, 100% 5%, 0% 5%, 0% 10%, 100% 10%, 100% 90%, 0% 90%, 0% 95%, 100% 95%, 100% 100%, 0% 100%);
-  /* Removido content-visibility: auto por causar micro-cortes */
 }
 
 .hero-cta-btn:hover {
@@ -554,7 +551,6 @@
 .carousel-item03 {
   animation: hero_cta_ani_01 10.8s linear infinite;
   clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-  /* Mantenemos will-change AQUÍ porque esta animación corre en bucle infinito */
   will-change: clip-path;
   position: absolute;
   display: flex;

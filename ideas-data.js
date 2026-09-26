@@ -249,4 +249,48 @@ const IDEAS_DATA = [
   },
 //#endregion
 
+//#region page05
+  {
+    type: "ideas_container_01",
+    category: "buttons",
+    images: [
+      { src: "assets/button_11.webp", alt: "Primary Button Design 11" },
+       { src: "assets/button_12.webp", alt: "Primary Button Design 12" },
+        { src: "assets/button_13.webp", alt: "Primary Button Design 13" },
+        { src: "assets/image_swich_button_05.webp", alt: "Switch Button 05" }
+       
+      
+    ]
+  },
+  {
+    type: "ideas_container_03",
+    category: "nav-bar",
+    images: [
+      { src: "assets/nav_bar_07.webp", alt: "Nav_bar Design 07" }
+    ]
+  },
+  {
+    type: "ideas_container_02",
+    category: "backgrounds",
+    images: [
+      { src: "assets/background_06.webp", alt: "Background Design 06" },
+     { src: "assets/background_07.webp", alt: "Background Design 07" }
+    ]
+  }, {
+    type: "ideas_container_03",
+    category: "nav-bar",
+    images: [
+      { src: "assets/nav_bar_08.webp", alt: "Nav_bar Design 08" }
+    ]
+  },
+  {
+    type: "ideas_container_02",
+    category: "backgrounds",
+    images: [
+      { src: "assets/background_08.webp", alt: "Background Design 08" },
+     { src: "assets/background_09.webp", alt: "Background Design 09" }
+    ]
+  },
+//#endregion
+
 ];

@@ -1,57 +1,185 @@
-.main-header{
-  width: 100%;
-  height: 60px;
-  background-color: var(--cls-black);
+html {
+   font-size: 62.5%;
+  scroll-padding-top: 60px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  /* Brand Colors */
+  --brand-primary: #00ffff;
+  --brand-secondary: #1d9e9e;
+  /* Base Colors */
+  --cls-white: #ffffff;
+  --cls-black: #000000;
+   --color-accent: #6495ed;
+    --onyx-dark: #171414;
+    --Soft-slate-gray:#475569;
+  /* Functional / Alpha Colors */
+  --bg-overlay: #0000001a; 
+   --color-card-overlay: #11111173;
+  /* Typography */
+  --font-main: "Inter", sans-serif;
+   /* Loader */
+  --spinner-size: 100px; 
+  --scale:1;
+  /* nav-buttons */
+         --nav02: #13dfdf; 
+        --nav03: #ccff00; 
+        --nav04: #ffd500; 
+        --nav05: #33fc5f; 
+        --nav06: #ffff00; 
+        --nav07: #ff69b4; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    font-family: var(--font-main);
+     text-decoration: none;
+  list-style: none;
+  letter-spacing: 1px;
+  color: var(--cls-black);
+}
+a,
+button,
+input,
+textarea,
+select,
+.is-clickable {
+  -webkit-tap-highlight-color: transparent;
+}
+nav a {
+  font-size: 1.5rem;
+}
+.flex--- {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 15px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
+  justify-content: center;
+}
+.flex__c---{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
 }
 
-
-
-.logo {
-  font-size: 2.4rem;
-  color: var(--brand-primary);
-  text-decoration: none; /* Limpieza visual */
+body {
+  max-width: 1920px;
+  margin: auto;
+  position: relative;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-
-.logo span {
-  font-weight: 600;
-  color: var(--brand-secondary);
-}
-
-@media only screen and (max-width: 850px) {
-  /* Al estar el botón adentro, el logo se queda a la izquierda y el botón a la derecha naturalmente */
-.main-header{
-    justify-content: space-between; 
+  p{
+    font-size: 1.4rem;
+    line-height: 150%;
   }
-  /* .logo span {
-    font-size:rem;
-  } */
+  .btn_wrapper {
+  display: inline-block;
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 1)); 
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  border: 0;
+  white-space: nowrap; 
 }
 
-footer {
+/* #region subtitle_style */
+
+.s_s_01{
+  color: #ffffff;
+  
+  background-color: #57505063;
+  background-color: #3a3434;
+background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"> <polygon points="50 0 50 20 20 50 50 80 50 100 0 50" fill="%23f1eaea4c" /> <polygon points="100 50 100 70 70 100 50 100" fill="%23f1eaea4c" /> <polygon points="50 0 70 0 100 30 100 50" fill="%23f1eaea4c" /><polygon points="50 0 100 50 50 100 50 80 80 50 50 20" fill="%231f1e1e" /> <polygon points="0 50 50 100 30 100 0 70" fill="%231f1e1e" /> <polygon points="30 0 50 0 0 50 0 30" fill="%231f1e1e" /></svg>');
+  background-repeat: repeat;
+  background-size: 30px 30px;
+  width:100%;
+  height: 40px;
+  line-height: 40px; 
+  letter-spacing: 1px;
+  position: relative;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+.s_s_01:after{
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border: 2px solid #3a3434;
+  border-radius: calc(40px + 4px);
+}
+.s_s_04{
+  position: relative;
+  padding: 10px 30px;
+}
+.s_s_04::after{
+   content: "";
+      position: absolute;
+      inset: 0;
+       filter: brightness(1.5);
+    
+      background-color: rgb(20, 9, 226);
+      clip-path: polygon(7px 0, 100% 0, 100% 100%, 0 100%, 0 0, 5px 0, 5px 5px, 0 5px, 0 7px, 2px 7px, 2px calc(100% - 7px), 0 calc(100% - 7px), 0 calc(100% - 5px), 5px calc(100% - 5px), 5px 100%, 7px 100%, 7px calc(100% - 2px), calc(100% - 7px) calc(100% - 2px), calc(100% - 7px) 100%, calc(100% - 5px) 100%, calc(100% - 5px) calc(100% - 5px), 100% calc(100% - 5px), 100% calc(100% - 7px), calc(100% - 2px) calc(100% - 7px), calc(100% - 2px) 7px, 100% 7px, 100% 5px, calc(100% - 5px) 5px, calc(100% - 5px) 0, calc(100% - 7px) 0, calc(100% - 7px) 2px, 7px 2px);
+}
+
+.s_s_02 {
+  max-width: max-content;
+  margin-bottom: 5px; 
+  padding-left:15px;
+  border-radius: 3rem;
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.s_s_02 span {
+  display: inline-block; 
+  background-color: #ffffff;
+  color: #111111;
+  padding: 15px ; 
+  border: 2px solid #111111;
+  border-radius: 3rem; 
+}
+.s_s_03{
+ 
+  display: block;
   width: 100%;
-  height: 60px;
-  background-color:var(--cls-black);
+  height: 70px;
+  font-weight: 900;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 }
-footer p {
-  color: var(--brand-primary);
-  font-size: 1.4rem;
-  line-height: 150%;
-}
-footer p span {
-  color: var(--brand-primary);
-  padding: 2px;
-}
-footer p span:last-child {
-  font-weight: 600;
-  color: var(--brand-secondary);
+.s_s_03 h2{
+  width:1920px ;
+  height: 70px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background: linear-gradient(to bottom, black 0, white 10px, black 70px);
+  
+   
+    clip-path: path("M0 0 Q1920 0 1920 0 1920 20 1920 20 1060 20 1060 20 1050 20 1050 30 1050 70 960 70 870 70 870 30 870 20 860 20 0 20 0 20 0 0 0 0");
+    
+    
 }
 
+/* #endregion */
+
+/* 1. forces all elements injected by the translator (<font>) to inherit their parent's color */
+font {
+  color: inherit !important;
+}
 

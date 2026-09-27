@@ -68,7 +68,9 @@ body {
   margin: auto;
   position: relative;
   padding-top: 60px;
-  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
   p{
     font-size: 1.4rem;

@@ -104,15 +104,15 @@ const IDEAS_DATA = [
       { src: "assets/card_04.webp", alt: "Card Design 04" }
     ]
   },
-  {
-    type: "ideas_container_01b",
-    category: "buttons",
+   {
+    type: "ideas_container_02",
+    category: "link_cards",
     images: [
-        { src: "assets/button_06.webp", alt: "Primary Button Design 06" },
-      { src: "assets/image_swich_button_02.webp", alt: "Switch Button 02" },
-      { src: "assets/pair_button_02.webp", alt: "Pair Button Design 02" }
+      { src: "assets/link_cards_01.webp", alt: "link_cards_01 Design" },
+      { src: "assets/link_cards_02.webp", alt: "link_cards_02 Design" }
     ]
   },
+  
     {
     type: "ideas_container_01",
     category: "loaders",
@@ -126,14 +126,14 @@ const IDEAS_DATA = [
 //#endregion
  
 //#region page03
+
   {
-    type: "ideas_container_01",
+    type: "ideas_container_01b",
     category: "buttons",
     images: [
-   { src: "assets/button_07.webp", alt: "Primary Button Design 07" },
-        { src: "assets/image_swich_button_03.webp", alt: "Switch Button 03" },
-          { src: "assets/button_08.webp", alt: "Primary Button Design 08" },
-          { src: "assets/button_09.webp", alt: "Primary Button Design 09" }
+        { src: "assets/button_06.webp", alt: "Primary Button Design 06" },
+      { src: "assets/image_swich_button_02.webp", alt: "Switch Button 02" },
+      { src: "assets/pair_button_02.webp", alt: "Pair Button Design 02" }
     ]
   },
   {
@@ -178,12 +178,14 @@ const IDEAS_DATA = [
     ]
   },
   {
-    type: "ideas_container_03",
-    category: "nav-bar",
+    type: "ideas_container_02",
+    category: "link_cards",
     images: [
-      { src: "assets/nav_bar_04.webp", alt: "Nav_bar Design 04" }
+      { src: "assets/link_cards_03.webp", alt: "link_cards_03 Design" },
+      { src: "assets/link_cards_04.webp", alt: "link_cards_04 Design" }
     ]
   },
+ 
 //#endregion
 
 //#region page04
@@ -197,13 +199,14 @@ const IDEAS_DATA = [
       
     ]
   },
-  {
+ {
     type: "ideas_container_03",
     category: "nav-bar",
     images: [
-      { src: "assets/nav_bar_05.webp", alt: "Nav_bar Design 05" }
+      { src: "assets/nav_bar_04.webp", alt: "Nav_bar Design 04" }
     ]
   },
+ 
   {
     type: "ideas_container_02",
     category: "backgrounds",
@@ -222,23 +225,23 @@ const IDEAS_DATA = [
       { src: "assets/CL16.webp", alt: "Spinner Loader Design 16" }
     ]
   },
-      {
-    type: "ideas_container_01",
-    category: "loaders",
+  {
+    type: "ideas_container_02",
+    category: "link_cards",
     images: [
-      { src: "assets/CL17.webp", alt: "Spinner Loader Design 17" },
-      { src: "assets/CL18.webp", alt: "Spinner Loader Design 18" },
-      { src: "assets/CL19.webp", alt: "Spinner Loader Design 19" }
-      
+      { src: "assets/link_cards_05.webp", alt: "link_cards_05 Design" },
+      { src: "assets/link_cards_06.webp", alt: "link_cards_06 Design" }
     ]
   },
-  {
+  
+   {
     type: "ideas_container_03",
     category: "nav-bar",
     images: [
-      { src: "assets/nav_bar_06.webp", alt: "Nav_bar Design 06" }
+      { src: "assets/nav_bar_05.webp", alt: "Nav_bar Design 05" }
     ]
   },
+
    {
     type: "ideas_container_02",
     category: "adaptive_frame",
@@ -250,16 +253,14 @@ const IDEAS_DATA = [
 //#endregion
 
 //#region page05
-  {
+    {
     type: "ideas_container_01",
     category: "buttons",
     images: [
-      { src: "assets/button_11.webp", alt: "Primary Button Design 11" },
-       { src: "assets/button_12.webp", alt: "Primary Button Design 12" },
-        { src: "assets/button_13.webp", alt: "Primary Button Design 13" },
-        { src: "assets/image_swich_button_05.webp", alt: "Switch Button 05" }
-       
-      
+   { src: "assets/button_07.webp", alt: "Primary Button Design 07" },
+        { src: "assets/image_swich_button_03.webp", alt: "Switch Button 03" },
+          { src: "assets/button_08.webp", alt: "Primary Button Design 08" },
+          { src: "assets/button_09.webp", alt: "Primary Button Design 09" }
     ]
   },
   {
@@ -299,6 +300,37 @@ const IDEAS_DATA = [
       { src: "assets/separator_08.webp", alt: "UI_Divider Design 08" }
     ]
   },
+      {
+    type: "ideas_container_01",
+    category: "loaders",
+    images: [
+      { src: "assets/CL17.webp", alt: "Spinner Loader Design 17" },
+      { src: "assets/CL18.webp", alt: "Spinner Loader Design 18" },
+      { src: "assets/CL19.webp", alt: "Spinner Loader Design 19" }
+      
+    ]
+  },
+//#endregion
+
+//#region page06
+  {
+    type: "ideas_container_01",
+    category: "buttons",
+    images: [
+      { src: "assets/button_11.webp", alt: "Primary Button Design 11" },
+       { src: "assets/button_12.webp", alt: "Primary Button Design 12" },
+        { src: "assets/button_13.webp", alt: "Primary Button Design 13" },
+        { src: "assets/image_swich_button_05.webp", alt: "Switch Button 05" }
+    ]
+  },
+    {
+    type: "ideas_container_03",
+    category: "nav-bar",
+    images: [
+      { src: "assets/nav_bar_06.webp", alt: "Nav_bar Design 06" }
+    ]
+  },
+   
 //#endregion
 
 ];

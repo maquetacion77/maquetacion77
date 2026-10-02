@@ -291,6 +291,14 @@ const IDEAS_DATA = [
      { src: "assets/background_09.webp", alt: "Background Design 09" }
     ]
   },
+  {
+      type: "ideas_container_02",
+    category: "ui_divider",
+    images: [
+      { src: "assets/separator_07.webp", alt: "UI_Divider Design 07" },
+      { src: "assets/separator_08.webp", alt: "UI_Divider Design 08" }
+    ]
+  },
 //#endregion
 
 ];

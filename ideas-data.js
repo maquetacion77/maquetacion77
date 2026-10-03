@@ -20,8 +20,8 @@ const IDEAS_DATA = [
     type: "ideas_container_02",
     category: "backgrounds",
     images: [
-      { src: "assets/background_02.webp", alt: "Background Design 02" },
-      { src: "assets/background_01.webp", alt: "Background Design 01" }
+      { src: "assets/svg_background01.webp", alt: "Background Design 01" },
+      { src: "assets/svg_background02.webp", alt: "Background Design 02" }
     ]
   },
   {
@@ -147,8 +147,8 @@ const IDEAS_DATA = [
     type: "ideas_container_02",
     category: "backgrounds",
     images: [
-      { src: "assets/background_03.webp", alt: "Background Design 03" },
-      { src: "assets/background_04.webp", alt: "Background Design 04" }
+      { src: "assets/svg_background03.webp", alt: "Background Design 03" },
+      { src: "assets/svg_background04.webp", alt: "Background Design 04" }
     ]
   },
   {
@@ -189,16 +189,17 @@ const IDEAS_DATA = [
 //#endregion
 
 //#region page04
-  {
-    type: "ideas_container_01b",
+ {
+    type: "ideas_container_01",
     category: "buttons",
     images: [
-      { src: "assets/button_10.webp", alt: "Primary Button Design 10" },
-        { src: "assets/image_swich_button_04.webp", alt: "Switch Button 04" },
-        { src: "assets/pair_button_03.webp", alt: "Pair Button Design 03" }
-      
+   { src: "assets/button_07.webp", alt: "Primary Button Design 07" },
+        { src: "assets/image_swich_button_03.webp", alt: "Switch Button 03" },
+          { src: "assets/button_08.webp", alt: "Primary Button Design 08" },
+          { src: "assets/button_09.webp", alt: "Primary Button Design 09" }
     ]
   },
+  
  {
     type: "ideas_container_03",
     category: "nav-bar",
@@ -211,8 +212,8 @@ const IDEAS_DATA = [
     type: "ideas_container_02",
     category: "backgrounds",
     images: [
-      { src: "assets/background_05.webp", alt: "Background Design 05" },
-      { src: "assets/you25.webp", alt: "Background Design 06" }
+      { src: "assets/svg_background05.webp", alt: "Background Design 05" },
+      { src: "assets/svg_background06.webp", alt: "Background Design 06" }
     ]
   },
     {
@@ -253,16 +254,17 @@ const IDEAS_DATA = [
 //#endregion
 
 //#region page05
-    {
-    type: "ideas_container_01",
+{
+    type: "ideas_container_01b",
     category: "buttons",
     images: [
-   { src: "assets/button_07.webp", alt: "Primary Button Design 07" },
-        { src: "assets/image_swich_button_03.webp", alt: "Switch Button 03" },
-          { src: "assets/button_08.webp", alt: "Primary Button Design 08" },
-          { src: "assets/button_09.webp", alt: "Primary Button Design 09" }
+      { src: "assets/button_10.webp", alt: "Primary Button Design 10" },
+        { src: "assets/image_swich_button_04.webp", alt: "Switch Button 04" },
+        { src: "assets/pair_button_03.webp", alt: "Pair Button Design 03" }
+      
     ]
   },
+   
   {
     type: "ideas_container_03",
     category: "nav-bar",
@@ -271,13 +273,6 @@ const IDEAS_DATA = [
     ]
   },
   {
-    type: "ideas_container_02",
-    category: "backgrounds",
-    images: [
-      { src: "assets/background_06.webp", alt: "Background Design 06" },
-     { src: "assets/background_07.webp", alt: "Background Design 07" }
-    ]
-  }, {
     type: "ideas_container_03",
     category: "nav-bar",
     images: [
@@ -288,8 +283,8 @@ const IDEAS_DATA = [
     type: "ideas_container_02",
     category: "backgrounds",
     images: [
-      { src: "assets/background_08.webp", alt: "Background Design 08" },
-     { src: "assets/background_09.webp", alt: "Background Design 09" }
+      { src: "assets/svg_background07.webp", alt: "Background Design 07" },
+     { src: "assets/svg_background08.webp", alt: "Background Design 08" }
     ]
   },
   {
@@ -328,6 +323,14 @@ const IDEAS_DATA = [
     category: "nav-bar",
     images: [
       { src: "assets/nav_bar_06.webp", alt: "Nav_bar Design 06" }
+    ]
+  },
+  {
+    type: "ideas_container_02",
+    category: "backgrounds",
+    images: [
+      { src: "assets/svg_background09.webp", alt: "Background Design 09  " },
+     { src: "assets/svg_background10.webp", alt: "Background Design 10" }
     ]
   },
    

@@ -305,10 +305,7 @@ const IDEAS_DATA = [
       
     ]
   },
-//#endregion
-
-//#region page06
-  {
+    {
     type: "ideas_container_01",
     category: "buttons",
     images: [
@@ -318,6 +315,10 @@ const IDEAS_DATA = [
         { src: "assets/image_swich_button_05.webp", alt: "Switch Button 05" }
     ]
   },
+//#endregion
+
+//#region page06
+
     {
     type: "ideas_container_03",
     category: "nav-bar",
@@ -331,6 +332,15 @@ const IDEAS_DATA = [
     images: [
       { src: "assets/svg_background09.webp", alt: "Background Design 09  " },
      { src: "assets/svg_background10.webp", alt: "Background Design 10" }
+    ]
+  },
+   {
+    type: "ideas_container_01b",
+    category: "buttons",
+    images: [
+      { src: "assets/button_14.webp", alt: "Primary Button Design 14" },
+      { src: "assets/button_15.webp", alt: "Primary Button Design 15" },
+     { src: "assets/pair_button_04.png", alt: "Pair Button Design 04" }
     ]
   },
    

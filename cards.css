@@ -167,6 +167,7 @@ opacity: 1;
       font-size: 25px;
       font-weight: 700;
       letter-spacing: 1px;
+      
     }
     .card01 .card-text {
       margin: 0;
@@ -325,10 +326,11 @@ opacity: 1;
     .card02 .card-btn span {
       padding-top: 20px;
        letter-spacing: 2px;
-      transition: letter-spacing 0.3s ease;
+      transition: letter-spacing 0.3s ease, color 0.3s ease;
     }
      .card02 .card-btn:hover span {
       letter-spacing: 3px;
+      color: #ffffff;
     }
     .card02 .card-btn::after {
       content: "";

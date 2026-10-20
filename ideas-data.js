@@ -44,8 +44,8 @@ const IDEAS_DATA = [
     type: "ideas_container_02",
     category: "adaptive_frame",
     images: [
-      { src: "assets/adaptive_frame_01.webp", alt: "Adaptive Frame 01" },
-      { src: "assets/adaptive_frame_02.webp", alt: "Adaptive Frame 02" }
+      { src: "assets/adaptive_frame_01.png", alt: "Adaptive Frame 01" },
+      { src: "assets/adaptive_frame_02.png", alt: "Adaptive Frame 02" }
     ]
   },
     {
@@ -248,7 +248,7 @@ const IDEAS_DATA = [
     category: "adaptive_frame",
     images: [
       { src: "assets/adaptive_frame_03.webp", alt: "Adaptive Frame 03" },
-      // { src: "assets/you09.webp", alt: "Adaptive Frame 04" }
+       { src: "assets/adaptive_frame_04.webp", alt: "Adaptive Frame 04" },
     ]
   },
 //#endregion
@@ -272,19 +272,21 @@ const IDEAS_DATA = [
       { src: "assets/nav_bar_07.webp", alt: "Nav_bar Design 07" }
     ]
   },
-  {
-    type: "ideas_container_03",
-    category: "nav-bar",
-    images: [
-      { src: "assets/nav_bar_08.webp", alt: "Nav_bar Design 08" }
-    ]
-  },
+ 
   {
     type: "ideas_container_02",
     category: "backgrounds",
     images: [
       { src: "assets/svg_background07.webp", alt: "Background Design 07" },
      { src: "assets/svg_background08.webp", alt: "Background Design 08" }
+    ]
+  },
+  {
+    type: "ideas_container_02",
+    category: "adaptive_frame",
+    images: [
+      { src: "assets/adaptive_frame_05.webp", alt: "Adaptive Frame 05" },
+       { src: "assets/adaptive_frame_06.webp", alt: "Adaptive Frame 06" },
     ]
   },
   {
@@ -343,7 +345,40 @@ const IDEAS_DATA = [
      { src: "assets/pair_button_04.png", alt: "Pair Button Design 04" }
     ]
   },
+   {
+    type: "ideas_container_02",
+    category: "adaptive_frame",
+    images: [
+      { src: "assets/adaptive_frame_07.webp", alt: "Adaptive Frame 07" },
+       { src: "assets/adaptive_frame_09.webp", alt: "Adaptive Frame 09" },
+    ]
+  },
+   {
+    type: "ideas_container_02",
+    category: "adaptive_frame",
+    images: [
+      { src: "assets/adaptive_frame_11.webp", alt: "Adaptive Frame 11" },
+       { src: "assets/adaptive_frame_14.webp", alt: "Adaptive Frame 14" },
+    ]
+  },
+   {
+    type: "ideas_container_02",
+    category: "adaptive_frame",
+    images: [
+      { src: "assets/adaptive_frame_18.webp", alt: "Adaptive Frame 18" },
+       { src: "assets/adaptive_frame_19.webp", alt: "Adaptive Frame 19" },
+    ]
+  },
    
 //#endregion
 
 ];
+
+
+//  {
+//     type: "ideas_container_03",
+//     category: "nav-bar",
+//     images: [
+//       { src: "assets/nav_bar_08.webp", alt: "Nav_bar Design 08" }
+//     ]
+//   },

@@ -369,16 +369,27 @@ const IDEAS_DATA = [
        { src: "assets/adaptive_frame_19.webp", alt: "Adaptive Frame 19" },
     ]
   },
+   {
+    type: "ideas_container_01b",
+    category: "buttons",
+    images: [
+      { src: "assets/button_16.webp", alt: "Primary Button Design 16" },
+      { src: "assets/button_17.webp", alt: "Primary Button Design 17" }
+    //  { src: "assets/pair_button_04.png", alt: "Pair Button Design 04" }
+    ]
+  },
+   {
+    type: "ideas_container_03",
+    category: "nav-bar",
+    images: [
+      { src: "assets/nav_bar_08.webp", alt: "Nav_bar Design 08" }
+    ]
+  },
    
 //#endregion
+
+
 
 ];
 
 
-//  {
-//     type: "ideas_container_03",
-//     category: "nav-bar",
-//     images: [
-//       { src: "assets/nav_bar_08.webp", alt: "Nav_bar Design 08" }
-//     ]
-//   },

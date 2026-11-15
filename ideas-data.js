@@ -385,6 +385,22 @@ const IDEAS_DATA = [
       { src: "assets/nav_bar_08.webp", alt: "Nav_bar Design 08" }
     ]
   },
+   {
+    type: "ideas_container_02",
+    category: "backgrounds",
+    images: [
+      { src: "assets/svg_background11.webp", alt: "Background Design 11  " },
+     { src: "assets/svg_background17.webp", alt: "Background Design 17" }
+    ]
+  },
+   {
+    type: "ideas_container_02",
+    category: "backgrounds",
+    images: [
+      { src: "assets/svg_background18.webp", alt: "Background Design 18  " },
+     { src: "assets/svg_background20.webp", alt: "Background Design 20" }
+    ]
+  },
    
 //#endregion
 

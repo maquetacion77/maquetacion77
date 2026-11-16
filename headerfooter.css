@@ -13,11 +13,10 @@
 }
 
 
-
 .logo {
   font-size: 2.4rem;
   color: var(--brand-primary);
-  text-decoration: none; /* Limpieza visual */
+  text-decoration: none; 
 }
 
 .logo span {
@@ -26,13 +25,12 @@
 }
 
 @media only screen and (max-width: 850px) {
-  /* Al estar el botón adentro, el logo se queda a la izquierda y el botón a la derecha naturalmente */
 .main-header{
     justify-content: space-between; 
-  }
-  /* .logo span {
-    font-size:rem;
-  } */
+    padding-right: 0;
+  };
+
+ 
 }
 
   footer {

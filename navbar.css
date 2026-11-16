@@ -100,9 +100,10 @@ font-size: 1.4rem;
     width: 60px;
             height: 60px;
             padding: 0;
-            background: transparent;
+           z-index: 99;
             border: none;
             cursor: pointer;
+             background: transparent;
             position: relative;
             display: flex;
             align-items: center;
@@ -119,7 +120,6 @@ font-size: 1.4rem;
             top: 15px;
             right: 15px;
             background-color: var(--brand-primary);
-z-index: 99;
             clip-path: polygon(
                 50%0%,0%0%,0%20%,50%20%,50%40%,0%40%,0%60%,50%60%,50%80%,0%80%,0%100%,100%100%,100%80%,50%80%,50%60%,100%60%,100%40%,50%40%,50%20%,100%20%,100%0%
             );

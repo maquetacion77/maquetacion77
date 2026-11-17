@@ -370,12 +370,13 @@ const IDEAS_DATA = [
     ]
   },
    {
-    type: "ideas_container_01b",
+    type: "ideas_container_01",
     category: "buttons",
     images: [
       { src: "assets/button_16.webp", alt: "Primary Button Design 16" },
-      { src: "assets/button_17.webp", alt: "Primary Button Design 17" }
-    //  { src: "assets/pair_button_04.png", alt: "Pair Button Design 04" }
+      { src: "assets/button_17.webp", alt: "Primary Button Design 17" },
+     { src: "assets/button_18.webp", alt: "Primary Button Design 18" },
+        { src: "assets/image_swich_button_06.webp", alt: "Switch Button 06" }
     ]
   },
    {

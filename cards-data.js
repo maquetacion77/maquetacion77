@@ -1,397 +1,188 @@
-const IDEAS_DATA = [
-  //#region page01
+const cardsData = [
+  // card01
   {
-    type: "ideas_container_01b",
-    category: "buttons",
-    images: [
-      { src: "assets/button_01.webp", alt: "Primary Button Design 01" },
-      { src: "assets/button_02.webp", alt: "Primary Button Design 02" },
-     { src: "assets/pair_button_01.webp", alt: "Pair Button Design 01" }
-    ]
+    id: "urban-living-01",
+    previewImg: "assets/card_01.webp",
+    altText: "Preview of Urban Living",
+    htmlContent: `
+      <article class="card01">
+         <img class="card-image" src="assets/Urban Living.jpg" alt="Exterior facade of a modern residential building at sunset" loading="lazy" decoding="async" />
+        <div class="card-overlay flex---">
+          <h2 class="card-title">Urban Living</h2>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, alias, voluptatem, laboriosam optio adipisci corporis.</p>
+          <a href="javascript:void(0)" class="card-btn">View Details</a>
+          <h3 class="card-subtitle" data-text="Downtown Area">Downtown Area</h3>
+        </div>
+      </article>
+    `
   },
+  // card02
   {
-    type: "ideas_container_03",
-    category: "nav-bar",
-    images: [
-      { src: "assets/nav_bar_01.webp", alt: "Nav_bar Design 01" }
-    ]
+    id: "exclusive-property",
+    previewImg: "assets/card_02.webp",
+    altText: "Preview of Exclusive Property",
+    htmlContent: `
+     <article class="card02">
+       <img class="card-image" src="assets/Exclusive Property.jpg" alt="Exterior view of a luxury villa with an infinity pool" loading="lazy" decoding="async" />
+      <div class="card-overlay flex---">
+        <h2 class="card-title">Exclusive Property</h2>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, alias, voluptatem, laboriosam optio adipisci corporis.</p>
+      </div>
+      <a href="javascript:void(0)" class="card-btn"><span>View Details</span></a>
+      <h3 class="card-subtitle">Prime Location</h3>
+    </article>
+    `
   },
+  // card03
   {
-    type: "ideas_container_02",
-    category: "backgrounds",
-    images: [
-      { src: "assets/svg_background01.webp", alt: "Background Design 01" },
-      { src: "assets/svg_background02.webp", alt: "Background Design 02" }
-    ]
+   id: "card-news-tech",
+  previewImg: "assets/card_03.webp",
+  altText: "Card News Preview",
+  htmlContent: `
+    <article class="card-news">
+     <div class="card-news-image">
+    <img 
+      src="assets/imageAI.png" 
+      alt="Artificial Intelligence concept visualization" 
+      loading="lazy" 
+      decoding="async" 
+    />
+    <span class="badge__news">Technology</span>
+  </div>
+      <div class="card-news-body">
+        <div class="card-news-meta">AUGUST 13, 2026 • 5 MIN READ</div>
+        <h2 class="card-news-title">The Impact of Artificial Intelligence on Modern Frontend Development</h2>
+        <p class="card-news-excerpt">Modern tools are transforming the way developers craft complex interfaces, optimizing CSS and HTML workflows.</p>
+        <div class="card-news-footer">
+          By <span class="author">Maquetacion77</span>
+        </div>
+      </div>
+    </article>
+    `
   },
+  // card04
   {
-    type: "ideas_container_02",
-    category: "ui_divider",
-    images: [
-      { src: "assets/separator_01.webp", alt: "UI_Divider Design 01" },
-      { src: "assets/separator_02.webp", alt: "UI_Divider Design 02" }
-    ]
-  },
-  {
-    type: "ideas_container_02",
-    category: "cards",
-    images: [
-      { src: "assets/card_01.webp", alt: "Card Design 01" },
-      { src: "assets/card_02.webp", alt: "Card Design 02" }
-    ]
-  },
-  {
-    type: "ideas_container_02",
-    category: "adaptive_frame",
-    images: [
-      { src: "assets/adaptive_frame_01.png", alt: "Adaptive Frame 01" },
-      { src: "assets/adaptive_frame_02.png", alt: "Adaptive Frame 02" }
-    ]
-  },
-    {
-    type: "ideas_container_01",
-    category: "loaders",
-    images: [
-      { src: "assets/CL01.webp", alt: "Spinner Loader Design 01" },
-      { src: "assets/CL02.webp", alt: "Spinner Loader Design 02" },
-      { src: "assets/CL03.webp", alt: "Spinner Loader Design 03" },
-      { src: "assets/CL04.webp", alt: "Spinner Loader Design 04" }
-    ]
-  },
-//#endregion
+   id: "cyber-card-rtx",
+  previewImg: "assets/card_04.webp",
+  altText: "Cyber Card Preview",
+  htmlContent: `
+    <div class="cyber-card">
+      <div class="cyber-card-inner">
+        <div class="card-content">
+          
+          <div class="card-top">
+            <span class="badge-cyber">GEFORCE RTX</span>
+            <span class="serial-number">// 4090-NEON</span>
+          </div>
 
-//#region page02
-  {
-    type: "ideas_container_01",
-    category: "buttons",
-    images: [
-       { src: "assets/image_swich_button_01.webp", alt: "Switch Button 01" },
-       { src: "assets/button_03.webp", alt: "Primary Button Design 03" },
-         { src: "assets/button_04.webp", alt: "Primary Button Design 04" },
-      { src: "assets/button_05.webp", alt: "Primary Button Design 05" }
-    
-      
-    ]
+          <div class="product-display">
+            <div class="gpu-graphic">
+              <div class="gpu-fan fan-left"></div>
+              <div class="gpu-core"></div>
+              <div class="gpu-fan fan-right"></div>
+            </div>
+            <div class="tech-specs-overlay">
+              24GB GDDR6X | DLSS 3.5
+            </div>
+          </div>
+
+          <div>
+            <div class="product-title">RTX 4090 CYBER</div>
+            <div class="product-subtitle">TITAN ARCHITECTURE / OC</div>
+          </div>
+
+          <div class="price-row">
+            <span class="price-tag">$1,899.99</span>
+            <span class="price-old">$2,199.00</span>
+          </div>
+
+          <div class="btn-cyber">
+            ACQUIRE CORE
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    `
   },
-  {
-    type: "ideas_container_03",
-    category: "nav-bar",
-    images: [
-      { src: "assets/nav_bar_02.webp", alt: "Nav_bar Design 02" }
-    ]
-  },
-  {
-    type: "ideas_container_02",
-    category: "hero",
-    images: [
-      { src: "assets/hero01.webp", alt: "Hero Design 01" },
-      { src: "assets/hero02.webp", alt: "Hero Design 02" }
-    ]
-  },
-  {
-    type: "ideas_container_02",
-    category: "ui_divider",
-    images: [
-      { src: "assets/separator_03.webp", alt: "UI_Divider Design 03" },
-      { src: "assets/separator_04.webp", alt: "UI_Divider Design 04" }
-    ]
-  },
-  {
-    type: "ideas_container_02",
-    category: "cards",
-    images: [
-      { src: "assets/card_03.webp", alt: "Card Design 03" },
-      { src: "assets/card_04.webp", alt: "Card Design 04" }
-    ]
-  },
+  // card05
    {
-    type: "ideas_container_02",
-    category: "link_cards",
-    images: [
-      { src: "assets/link_cards_01.webp", alt: "link_cards_01 Design" },
-      { src: "assets/link_cards_02.webp", alt: "link_cards_02 Design" }
-    ]
-  },
+   id: "gamming-card-01 ",
+  previewImg: "assets/card_05.webp",
+  altText: "Pase Cyberpunk Preview",
+  htmlContent: `
   
-    {
-    type: "ideas_container_01",
-    category: "loaders",
-    images: [
-      { src: "assets/CL05.webp", alt: "Spinner Loader Design 05" },
-      { src: "assets/CL06.webp", alt: "Spinner Loader Design 06" },
-      { src: "assets/CL07.webp", alt: "Spinner Loader Design 07" },
-      { src: "assets/CL08.webp", alt: "Spinner Loader Design 08" }
-    ]
-  },
-//#endregion
- 
-//#region page03
+    <article class="card_gaming_01">
+    <div class="card_gaming_content">
+  <span class="card_tag">RANK #01</span>
 
-  {
-    type: "ideas_container_01b",
-    category: "buttons",
-    images: [
-        { src: "assets/button_06.webp", alt: "Primary Button Design 06" },
-      { src: "assets/image_swich_button_02.webp", alt: "Switch Button 02" },
-      { src: "assets/pair_button_02.webp", alt: "Pair Button Design 02" }
-    ]
-  },
-  {
-    type: "ideas_container_03",
-    category: "nav-bar",
-    images: [
-      { src: "assets/nav_bar_03.webp", alt: "Nav_bar Design 03" }
-    ]
-  },
-  {
-    type: "ideas_container_02",
-    category: "backgrounds",
-    images: [
-      { src: "assets/svg_background03.webp", alt: "Background Design 03" },
-      { src: "assets/svg_background04.webp", alt: "Background Design 04" }
-    ]
-  },
-  {
-    type: "ideas_container_02",
-    category: "ui_divider",
-    images: [
-      { src: "assets/separator_05.webp", alt: "UI_Divider Design 05" },
-      { src: "assets/separator_06.webp", alt: "UI_Divider Design 06" }
-    ]
-  },
-  {
-    type: "ideas_container_02",
-    category: "cards",
-    images: [
-      { src: "assets/card_05.webp", alt: "Card Design 05" },
-      { src: "assets/card_06.webp", alt: "Card Design 06" }
-    ]
-  },
-    {
-    type: "ideas_container_01",
-    category: "loaders",
-    images: [
-      { src: "assets/CL09.webp", alt: "Spinner Loader Design 09" },
-      { src: "assets/CL10.webp", alt: "Spinner Loader Design 10" },
-      { src: "assets/CL11.webp", alt: "Spinner Loader Design 11" },
-      { src: "assets/CL12.webp", alt: "Spinner Loader Design 12" }
-    ]
-  },
-  {
-    type: "ideas_container_02",
-    category: "link_cards",
-    images: [
-      { src: "assets/link_cards_03.webp", alt: "link_cards_03 Design" },
-      { src: "assets/link_cards_04.webp", alt: "link_cards_04 Design" }
-    ]
-  },
- 
-//#endregion
+  <h2 class="card_title">CYBER PASS</h2>
+  <p class="card_subtitle">Access Level: Omega</p>
 
-//#region page04
- {
-    type: "ideas_container_01",
-    category: "buttons",
-    images: [
-   { src: "assets/button_07.webp", alt: "Primary Button Design 07" },
-        { src: "assets/image_swich_button_03.webp", alt: "Switch Button 03" },
-          { src: "assets/button_08.webp", alt: "Primary Button Design 08" },
-          { src: "assets/button_09.webp", alt: "Primary Button Design 09" }
-    ]
+  <ul class="card_stats">
+    <li>
+      <span>STATUS</span>
+      <strong>ACTIVE</strong>
+    </li>
+    <li>
+      <span>XP BONUS</span>
+      <strong>+150%</strong>
+    </li>
+    <li>
+      <span>EXPIRATION</span>
+      <strong>30 DAYS</strong>
+    </li>
+  </ul>
+
+ <p class="card_description">
+  Unlock exclusive rewards, priority servers, and encrypted network routing.
+</p>
+<button  type="button" class="btn_cta">
+CLAIM ACCESS
+</button>
+</div>
+  </article>
+
+    `
   },
-  
- {
-    type: "ideas_container_03",
-    category: "nav-bar",
-    images: [
-      { src: "assets/nav_bar_04.webp", alt: "Nav_bar Design 04" }
-    ]
-  },
- 
-  {
-    type: "ideas_container_02",
-    category: "backgrounds",
-    images: [
-      { src: "assets/svg_background05.webp", alt: "Background Design 05" },
-      { src: "assets/svg_background06.webp", alt: "Background Design 06" }
-    ]
-  },
-    {
-    type: "ideas_container_01",
-    category: "loaders",
-    images: [
-      { src: "assets/CL13.webp", alt: "Spinner Loader Design 13" },
-      { src: "assets/CL14.webp", alt: "Spinner Loader Design 14" },
-      { src: "assets/CL15.webp", alt: "Spinner Loader Design 15" },
-      { src: "assets/CL16.webp", alt: "Spinner Loader Design 16" }
-    ]
-  },
-  {
-    type: "ideas_container_02",
-    category: "link_cards",
-    images: [
-      { src: "assets/link_cards_05.webp", alt: "link_cards_05 Design" },
-      { src: "assets/link_cards_06.webp", alt: "link_cards_06 Design" }
-    ]
-  },
-  
+   // card06
    {
-    type: "ideas_container_03",
-    category: "nav-bar",
-    images: [
-      { src: "assets/nav_bar_05.webp", alt: "Nav_bar Design 05" }
-    ]
-  },
+   id: "pricing-card-01 ",
+  previewImg: "assets/card_06.webp",
+  altText: "Saas Preview",
+  htmlContent: `
+  <div class="saas-card-container">
+   <article class="saas-card">
+    <div class="saas-card-header">
+      <div class="badge-container">
+        <span class="badge-plan">Pro Dev</span>
+        <span class="badge-popular">★ Most Popular</span>
+      </div>
 
-   {
-    type: "ideas_container_02",
-    category: "adaptive_frame",
-    images: [
-      { src: "assets/adaptive_frame_03.webp", alt: "Adaptive Frame 03" },
-       { src: "assets/adaptive_frame_04.webp", alt: "Adaptive Frame 04" },
-    ]
-  },
-//#endregion
+      <h2 class="plan-title">Pro Plan</h2>
+      <p class="plan-description">
+        Ideal for independent developers and growing teams.
+      </p>
 
-//#region page05
-{
-    type: "ideas_container_01b",
-    category: "buttons",
-    images: [
-      { src: "assets/button_10.webp", alt: "Primary Button Design 10" },
-        { src: "assets/image_swich_button_04.webp", alt: "Switch Button 04" },
-        { src: "assets/pair_button_03.webp", alt: "Pair Button Design 03" }
-      
-    ]
-  },
-   
-  {
-    type: "ideas_container_03",
-    category: "nav-bar",
-    images: [
-      { src: "assets/nav_bar_07.webp", alt: "Nav_bar Design 07" }
-    ]
-  },
- 
-  {
-    type: "ideas_container_02",
-    category: "backgrounds",
-    images: [
-      { src: "assets/svg_background07.webp", alt: "Background Design 07" },
-     { src: "assets/svg_background08.webp", alt: "Background Design 08" }
-    ]
-  },
-  {
-    type: "ideas_container_02",
-    category: "adaptive_frame",
-    images: [
-      { src: "assets/adaptive_frame_05.webp", alt: "Adaptive Frame 05" },
-       { src: "assets/adaptive_frame_06.webp", alt: "Adaptive Frame 06" },
-    ]
-  },
-  {
-      type: "ideas_container_02",
-    category: "ui_divider",
-    images: [
-      { src: "assets/separator_07.webp", alt: "UI_Divider Design 07" },
-      { src: "assets/separator_08.webp", alt: "UI_Divider Design 08" }
-    ]
-  },
-      {
-    type: "ideas_container_01",
-    category: "loaders",
-    images: [
-      { src: "assets/CL17.webp", alt: "Spinner Loader Design 17" },
-      { src: "assets/CL18.webp", alt: "Spinner Loader Design 18" },
-      { src: "assets/CL19.webp", alt: "Spinner Loader Design 19" }
-      
-    ]
-  },
-    {
-    type: "ideas_container_01",
-    category: "buttons",
-    images: [
-      { src: "assets/button_11.webp", alt: "Primary Button Design 11" },
-       { src: "assets/button_12.webp", alt: "Primary Button Design 12" },
-        { src: "assets/button_13.webp", alt: "Primary Button Design 13" },
-        { src: "assets/image_swich_button_05.webp", alt: "Switch Button 05" }
-    ]
-  },
-//#endregion
+      <div class="price-container">
+        <span class="price-amount">$29</span>
+        <span class="price-period">/ month</span>
+      </div>
 
-//#region page06
+      <ul class="features-list">
+        <li class="feature-item"><span>✓</span>Up to 15 Active Projects</li>
+        <li class="feature-item"><span>✓</span>Continuous Deployment (CI/CD)</li>
+        <li class="feature-item"><span>✓</span>24/7 Priority Support</li>
+        <li class="feature-item"><span>✓</span>Unlimited Custom Domains</li>
+        <li class="feature-item"><span>✓</span>Advanced Traffic Analytics</li>
+      </ul>
+    </div>
 
-    {
-    type: "ideas_container_03",
-    category: "nav-bar",
-    images: [
-      { src: "assets/nav_bar_06.webp", alt: "Nav_bar Design 06" }
-    ]
-  },
-  {
-    type: "ideas_container_02",
-    category: "backgrounds",
-    images: [
-      { src: "assets/svg_background09.webp", alt: "Background Design 09  " },
-     { src: "assets/svg_background10.webp", alt: "Background Design 10" }
-    ]
-  },
-   {
-    type: "ideas_container_01b",
-    category: "buttons",
-    images: [
-      { src: "assets/button_14.webp", alt: "Primary Button Design 14" },
-      { src: "assets/button_15.webp", alt: "Primary Button Design 15" },
-     { src: "assets/pair_button_04.png", alt: "Pair Button Design 04" }
-    ]
-  },
-   {
-    type: "ideas_container_02",
-    category: "adaptive_frame",
-    images: [
-      { src: "assets/adaptive_frame_07.webp", alt: "Adaptive Frame 07" },
-       { src: "assets/adaptive_frame_09.webp", alt: "Adaptive Frame 09" },
-    ]
-  },
-   {
-    type: "ideas_container_02",
-    category: "adaptive_frame",
-    images: [
-      { src: "assets/adaptive_frame_11.webp", alt: "Adaptive Frame 11" },
-       { src: "assets/adaptive_frame_14.webp", alt: "Adaptive Frame 14" },
-    ]
-  },
-   {
-    type: "ideas_container_02",
-    category: "adaptive_frame",
-    images: [
-      { src: "assets/adaptive_frame_18.webp", alt: "Adaptive Frame 18" },
-       { src: "assets/adaptive_frame_19.webp", alt: "Adaptive Frame 19" },
-    ]
-  },
-   {
-    type: "ideas_container_01b",
-    category: "buttons",
-    images: [
-      { src: "assets/button_16.webp", alt: "Primary Button Design 16" },
-      { src: "assets/button_17.webp", alt: "Primary Button Design 17" }
-    //  { src: "assets/pair_button_04.png", alt: "Pair Button Design 04" }
-    ]
-  },
-   
-//#endregion
 
-// #region page07
-
-// #endregion
-
+    <a href="javascript:void(0)" class="btn-plan">Start Free Trial</a>
+  </article>
+  </div>
+    `
+  }
 ];
-
-
-//  {
-//     type: "ideas_container_03",
-//     category: "nav-bar",
-//     images: [
-//       { src: "assets/nav_bar_08.webp", alt: "Nav_bar Design 08" }
-//     ]
-//   },

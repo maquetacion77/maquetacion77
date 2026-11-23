@@ -402,6 +402,39 @@ const IDEAS_DATA = [
      { src: "assets/svg_background20.webp", alt: "Background Design 20" }
     ]
   },
+   {
+    type: "ideas_container_02",
+    category: "adaptive_frame",
+    images: [
+      { src: "assets/adaptive_frame_08.webp", alt: "Adaptive Frame 08" },
+       { src: "assets/adaptive_frame_10.webp", alt: "Adaptive Frame 10" },
+    ]
+  },
+   {
+    type: "ideas_container_02",
+    category: "adaptive_frame",
+    images: [
+      { src: "assets/adaptive_frame_12.webp", alt: "Adaptive Frame 12" },
+       { src: "assets/adaptive_frame_13.webp", alt: "Adaptive Frame 13" },
+    ]
+  },
+   {
+    type: "ideas_container_02",
+    category: "adaptive_frame",
+    images: [
+      { src: "assets/adaptive_frame_15.webp", alt: "Adaptive Frame 15" },
+       { src: "assets/adaptive_frame_16.webp", alt: "Adaptive Frame 16" },
+    ]
+  },
+   {
+    type: "ideas_container_02",
+    category: "adaptive_frame",
+    images: [
+      { src: "assets/adaptive_frame_17.webp", alt: "Adaptive Frame 17" },
+       { src: "assets/adaptive_frame_17.webp", alt: "Adaptive Frame 17" },
+     
+    ]
+  },
    
 //#endregion
 

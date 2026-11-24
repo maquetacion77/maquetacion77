@@ -431,7 +431,7 @@ const IDEAS_DATA = [
     category: "adaptive_frame",
     images: [
       { src: "assets/adaptive_frame_17.webp", alt: "Adaptive Frame 17" },
-       { src: "assets/adaptive_frame_17.webp", alt: "Adaptive Frame 17" },
+       { src: "assets/adaptive_frame_20.webp", alt: "Adaptive Frame 20" },
      
     ]
   },
